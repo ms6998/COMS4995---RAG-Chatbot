@@ -11,7 +11,7 @@ def get_with_backoff(url, retries=10, base_delay=0.5):
         r = requests.get(url, timeout=5)
         if r.status_code != 429:
             r.raise_for_status()
-            return r.json()
+            return r
 
         retry_after = r.headers.get("Retry-After")
         if retry_after:
@@ -50,7 +50,7 @@ def get_professor_ids(name: str, debug: bool=False):
 
     # Search with an exponential backoff to avoid HTTP 429
     # killing the search
-    results = get_with_backoff(BASE_URL + quote(name))
+    results = get_with_backoff(BASE_URL + quote(name)).json()
 
     # Remove all results except professors
     results = [r for r in results if PROF in r.keys()]
@@ -116,5 +116,5 @@ def get_professor_ids(name: str, debug: bool=False):
 
 def get_professor_rating(professor_id: str, debug: bool=False):
     url = f"https://culpa.info/api/professor_page/card/{professor_id}"
-    r = get_with_backoff(url)
+    r = get_with_backoff(url).json()
     return r["professor_summary"]["avg_rating"]
