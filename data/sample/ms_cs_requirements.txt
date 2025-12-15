@@ -1,0 +1,115 @@
+MS Computer Science - Degree Requirements (2023 Catalog)
+
+Program Overview:
+The Master of Science in Computer Science requires a minimum of 30 credits of graduate-level coursework. The program is designed to provide advanced knowledge in computer science fundamentals and specialized areas.
+
+Core Requirements (12 credits):
+Students must complete FOUR core courses (12 credits total) from the following areas:
+
+1. Systems Track:
+   - COMS 4111 Introduction to Databases (3 credits)
+   - COMS 4115 Programming Languages and Translators (3 credits)
+   - COMS 4118 Operating Systems (3 credits)
+
+2. Theory and Algorithms:
+   - COMS 4231 Analysis of Algorithms (3 credits)
+   - COMS 4236 Computational Complexity (3 credits)
+
+3. Artificial Intelligence and Applications:
+   - COMS 4701 Artificial Intelligence (3 credits)
+   - COMS 4771 Machine Learning (3 credits)
+
+4. Software Engineering:
+   - COMS 4156 Advanced Software Engineering (3 credits)
+   - COMS 4995 Software Development Project (3 credits)
+
+Students must select at least ONE course from each of THREE different areas listed above.
+
+Technical Electives (15 credits):
+Students must complete 15 credits of technical electives. These electives must be:
+- At least 3 credits must be from 6000-level COMS courses
+- Can include approved courses from COMS, IEOR, ELEN, MATH departments
+- Must be approved by the academic advisor
+
+Approved 6000-level courses include:
+- COMS 6111 Advanced Database Systems
+- COMS 6156 Topics in Software Engineering
+- COMS 6701 Advanced Machine Learning
+- COMS 6998 Topics in Computer Science
+
+Track Options:
+Students can optionally follow a specialized track:
+
+Machine Learning Track:
+Required:
+- COMS 4771 Machine Learning (core requirement)
+- COMS 4772 Advanced Machine Learning
+- COMS 4774 Unsupervised Learning
+Plus 2 additional ML-related electives
+
+Natural Language Processing Track:
+Required:
+- COMS 4705 Natural Language Processing
+- COMS 4995 Deep Learning for NLP
+Plus 2 additional NLP-related electives
+
+Computer Systems Track:
+Required:
+- COMS 4111 Databases (core)
+- COMS 4118 Operating Systems (core)
+- COMS 4119 Computer Networks
+- COMS 4156 Advanced Software Engineering (core)
+
+Thesis Option (3 credits):
+Students may substitute 3 credits of electives with:
+- COMS 6999 Master's Thesis (3 credits)
+Requires advisor approval and thesis defense.
+
+Prerequisites:
+Students are expected to have undergraduate-level knowledge in:
+- Data Structures and Algorithms
+- Discrete Mathematics
+- Computer Organization
+- At least one programming language (Java, C++, or Python)
+
+Deficiency courses may be required if prerequisites are not met.
+
+GPA Requirements:
+- Minimum cumulative GPA of 3.0 required for graduation
+- No more than two grades below B- are permitted
+- Grade of C+ or better required in core courses
+
+Time Limit:
+- Full-time students: Complete within 2 years
+- Part-time students: Complete within 5 years
+
+Course Load:
+- Full-time: 9-12 credits per semester
+- Part-time: 3-8 credits per semester
+
+Transfer Credits:
+- Maximum 6 credits from other institutions may be transferred
+- Courses must be graduate-level with grade B or better
+- Must be approved by department
+
+Additional Requirements:
+- Academic Integrity: All students must complete academic integrity training
+- Enrollment: Must maintain continuous enrollment (excluding summers)
+- Residency: At least 24 credits must be completed at Columbia
+
+Contact Information:
+Department of Computer Science
+Columbia University
+450 Computer Science Building
+1214 Amsterdam Avenue
+New York, NY 10027
+
+Academic Advising:
+advising@cs.columbia.edu
+Office Hours: Monday-Friday, 9am-5pm
+
+For the most up-to-date information, visit:
+https://www.cs.columbia.edu/education/ms/
+
+Last Updated: September 2023
+
