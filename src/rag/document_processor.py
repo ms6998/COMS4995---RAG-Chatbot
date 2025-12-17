@@ -237,3 +237,4 @@ if __name__ == "__main__":
         print(f"Text: {chunk.text[:100]}...")
         print(f"Metadata: {chunk.metadata}")
 
+

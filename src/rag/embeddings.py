@@ -196,3 +196,4 @@ if __name__ == "__main__":
     similarities = embedder.compute_similarity(query_emb, embeddings)
     print(f"Similarities: {similarities}")
 
+
