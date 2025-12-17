@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# Python
+frontend-api-mock/.venv/
+__pycache__/
+*.pyc
+
