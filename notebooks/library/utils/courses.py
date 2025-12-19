@@ -242,7 +242,7 @@ class ColumbiaCourseData:
             if link:
                 url = link["href"].strip()
 
-                m = re.search(r"subj/([^/]+)/([0-9A-Za-z\-]+)-", url)
+                m = re.search(r"subj/([^/]+)/([^-\/]+)", url)
                 if m:
                     dept = m.group(1).replace("%20", " ").strip()
                     num = m.group(2).strip()
