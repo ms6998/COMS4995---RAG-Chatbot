@@ -1,0 +1,11 @@
+services:
+  pathwise:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    network_mode: "host"
+    volumes:
+      - ./config.py:/app/.env
+      - ./run.sh:/app/run.sh
+      - ./scripts:/app/scripts
+      - ./src:/app/src

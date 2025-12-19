@@ -89,6 +89,8 @@ class GeminiInterface(LLMInterface):
             return response.text
         except Exception as e:
             logger.error(f"Error generating Gemini response: {e}")
+            if os.environ["DEBUG"]:
+                raise e
             return f"Error: {str(e)}"
 
 class PromptTemplate:
@@ -136,6 +138,8 @@ class OpenAIInterface(LLMInterface):
             return response.choices[0].message.content
         except Exception as e:
             logger.error(f"Error generating OpenAI response: {e}")
+            if os.environ["DEBUG"]:
+                raise e
             return f"Error: {str(e)}"
 
 # AnthropicInterface and PromptTemplate remain largely the same, 
@@ -158,9 +162,11 @@ def create_llm_interface(
     else:
         raise ValueError(f"Unknown provider: {provider}")
 
+
 if __name__ == "__main__":
     # Example health check
-    from prompt_template import PromptTemplate # Assuming PromptTemplate is available
+    from prompt_template import PromptTemplate
+
     print("Building test prompt...")
     test_messages = PromptTemplate.build_qa_prompt(
         query="What is the CS core?",

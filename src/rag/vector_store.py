@@ -144,9 +144,11 @@ class ChromaVectorStore(VectorStore):
         # Build where clause for filtering
         where_clause = None
         if filter_dict:
-            where_clause = {}
-            for key, value in filter_dict.items():
-                where_clause[key] = value
+            items = [{k: v} for k, v in filter_dict.items()]
+            if len(items) == 1:
+                where_clause = items[0]
+            else:
+                where_clause = {"$and": items}
         
         results = self.collection.query(
             query_embeddings=[query_embedding_list],

@@ -47,6 +47,7 @@ def main():
         host="0.0.0.0",
         port=8000,
         reload=True,
+        reload_dirs=["src"],
         log_level="info"
     )
 

@@ -1,13 +1,14 @@
 """
 Document processing module for extracting and chunking text from various sources.
 """
-
+import logging
+import os
 import re
-from typing import List, Dict, Any
 from pathlib import Path
+from typing import List, Dict, Any
+
 import pypdf
 from bs4 import BeautifulSoup
-import logging
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -53,6 +54,8 @@ class DocumentProcessor:
             return self.clean_text(text)
         except Exception as e:
             logger.error(f"Error extracting PDF {pdf_path}: {e}")
+            if os.environ["DEBUG"]:
+                raise e
             return ""
     
     def extract_from_html(self, html_content: str) -> str:
@@ -66,6 +69,8 @@ class DocumentProcessor:
             return self.clean_text(text)
         except Exception as e:
             logger.error(f"Error extracting HTML: {e}")
+            if os.environ["DEBUG"]:
+                raise e
             return ""
     
     def clean_text(self, text: str) -> str:

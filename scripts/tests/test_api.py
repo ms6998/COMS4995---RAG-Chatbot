@@ -131,12 +131,11 @@ def test_plan():
 
 def main():
     """Run all tests."""
+
     print("="*60)
     print("PathWise API Test Suite")
     print("="*60)
     print("\nMake sure the server is running: python scripts/start_server.py")
-    print("Waiting for user confirmation...")
-    input("Press Enter to continue...")
     
     tests = [
         ("Health Check", test_health),
