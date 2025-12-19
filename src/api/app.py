@@ -14,8 +14,6 @@ from typing import Optional
 
 from dotenv import load_dotenv
 
-load_dotenv()
-api_key = os.getenv("GEMINI_API_KEY")
 
 from .models import (
     QuestionRequest, QuestionResponse, Source,
@@ -27,6 +25,9 @@ from ..rag.embeddings import EmbeddingGenerator
 from ..rag.vector_store import create_vector_store
 from ..rag.retriever import RAGRetriever, ProfessorRatingsRetriever
 from ..rag.llm_interface import create_llm_interface, PromptTemplate
+
+# Load '.env' if provided
+load_dotenv()
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -128,7 +129,8 @@ async def _startup_event(*args, **kwargs) -> None:
     global embedder, requirements_retriever, professor_retriever, llm_interface
     logger.info("Initializing PathWise RAG system...")
         
-    # Load configuration (in production, use proper config management)
+    # Load configuration
+    # This can be handled better and more consistently
     try:
         from config import (
             EMBEDDING_MODEL, VECTOR_DB_TYPE, VECTOR_DB_PATH,
@@ -136,21 +138,33 @@ async def _startup_event(*args, **kwargs) -> None:
             TOP_K_RETRIEVAL, GEMINI_API_KEY, LLM_MODEL
         )
     except ImportError:
-        logger.warning("Config file not found. Using defaults.")
-        EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-        VECTOR_DB_TYPE = "chroma"
-        VECTOR_DB_PATH = "./vector_db"
-        COLLECTION_NAME_REQUIREMENTS = "degree_requirements"
-        COLLECTION_NAME_PROFESSORS = "professor_ratings"
-        TOP_K_RETRIEVAL = 5
-        GEMINI_API_KEY = api_key
-        LLM_MODEL = "gemini-2.5-pro"
+        # EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+        # VECTOR_DB_TYPE = "chroma"
+        # VECTOR_DB_PATH = "./vector_db"
+        # COLLECTION_NAME_REQUIREMENTS = "degree_requirements"
+        # COLLECTION_NAME_PROFESSORS = "professor_ratings"
+        # TOP_K_RETRIEVAL = 5
+        # GEMINI_API_KEY = api_key
+        # LLM_MODEL = "gemini-2.5-pro"
+        logger.warning("Config file not found. Trying environment.")
+        EMBEDDING_MODEL = os.environ["EMBEDDING_MODEL"]
+        VECTOR_DB_TYPE = os.environ["VECTOR_DB_TYPE"]
+        VECTOR_DB_PATH = os.environ["VECTOR_DB_PATH"]
+        COLLECTION_NAME_REQUIREMENTS = os.environ["COLLECTION_NAME_REQUIREMENTS"]
+        COLLECTION_NAME_PROFESSORS = os.environ["COLLECTION_NAME_PROFESSORS"]
+        TOP_K_RETRIEVAL = os.environ["TOP_K_RETRIEVAL"]
+        ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
+        GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
+        OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
+        LLM_MODEL = os.environ["LLM_MODEL"]
 
     if os.environ["DEBUG"]:
         # WARNING: very bad to reflect sensitive config to logs, do not
         # run with debug on in production without removing this
         logging.info(f"Gemini api key: {GEMINI_API_KEY}")
-    
+        logging.info(f"OpenAI api key: {OPENAI_API_KEY}")
+        logging.info(f"Anthropic api key: {ANTHROPIC_API_KEY}")
+
     # Initialize embedder
     logger.info(f"Loading embedding model: {EMBEDDING_MODEL}")
     embedder = EmbeddingGenerator(EMBEDDING_MODEL)
@@ -227,6 +241,48 @@ async def health_check():
     )
 
 
+async def _info_requirements_retriever():
+    """
+    Return various metadata about the requirements retriever and its
+    vector store
+    """
+    return {
+        "count": requirements_retriever.vector_store.count_documents()
+    }
+
+
+@app.get("/info/retriever/requirements")
+async def info_requirements_retriever():
+    return await run_endpoint(_info_requirements_retriever)
+
+
+async def _info_professor_retriever():
+    """
+    Return various metadata about the professor retriever and its
+    vector store
+    """
+    return {
+        "count": professor_retriever.vector_store.count_documents()
+    }
+
+
+@app.get("/info/retriever/professor")
+async def info_professor_retriever():
+    return await run_endpoint(_info_professor_retriever)
+
+
+async def _info_retrievers():
+    return {
+        "requirments": await _info_requirements_retriever(),
+        "professor": await _info_professor_retriever(),
+    }
+
+
+@app.get("/info/retriever")
+async def info_retrievers():
+    return await run_endpoint(_info_retrievers)
+
+
 async def _ask_question(request: QuestionRequest, *args, **kwargs):
     """
     Answer a question about degree requirements.
@@ -238,41 +294,41 @@ async def _ask_question(request: QuestionRequest, *args, **kwargs):
         Answer with sources and citations
     """
     logger.info(f"Received question: {request.question}")
-    
+
     # Build user profile for filtering if provided
     user_profile_dict = None
     if request.user_profile:
         user_profile_dict = request.user_profile.dict()
-    
+
     # Retrieve relevant documents
     retrieval_result = requirements_retriever.retrieve_with_context(
         query=request.question,
         user_profile=None,
         k=request.top_k
     )
-    
+
     retrieved_docs = retrieval_result['results']
-    
+
     if not retrieved_docs:
         return QuestionResponse(
             question=request.question,
             answer="I couldn't find relevant information in the knowledge base to answer your question. Please contact your academic advisor for assistance.",
             sources=[]
         )
-    
+
     # Format context for LLM
     context = requirements_retriever.format_context_for_llm(retrieved_docs)
-    
+
     # Build prompt
     messages = PromptTemplate.build_qa_prompt(
         query=request.question,
         context=context,
         user_profile=user_profile_dict
     )
-    
+
     # Generate answer
     answer = llm_interface.generate(messages)
-    
+
     # Format sources
     sources = [
         Source(

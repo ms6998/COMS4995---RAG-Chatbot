@@ -60,20 +60,20 @@ def test_ask():
 def test_professors():
     """Test professors endpoint."""
     print("\n=== Testing /professors ===")
-    
+
     request_data = {
         "course_codes": ["COMS 4111", "COMS 4701", "IEOR 4150"]
     }
-    
+
     print(f"Request: {json.dumps(request_data, indent=2)}")
-    
+
     response = requests.post(
         f"{BASE_URL}/professors",
         json=request_data
     )
-    
+
     print(f"\nStatus: {response.status_code}")
-    
+
     if response.status_code == 200:
         data = response.json()
         print("\nProfessor Ratings:")
@@ -83,7 +83,7 @@ def test_professors():
                 print(f"  • {prof['prof_name']}: {prof['rating']}/5.0 - {prof['tags']}")
     else:
         print(f"Error: {response.text}")
-    
+
     return response.status_code == 200
 
 
@@ -143,9 +143,9 @@ def main():
         ("Professor Ratings", test_professors),
         ("Degree Planning", test_plan)
     ]
-    
+
     results = []
-    
+
     for name, test_func in tests:
         try:
             passed = test_func()
@@ -153,7 +153,7 @@ def main():
         except Exception as e:
             print(f"\nError in {name}: {e}")
             results.append((name, False))
-    
+
     # Print summary
     print("\n" + "="*60)
     print("Test Summary")
@@ -161,7 +161,7 @@ def main():
     for name, passed in results:
         status = "✓ PASS" if passed else "✗ FAIL"
         print(f"{status}: {name}")
-    
+
     passed_count = sum(1 for _, passed in results if passed)
     total_count = len(results)
     print(f"\nTotal: {passed_count}/{total_count} tests passed")

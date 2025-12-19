@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 class EmbeddingGenerator:
     """Generate embeddings for text using sentence transformers."""
     
-    def __init__(self, model_name: str = "sentence-transformers/all-MiniLM-L6-v2"):
+    def __init__(self, model_name):
         """
         Initialize the embedding generator.
         
@@ -132,6 +132,7 @@ class OpenAIEmbeddings:
         """
         try:
             from openai import OpenAI
+
             self.client = OpenAI(api_key=api_key)
             self.model = model
             logger.info(f"Initialized OpenAI embeddings with model: {model}")
@@ -195,6 +196,3 @@ if __name__ == "__main__":
     query_emb = embedder.encode_query(query)
     similarities = embedder.compute_similarity(query_emb, embeddings)
     print(f"Similarities: {similarities}")
-
-
-

@@ -26,6 +26,12 @@ class VectorStore:
     ):
         """Add documents to the vector store."""
         raise NotImplementedError
+
+    def count_documents(self):
+        """
+        How many documents does the store have?
+        """
+        raise NotImplementedError
     
     def search(
         self,
@@ -121,7 +127,10 @@ class ChromaVectorStore(VectorStore):
         )
         
         logger.info(f"Added {len(texts)} documents to ChromaDB")
-    
+
+    def count_documents(self):
+        return self.collection.count()
+
     def search(
         self,
         query_embedding: np.ndarray,

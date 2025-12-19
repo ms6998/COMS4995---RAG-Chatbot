@@ -11,11 +11,13 @@ import os
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+
 class LLMProvider(Enum):
     """Supported LLM providers."""
     OPENAI = "openai"
     ANTHROPIC = "anthropic"
     GEMINI = "gemini"
+
 
 class LLMInterface:
     """Base interface for LLM interactions."""
@@ -28,6 +30,7 @@ class LLMInterface:
     ) -> str:
         """Generate a response from the LLM."""
         raise NotImplementedError
+
 
 class GeminiInterface(LLMInterface):
     """Interface for Google Gemini models using the unified google-genai SDK."""
@@ -93,6 +96,7 @@ class GeminiInterface(LLMInterface):
                 raise e
             return f"Error: {str(e)}"
 
+
 class PromptTemplate:
     """Template for building prompts."""
     
@@ -114,6 +118,7 @@ class PromptTemplate:
             {"role": "system", "content": PromptTemplate.PLANNING_SYSTEM},
             {"role": "user", "content": f"Task: Create a plan for {user_profile.get('program')}"}
         ]
+
 
 class OpenAIInterface(LLMInterface):
     """Interface for OpenAI models."""
@@ -142,8 +147,6 @@ class OpenAIInterface(LLMInterface):
                 raise e
             return f"Error: {str(e)}"
 
-# AnthropicInterface and PromptTemplate remain largely the same, 
-# but ensure you use the logic above for the factory.
 
 def create_llm_interface(
     provider: str,
@@ -157,7 +160,7 @@ def create_llm_interface(
         # Removed the 'models/' prefix requirement as the SDK handles it
         return GeminiInterface(api_key, model or "gemini-1.5-pro")
     elif p == 'anthropic':
-        from anthropic_interface import AnthropicInterface # Assuming it's in a separate file or defined
+        from anthropic_interface import AnthropicInterface
         return AnthropicInterface(api_key, model or "claude-3-5-sonnet-latest")
     else:
         raise ValueError(f"Unknown provider: {provider}")
@@ -165,8 +168,6 @@ def create_llm_interface(
 
 if __name__ == "__main__":
     # Example health check
-    from prompt_template import PromptTemplate
-
     print("Building test prompt...")
     test_messages = PromptTemplate.build_qa_prompt(
         query="What is the CS core?",
