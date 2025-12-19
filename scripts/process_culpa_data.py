@@ -37,15 +37,15 @@ def load_culpa_ratings(csv_path: str) -> pd.DataFrame:
     column_mapping = {}
 
     # Map professor name column
-    for col in ['prof_name', 'name', 'professor', 'instructor']:
+    for col in ["prof_name", "name", "professor", "instructor"]:
         if col in df.columns:
-            column_mapping[col] = 'professor_name'
+            column_mapping[col] = "professor_name"
             break
 
     # Map rating column
-    for col in ['score', 'rating_score', 'culpa_rating']:
+    for col in ["score", "rating_score", "culpa_rating"]:
         if col in df.columns:
-            column_mapping[col] = 'rating'
+            column_mapping[col] = "rating"
             break
 
     if column_mapping:

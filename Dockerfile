@@ -1,7 +1,8 @@
 FROM python:3.11-slim AS base
 
 ENV PYTHONUNBUFFERED=1 \
-    APP_HOME=/app
+    APP_HOME=/app \
+    INDEX_CONFIG=data/index_config.json
 WORKDIR ${APP_HOME}
 
 COPY requirements.txt requirements.txt
@@ -23,7 +24,7 @@ COPY ./scripts/ scripts/
 COPY ./data/ data/
 
 # Build vector database indices
-RUN python scripts/build_index.py
+RUN python scripts/build_index.py ${INDEX_CONFIG}
 
 EXPOSE 8000
 COPY run.sh run.sh

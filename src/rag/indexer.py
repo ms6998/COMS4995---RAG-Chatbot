@@ -1,11 +1,12 @@
 """
 Indexing module for building and managing vector indices.
 """
-
-from typing import List, Dict, Any
-from pathlib import Path
 import json
 import logging
+from typing import List, Dict, Any
+from pathlib import Path
+
+import pandas as pd
 from tqdm import tqdm
 
 from .document_processor import DocumentProcessor, DocumentChunk
@@ -64,11 +65,11 @@ class DocumentIndexer:
         # Process all documents
         for doc_info in tqdm(documents, desc="Processing documents"):
             chunks = self.processor.process_degree_requirement_doc(
-                file_path=doc_info['file_path'],
-                program=doc_info['program'],
-                degree=doc_info['degree'],
-                catalog_year=doc_info['catalog_year'],
-                source_url=doc_info.get('source_url', '')
+                file_path=doc_info["file_path"],
+                program=doc_info["program"],
+                degree=doc_info["degree"],
+                catalog_year=doc_info["catalog_year"],
+                source_url=doc_info.get("source_url", "")
             )
             all_chunks.extend(chunks)
 
@@ -115,13 +116,12 @@ class DocumentIndexer:
         # Load ratings data
         ratings_path = Path(ratings_file)
 
-        if ratings_path.suffix == '.json':
-            with open(ratings_path, 'r') as f:
+        if ratings_path.suffix == ".json":
+            with open(ratings_path, "r") as f:
                 ratings_data = json.load(f)
-        elif ratings_path.suffix == '.csv':
-            import pandas as pd
+        elif ratings_path.suffix == ".csv":
             df = pd.read_csv(ratings_path)
-            ratings_data = df.to_dict('records')
+            ratings_data = df.to_dict("records")
         else:
             raise ValueError(f"Unsupported file format: {ratings_path.suffix}")
 
@@ -133,10 +133,10 @@ class DocumentIndexer:
         ids = []
 
         for i, rating in enumerate(ratings_data):
-            course_code = rating['course_code']
-            prof_name = rating['prof_name']
-            rating_score = rating['rating']
-            tags = rating.get('tags', '')
+            course_code = rating["course_code"]
+            prof_name = rating["prof_name"]
+            rating_score = rating["rating"]
+            tags = rating.get("tags", "")
 
             # Create text representation
             text = (
@@ -147,11 +147,11 @@ class DocumentIndexer:
 
             texts.append(text)
             metadatas.append({
-                'course_code': course_code,
-                'prof_name': prof_name,
-                'rating': float(rating_score),
-                'tags': tags,
-                'doc_type': 'professor_rating'
+                "course_code": course_code,
+                "prof_name": prof_name,
+                "rating": float(rating_score),
+                "tags": tags,
+                "doc_type": "professor_rating"
             })
             ids.append(f"prof_{course_code}_{prof_name}_{i}")
 
@@ -237,42 +237,42 @@ def build_indices_from_config(config_path: str):
     """
     logger.info(f"Building indices from config: {config_path}")
 
-    with open(config_path, 'r') as f:
+    with open(config_path, "r") as f:
         config = json.load(f)
 
     # Initialize components
     processor = DocumentProcessor(
-        chunk_size=config.get('chunk_size', 600),
-        chunk_overlap=config.get('chunk_overlap', 100)
+        chunk_size=config.get("chunk_size", 600),
+        chunk_overlap=config.get("chunk_overlap", 100)
     )
 
     embedder = EmbeddingGenerator(
-        model_name=config.get('embedding_model', 'sentence-transformers/all-MiniLM-L6-v2')
+        model_name=config.get("embedding_model", "sentence-transformers/all-MiniLM-L6-v2")
     )
 
     # Build degree requirements index
-    if 'degree_requirements' in config:
-        req_config = config['degree_requirements']
+    if "degree_requirements" in config:
+        req_config = config["degree_requirements"]
         req_store = create_vector_store(
-            store_type=config['vector_db']['type'],
-            collection_name=req_config['collection_name'],
-            persist_directory=config['vector_db']['persist_directory']
+            store_type=config["vector_db"]["type"],
+            collection_name=req_config["collection_name"],
+            persist_directory=config["vector_db"]["persist_directory"]
         )
 
         req_indexer = DocumentIndexer(processor, embedder, req_store)
-        req_indexer.index_degree_requirements(req_config['documents'])
+        req_indexer.index_degree_requirements(req_config["documents"])
 
     # Build professor ratings index
-    if 'professor_ratings' in config:
-        prof_config = config['professor_ratings']
+    if "professor_ratings" in config:
+        prof_config = config["professor_ratings"]
         prof_store = create_vector_store(
-            store_type=config['vector_db']['type'],
-            collection_name=prof_config['collection_name'],
-            persist_directory=config['vector_db']['persist_directory']
+            store_type=config["vector_db"]["type"],
+            collection_name=prof_config["collection_name"],
+            persist_directory=config["vector_db"]["persist_directory"]
         )
 
         prof_indexer = DocumentIndexer(processor, embedder, prof_store)
-        prof_indexer.index_professor_ratings(prof_config['ratings_file'])
+        prof_indexer.index_professor_ratings(prof_config["ratings_file"])
 
     logger.info("All indices built successfully!")
 
