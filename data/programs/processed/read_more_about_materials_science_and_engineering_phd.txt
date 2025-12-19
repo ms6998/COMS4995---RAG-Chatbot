@@ -1,0 +1,64 @@
+Doctoral Program in Materials Science and Engineering
+We offer MS/PhD Track, PhD or EngScD degree programs in Materials Science and Engineering, along with a specialty in Solid-State Science and Engineering. Students interested in materials science and engineering enroll in the materials science and engineering program in the Department of Applied Physics and Applied Mathematics.
+Doctoral Program
+Students wishing to pursue an MS degree which continues directly into a PhD program, should apply to the MS / PhD Track Program in Materials Science and Engineering in the Department of Applied Physics and Applied Mathematics. Students who have already earned an MS degree should apply to the Doctor of Philosophy (PhD) or the Doctor of Engineering Science (EngScD or DES) degree programs. Financial aid is available for students pursuing a doctorate. Fellowships, scholarships, teaching assistantships, and graduate research assistantships are awarded on a competitive basis.
+For more information, please see the Columbia Engineering Bulletin: Materials Science and Engineering (EngScD, PhD)
+Requirements for the PhD
+At the end of the first year of graduate study in the doctoral program, candidates are required to take a comprehensive written qualifying examination, which is designed to test the ability of the candidate to apply course work in problem solving and creative thinking. The standard is first-year graduate level. There are two four-hour examinations over a two-day period. Candidates in the program must take an oral examination within one year of taking the qualifying examination. Within two years of taking the qualifying examination, candidates must submit a written proposal and defend it orally before a Thesis Proposal Defense Committee consisting of three members of the faculty, including the adviser. Doctoral candidates must submit a thesis to be defended before a Dissertation Defense Committee consisting of five faculty members, including two professors from outside the doctoral program. Requirements for the EngScD (administered by the School of Engineering and Applied Science) and the PhD (administered by the Graduate School of Arts and Sciences) are listed elsewhere in the SEAS bulletin.
+- Complete requirements for the MS with a 3.0 Minimum GPA
+(unless a Master’s Degree from another institution has already been earned, in which case students receive 30 points and 2 Residence Units of advanced standing) - PhD candidates are strongly encouraged to complete ENGI E6001–6004 and should consult their program for Professional Development and Leadership Course, ENGI E4000, as a graduation requirement.
+- Complete requirements for the Master of Philosophy (MPhil) Degree:
+- Written Qualifying Examination
+Courses suggested for preparation at the level of the general and materials science parts of the written qualifying examination are listed in the qualifying examination memorandum. - Ethics requirement
+Online ethics course during Fall of 1st, year, attend departmental ethics seminar during Spring of 1st and 2nd years - Oral Exam (usually Spring of 2nd year)
+- 30 points of courses and/or research (beyond MS) taken for a letter grade with 3.0 GPA
+Can be fulfilled with core and related courses of specialization not used for the MS degree as well as research points, but no more than 15 points of research can be applied to this 30 point requirement - 6 Residence Units
+One per semester not including summer, takes 3 years without MS or 2 years with MS - Thesis proposal (usually Spring of 3rd year)
+- Master of Philosophy Degree awarded
+- Written Qualifying Examination
+- Complete Dissertation
+- Successful Defense
+Requirements for the EngScD or DES
+The requirements for the Doctor of Engineering Science ( EngScD or DES) in Materials Science and Engineering
+- Complete requirements for the MS with a 3.0 Minimum GPA
+(unless a Master’s Degree from another institution has already been earned, in which case student receives 30 points of advanced standing) - PhD candidates are strongly encouraged to complete ENGI E6001–6004 and should consult their program for Professional Development and Leadership Course, ENGI E4000, as a graduation requirement.
+- Written Qualifying Examination
+Specific course requirements are determined in consultation with the program adviser. Courses suggested for preparation at the level of the general and materials science parts of the written qualifying examination are listed in the qualifying examination memorandum. - Ethics requirement
+Online ethics course during Fall of 1st year, attend departmental ethics seminar during Spring of 1st and 2nd years - Oral Exam (usually Spring of 2nd year)
+- 30 points of courses and/or research (beyond MS) taken for a letter grade with 3.0 GPA
+Can be fulfilled with core and related courses of specialization not used for the MS degree as well as research points, but no more than 15 points of research can be applied toward this 30 point requirement - 12 points of MSAE E9800: Doctoral Research Instruction
+- Thesis proposal (usually Spring of 3rd year)
+- Complete Dissertation
+- Successful Defense
+Specialty in Solid-State Science and Engineering
+Solid-state science and engineering is an interdepartmental graduate specialty that provides coverage of an important area of modern technology that no single department can provide. It encompasses the study of the full range of properties of solid materials, with special emphasis on electrical, magnetic, optical, and thermal properties. The science of solids is concerned with understanding these properties in terms of the atomic and electronic structure of the materials in question. Insulators (dielectrics), semiconductors, ceramics, and metallic materials are all studied from this viewpoint. Quantum and statistical mechanics are key background subjects. The engineering aspects deal with the design of materials to achieve desired properties and the assembling of materials into systems to produce devices of interest to modern technology, e.g., for computers and for energy production.
+The graduate specialty in solid-state science and engineering includes research programs in semiconductor nanocrystals (Prof. Louis Brus, Chemistry/Chemical Engineering); optics of semiconductors and nanomaterials; molecular beam epitaxy leading to semi-conductor devices (Prof. Wen Wang, Electrical Engineering/Applied Physics and Applied Mathematics); metamaterials and infrared optoelectronic devices (Prof. Nanfang Yu, Applied Physics and Applied Mathematics); and inelastic light scattering in low-dimensional electron gases within semiconductors); large-area electronics and thin-film transistors (Prof. James Im, Henry Krumb School of Mines/Applied Physics and Applied Mathematics); structural analysis and high Tc superconductors (Prof. Siu-Wai Chan, Henry Krumb School of Mines/Applied Physics and Applied Mathematics); X-ray microdiffraction and stresses (Prof. I. C. Noyan, Henry Krumb School of Mines/Applied Physics and Applied Mathematics); electronic and magnetic metal thin films (Prof. Katayun Barmak, Applied Physics and Applied Mathematics); magnetic properties of thin films (Prof. William Bailey, Applied Physics and Applied Mathematics); the structure of nanomaterials (Prof. Simon Billinge, Applied Physics and Applied Mathematics); electronic structure calculations of materials (Prof. Chris Marianetti, Applied Physics and Applied Mathematics); ultrafast nonlinear optics and nanophotonics (Prof. Alexander Gaeta, Applied Physics and Materials Science and Engineering); and silicon photonics (Prof. Michal Lipson, Electrical Engineering and Applied Physics).
+Program of Study
+The applicant for the graduate specialty must be admitted to one of the participating programs: applied physics and applied mathematics, or electrical engineering. A strong undergraduate background in physics or chemistry and in mathematics is important.
+The doctoral student must meet the formal requirements for the EngScD or PhD degree set by the department in which he or she is registered. However, the bulk of the program for the specialty will be arranged in consultation with a member of the interdepartmental Committee on Materials Science and Engineering/ Solid-State Science and Engineering. At the end of the first year of graduate study, doctoral candidates are required to take a comprehensive written examination concentrating on solid-state science and engineering.
+The following are regarded as core courses of the specialty:
+APPH E4100: Quantum physics of matter (3 pts)
+APPH E4110: Modern Optics (3 pts)
+APPH E4112: Laser physics (3 pts)
+APPH-MSAE E6081-E6082: Solid state physics, I and II (3 pts)
+CHEM GU4230: Statistical thermodynamics (4.5 pts)
+or
+CHAP E4120: Statistical mechanics (3 pts)
+ELEN E4301: Introduction to semiconductor devices (3 pts)
+ELEN E4944: Principles of device microfabrication (3 pts)
+ELEN E6331-E6332: Principles of semiconductor physics (3 pts)
+ELEN E6403: Classical electromagnetic theory (4.5 pts)
+or
+PHYS GR6092: Electromagnetic theory, I (4.5 pts)
+MSAE E4100: Crystallography (3 pts)
+MSAE E4206: Electronic and magnetic properties of solids (3 pts)
+MSAE E4207: Lattice vibrations and crystal defects (3 pts)
+MSAE E6220: Crystal physics (3 pts)
+MSAE E6240: Impurities and defects in semiconductor materials
+MSAE E6241: Theory of solids
+PHYS GR6018: Physics of the solid state
+PHYS GR6037: Quantum mechanics
+Professional Degree: Metallurgical Engineer
+For for engineers who wish to do advanced work beyond the level of the MS degree, but who do not desire to emphasize research, please learn more about our Professional Degree: Metallurgical Engineer
+Advising
+Have a question? Feel free to contact our Student Services Coordinator or reach out to the Materials Science & Engineering 1st Year Doctoral Advisor.

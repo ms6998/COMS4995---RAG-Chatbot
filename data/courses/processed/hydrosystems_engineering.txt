@@ -1,0 +1,4 @@
+TITLE: Hydrosystems Engineering
+SUBJECT: Eaee & Ceem
+INSTRUCTOR: 
+DESCRIPTION: A quantitative introduction to hydrologic and hydraulic systems, with a focus on integrated modeling and analysis of the water cycle and associated mass transport for water resources and environmental engineering. Coverage of unit hydrologic processes such as precipitation, evaporation, infiltration, runoff generation, open channel and pipe flow, subsurface flow and well hydraulics in the context of example watersheds and specific integrative problems such as risk-based design for flood control, provision of water, and assessment of environmental impact or potential for non-point source pollution. Spatial hydrologic analysis using GIS and watershed models.

@@ -1,0 +1,4 @@
+TITLE: Cost Benefit Analysis
+SUBJECT: Executive Mpa Program
+INSTRUCTOR: 
+DESCRIPTION: Pre-req: EMPA IA8213 - Microeconomics or equivalent. Familiarity with Excel is strongly recommended. This course introduces students to the principles and practice of cost-benefit analysis for evaluating policies and projects. Emphasizing practical skills over theoretical complexity, students will learn to apply key tools, including valuation methods, discounting, sensitivity analysis, and Excel-based modeling. The first half of the course focuses on the economic and methodological foundations; the second half applies these tools to real-world case studies in various sectors, including transportation, health, education, energy, and security. The course culminates in a major project requiring students to conduct and present an independent cost-benefit analysis on a topic of their choice.

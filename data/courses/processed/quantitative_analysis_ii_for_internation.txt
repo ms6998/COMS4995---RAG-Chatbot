@@ -1,0 +1,4 @@
+TITLE: Quantitative Analysis II for Internation
+SUBJECT: School Of Int & Public Affairs
+INSTRUCTOR: 
+DESCRIPTION: MPA Quantitative II Core. This course introduces regression analysis as a key tool for policy analysis and program evaluation. Emphasizing causal inference, students will learn to assess the impacts of programs and policies using both experimental and non-experimental methods. The first half of the course reviews foundational concepts from Quant I and builds toward multiple regression techniques; the second half applies those tools to real-world policy settings. Designed for future practitioners, the course focuses on applying and communicating statistical concepts in accessible, non-technical language, and prepares students for advanced coursework in data analysis and program evaluation.

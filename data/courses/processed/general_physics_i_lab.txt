@@ -1,0 +1,4 @@
+TITLE: GENERAL PHYSICS I LAB
+SUBJECT: Physics
+INSTRUCTOR: Giuseppina C Cambareri
+DESCRIPTION: Corequisites: PHYS UN1201 This course is the laboratory for the corequisite lecture course and can be taken only during the same term as the corresponding lecture.

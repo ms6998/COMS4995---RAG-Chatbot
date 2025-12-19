@@ -1,0 +1,4 @@
+TITLE: MATH FINANCE PRACTITIONERS SEMINAR II
+SUBJECT: Mathematics
+INSTRUCTOR: Jaehyuk Choi
+DESCRIPTION: This seminar offers participants the opportunity to listen to practitioners discuss a range of important topics in the financial industry.  Topics may include portfolio optimization, exotic derivatives, high frequency analysis of data and numerical methods. While most talks require knowledge of mathematical methods in finance, some talks are accessible to a more general audience.

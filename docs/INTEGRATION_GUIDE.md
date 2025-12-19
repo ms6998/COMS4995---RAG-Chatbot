@@ -120,13 +120,13 @@ If your data format differs, you can modify process_culpa_data.py:
 # In the load_culpa_ratings function
 def load_culpa_ratings(csv_path: str) -> pd.DataFrame:
     df = pd.read_csv(csv_path)
-    
+
     # Rename columns if they differ
     df = df.rename(columns={
         'prof_name': 'professor_name',  # if original column is prof_name
         'score': 'rating'               # if original column is score
     })
-    
+
     return df
 
 📊 Viewing Data Statistics

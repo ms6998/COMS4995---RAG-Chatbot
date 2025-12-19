@@ -1,0 +1,4 @@
+TITLE: ASTRONOMY LAB II
+SUBJECT: Astronomy
+INSTRUCTOR: Mary Putman
+DESCRIPTION: Laboratory for ASTR UN1404. Projects include use of telescopes, laboratory experiments in the nature of light, spectroscopy, and the analysis of astronomical data. Lab 2 ASTR UN1904 - goes with ASTR BC1754 or ASTR UN1404 (or ASTR UN1836 or ASTR UN1420).

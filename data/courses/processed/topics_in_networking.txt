@@ -1,0 +1,4 @@
+TITLE: TOPICS IN NETWORKING
+SUBJECT: Electrical Engineering
+INSTRUCTOR: Anwar I Walid
+DESCRIPTION: Further study of areas such as communication protocols and architectures, flow and congestion control in data networks, performance evaluation in integrated networks. Content varies from year to year, and different topics rotate through the course numbers 6770 to 6779.

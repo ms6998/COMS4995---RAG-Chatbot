@@ -1,0 +1,4 @@
+TITLE: FINANCIAL RISK MGMT & REGULATION
+SUBJECT: Mathematics
+INSTRUCTOR: Harvey Stein
+DESCRIPTION: Prerequisites: student expected to be mathematically mature and familiar with probability and statistics, arbitrage pricing theory, and stochastic processes. The course will introduce the notions of financial risk management, review the structure of the markets and the contracts traded, introduce risk measures such as VaR, PFE and EE, overview regulation of financial markets, and study a number of risk management failures. After successfully completing the course, the student will understand the basics of computing parametric VaR, historical VaR, Monte Carlo VaR, cedit exposures and CVA and the issues and computations associated with managing market risk and credit risk. The student will be familiar with the different categories of financial risk, current regulatory practices, and the events of financial crises, especially the most recent one.

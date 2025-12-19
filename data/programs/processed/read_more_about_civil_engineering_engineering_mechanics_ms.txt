@@ -1,0 +1,193 @@
+MS in Civil Engineering & Engineering Mechanics
+Our MS in Civil Engineering and Engineering Mechanics is so much more than a degree. It’s your opportunity to design a personalized path toward solving real-world challenges, advancing your career, and making a lasting impact on the built environment.
+Degree Overview
+As a Columbia University MS Civil Engineering and Engineering Mechanics student, you will do a lot more than learn how to design buildings and bridges. You will explore smart and sustainable cities, advance renewable energy infrastructure, apply AI and data science to engineering systems, pioneer resilient solutions for climate adaptation, and engage with cutting-edge fields like nanomaterials, robotics, and forensic engineering.
+The program’s flexible structure gives you the unique opportunity to design your own degree. Along with core courses, you will choose from 13 industry-relevant concentrations or customize your courses to build a degree that aligns with your career ambitions. Courses from other Columbia schools and departments will enhance your intellectual toolkit and deepen your understanding of how civil engineering intersects with broader societal, economic, and environmental contexts. With part-time options and evening classes, our program meets you where you are — and takes you where you want to go.
+Our strong industry partnerships will give you meaningful real-world experience, helping you connect what you learn in the classroom to the demands of professional practice. Our New York City location gives you direct access to leading engineering firms, real-world projects, and professional networks. Through industry seminars, networking events, and collaborative research, you will engage with top professionals and gain practical insights that directly enhance your academic learning and career prospects.
+Studying at an Ivy League institution with a global reputation, you’ll have access to world-class faculty, state-of-the-art research facilities, and a vibrant intellectual community. As a Columbia graduate, you will have a distinct edge in the job market - both in the U.S. and internationally. You will be equipped with the specialist knowledge, industry contacts and professional insight to tackle society’s most pressing engineering challenges, making a positive impact on the world around you.
+Program Structure
+Unlike many other universities, we have designed a highly customizable MS program. As well as a diverse range of core courses, you have the opportunity to specialize in 1 of 13 cutting-edge concentrations. If you are interested in an area that is not represented, you can also design your own in consultation with your advisor.
+To graduate from our MS program, you must complete:
+- 30 credits (10 courses) with at least 18 credits (6 courses) within the CEEM Department.
+The remaining credits can be earned through a combination of the following:
+- A selection of concentration courses, if you choose to undertake a concentration. The course requirements for each concentration are listed below.
+- A maximum of 6 credits of independent research.
+- A maximum of 12 credits (3 courses) offered by other departments within the School of Engineering and Applied Science, the Graduate School of Architecture, Planning and Preservation, the Graduate School of Business, the Graduate School of Arts and Sciences, and other Columbia Schools.
+Please note: You may also need to take some additional undergraduate-level courses if you have not undertaken the necessary training to proceed to graduate-level study.
+You must take at least three core courses:
+- ENME E4332: Finite Element Analysis I
+- CIEN E4100: Earthquake and Wind Engineering
+- CIEE E4111: Uncertainty and Risk in Infrastructure Systems
+- CIEN E4131: Principles of Construction Techniques
+- CIEN E4133: Capital Facility Planning and Financing
+- CIEN E4137: Managing Civil Infrastructure Systems
+- CIEN E4241: Geotechnical Engineering Fundamentals
+- MECE E4520: Data Science for Mechanical Systems (offered by Mechanical Engineering)
+The Advanced Infrastructure Materials Concentration focuses on the properties, design, analysis and testing of material systems used in civil engineering.
+To graduate from this concentration, you must take three courses. However, you may substitute one course if you feel there is a more suitable option offered across our wider curriculum. Please speak with your advisor to find the most appropriate substitute.
+Concentration Course List
+- ENME E4114: Mechanics of Fracture and Fatigue
+- ENME E4115: Micromechanics of Composite Materials
+- MSAE E4215: Mechanical Behavior of Structural Materials (Offered by the Department of Applied Physics and Mathematics)
+The Computational and Data-Driven Engineering Mechanics Concentration will enhance your knowledge of the state-of-the-art methods and algorithms used to solve challenging problems in science and engineering.
+You are required to complete 2 of the core courses as well as 6 electives listed below:
+Core Concentration Course List
+- ENME E4332: Finite Element Analysis I
+- CIEN E4111: Uncertainty and Risk in Infrastructure Systems
+- MECE E4520: Data Science for Mechanical Systems (Offered by the Department of Mechanical Engineering)
+Elective Concentration Course List
+- CEOR E4011: Infrastructure Systems Optimization
+- CIEN E4011: Big Data Analytics in Transportation
+- CIEN E4100: Earthquake and Wind Engineering
+- CIEN E4235: Multi-Hazard Design of Structures
+- CIEN E4241: Geotechnical Engineering Fundamentals
+- CIEN E4242: Geotechnical Earthquake Engineering
+- CIEN E4253: Computational Solid Mechanics with AI
+- CIEN E6246: Advanced Soil Mechanics
+- CIEN E6248: Experimental Soil Mechanics
+- CIEE E4250: Hydrosystems Engineering
+- ENME E4113: Advanced Mechanics of Solids
+- ENME E4114: Mechanics of Fracture and Fatigue
+- ENME E4115: Micromechanics of Composite Materials
+- ENME E4202: Advanced Mechanics
+- ENME E4214: Theory of Plates and Shells
+- ENME E4215: Theory of Vibrations
+- ENME E4363: Multiscale Computational Science and Engineering
+- ENME E6215: Principles and Applications of Sensors for Structural Health Monitoring
+- ENME E6216: Structural Health Monitoring
+- ENME E6220: Stochastic Engineering Mechanics
+- ENME E6320: Computational Poromechanics
+- ENME E6333: Finite Element Analysis II
+- ENME E6364: Nonlinear Computational Mechanics
+- ENME E6370: Turbulence Theory and Modeling
+- ENME E8310: Advanced Continuum Mechanics
+- ENME E8320: Viscoelasticity and Plasticity
+- APMA E4300: Computational Math: Introduction to Numerical Methods (Offered by the Department of Applied Physics and Mathematics)
+- APMA E4301: Numerical Methods for Partial Differential Equations (Offered by the Department of Applied Physics and Mathematics)
+- APMA E6302: Numerical Analysis of Partial Differential Equations (Offered by the Department of Applied Physics and Mathematics)
+- CSEE W4121: Computer Systems for Data Science (Offered by the Department of Computer Science)
+- COMS W4771: Machine Learning (Offered by the Department of Computer Science)
+- COMS W4776: Machine Learning for Data Science (Offered by the Department of Computer Science)
+- COMS W4995: Topics in Computer Science: Mathematics of Machine Learning and Signal Recognition (Offered by the Department of Computer Science)
+- MECE E6102: Computational Heat Transfer and Fluid Flow (Offered by the Department of Mechanical Engineering)
+- ECBM E4040: Neural Networks and Deep Learning (Offered by the Departments of Computer Science, Electrical Engineering and Biomedical Engineering)
+- CIEN E9101: Independent Research with faculty in CEEM or other SEAS departments
+The Construction Engineering and Management (CEM) Concentration prepares students to lead the delivery of capital projects and infrastructure that shape the built environment and support economic growth. It combines technical depth with managerial insight, giving students the tools to plan, design, and execute projects efficiently, sustainably, and safely.
+The concentration emphasizes the integration of engineering knowledge with strategic decision-making, risk management, and leadership in construction practice. Students gain exposure to the methods and systems that underpin modern project delivery, while also developing the ability to evaluate challenges such as sustainability, safety, productivity, and the adoption of new technologies. By engaging with both theory and real-world applications, the curriculum equips students to approach construction as a dynamic, global industry where innovation and collaboration drive success.
+Graduates of this concentration are prepared to take on critical roles in engineering firms, construction companies, and infrastructure agencies. They leave with the skills not only to manage projects, but also to influence the future of the industry as leaders, innovators, and problem-solvers.
+You must complete at least 3 of the following 4 courses to graduate from this concentration:
+Concentration Course List
+- CIEN E4129: Managing Engineering and Construction Processes
+- CIEN E4130: Design of Construction Systems
+- CIEN E4131: Principles of Construction Techniques
+- CIEN E4140: Environmental, Health, and Safety Concepts in Construction Processes
+The Engineering Mechanics Concentration provides a rigorous foundation in the theoretical and computational principles that govern the behavior of materials and structures. You will cover a wide range of engineering topics including solids, fluids, structural, stochastic, experimental, computational, and geo-mechanics. Emphasizing applied mathematics, continuum mechanics, elasticity, and numerical methods, the program trains you to analyze complex systems and develop advanced problem-solving skills for modern engineering challenges. The knowledge and skills you develop will ensure you are well-positioned for careers in structural and mechanical design, aerospace, biomechanics, and materials science, or to pursue PhD studies and research roles.
+You must take 3 out of the following 4 courses:
+Concentration Course List
+The Environmental Engineering and Water Resources Concentration is focused on training civil engineers who are interested in solving the world’s environmental problems and contributing to the sustainable management of global water resources.
+To graduate from this concentration, you must take both courses listed below plus an additional course from our wider curriculum approved by your faculty advisor.
+Concentration Course List
+- EACE E4163: Sustainable Water Treatment and Reuse
+- EACE E4252: Foundations of Environmental Engineering
+The Forensic Structural Engineering Concentration provides a foundation in failure investigation and the relevant legal aspects of the field.
+To graduate from this concentration, you must take three courses. However, you may substitute one course if you feel there is a more suitable option offered across our wider curriculum. Please speak with your advisor to find the most appropriate substitute.
+Concentration Course List
+- CIEN E4132: Prevention and Resolution of Construction Disputes
+- CIEN E4134: Construction Industry Law
+- CIEN E4210: Forensic Structural Engineering
+The Geotechnical Engineering Concentration deals with the behavior of soils, and the design and analysis of natural and man-made soil structures.
+To graduate from this concentration, you must take both courses listed below plus an additional course from our wider curriculum approved by your faculty advisor.
+Concentration Course List
+The Infrastructure Engineering Concentration deals with the management of complex infrastructure systems.
+You must take 3 out of the following 4 courses:
+Concentration Course List
+- CIEN E4022: Bridge Design and Management
+- CEOR E4011: Infrastructure Systems Optimization
+- MECE E4210: Energy Infrastructure Planning (Offered by the Department of Mechanical Engineering)
+- ECIA W4100: Management and Development of Water Systems (Offered by the Department of Earth & Environmental Engineering)
+The Real Estate Development, Construction, and Project Finance Concentration prepares students to navigate the interconnected disciplines of engineering, construction, and finance that drive real estate and infrastructure development. It emphasizes both the technical and financial perspectives required to deliver projects that are economically viable, sustainable, and resilient.
+Through this concentration, students gain exposure to the full project lifecycle, from land development and project financing to construction execution and dispute resolution. The curriculum highlights the critical skills needed to manage the risks and complexities of today’s real estate and infrastructure markets, including how to structure innovative financing models, evaluate partnerships, and align technical solutions with financial realities.
+Graduates of this concentration will be equipped to engage with diverse stakeholders across the public and private sectors, and to assume leadership roles where engineering, management, and finance converge. With expertise spanning development, delivery, and investment strategies, students are positioned to shape projects that create value for both communities and investors.
+You must complete 3 out of the following 4 courses:
+Concentration Course List
+- CIEN E4132: Prevention and Resolution of Construction Disputes
+- CIEN E4138: Real Estate Finance for Construction Management
+- CIEN E4141: Public-Private Partnerships in Global Infrastructure Development
+- CIEN E4144: Real Estate Land Development Engineering
+The Smart and Sustainable Cities Concentration deals with the development and monitoring of sustainable urban infrastructure and buildings.
+You must complete 3 out of the following 4 courses:
+Concentration Course List
+- ENME E6215: Principles and Applications of Sensors for Structural Health Monitoring
+- CIEN E4011: Big Data Analytics in Transportation
+- CIEE E4116: Energy Harvesting
+- EAEE E4350: Planning and Management of Urban Hydrologic Systems (Offered by the Department of Earth & Environmental Engineering)
+The Strategic Management, Entrepreneurship, and Leadership Concentration prepares students to become forward-thinking leaders capable of shaping the future of engineering and construction organizations. With a strong focus on strategic decision-making, innovation, and organizational leadership, the concentration provides the knowledge and tools to guide companies through growth, change, and global competition.
+Students in this concentration explore how strategy is developed and executed within engineering and construction enterprises, how entrepreneurial thinking drives new opportunities, and how effective leadership fosters organizational resilience and performance. The curriculum integrates theory with real-world applications, encouraging students to analyze global market dynamics, address challenges in international project delivery, and design innovative business models for the industry.
+Graduates of this concentration are equipped to take on leadership and executive roles across the construction value chain, whether in established firms, new ventures, or international markets. They emerge with the ability to align strategy with execution, inspire teams, and drive innovation to advance the competitiveness and sustainability of engineering and construction organizations.
+You must complete 3 out of the following 4 courses:
+The Structural Engineering Concentration equips you with a rigorous foundation in structural analysis, design, and performance, combining advanced coursework in areas such as dynamics, earthquake engineering, finite element analysis, and high-performance materials with hands-on experience in state-of-the-art labs and software. As a graduate, you will be prepared to design and manage critical infrastructure including buildings, bridges, and transportation systems. As well as construction, you will have the knowledge and skills to pursue a career in consulting, government, research, or progress to doctoral study and professional engineering licensure.
+You must take 3 out of the following 4 courses:
+The Transportation Engineering Concentration will train you to design, build, and govern the next-generation transportation ecosystem using emerging technologies such as shared mobility, vehicle connectivity, and autonomous driving, as well as big data.
+You must take 3 out of the following 4 courses:
+Concentration Course List
+- CIEN E4012: Sustainable Urban Systems Engineering
+- CIEN E4011: Big Data Analytics in Transportation
+- CEOR E4011: Infrastructure Systems Optimization
+- IEOR E4418: Transportation Analytics and Logistics (Department of Industrial Engineering and Operations Research)
+- EAEE E4009: Geographic Information Systems (GIS) for Resource, Environmental, and Infrastructure Management
+- CIEE E4116: Energy Harvesting
+- ENME E4117: Mechanics of Fiber-Reinforced Composites
+- CIEN E4236: Design of Prestressed Concrete Structures
+- CIEN E4139: Theory and Practice of Virtual Design and Construction
+- CIEN E4148: Construction Engineering Management (CEM) Industry Field Studies
+- ENME E4212: Experimental Solid Mechanics
+- CIEN E4233: Design of Large-Scale Bridges
+- CIEN E4235: Multi-Hazard Design of Structures
+- CIEN E4121: Advanced Analysis and Design of Structures
+- CIEN E4244: Geosynthetics and Applications
+- CIEN E4256: Applied Machine Learning in Civil Engineering
+- CIEN E4258: Embodied AI for Construction and Facilities Management
+- CIEN E4995: Topics in Civil Engineering: Materials Science of Concrete
+- PLCE GU4444: The Future City: Transforming Urban Infrastructure
+- AHCE W4149: The Roman Art of Engineering
+- CIEN E4100, CIEN E4131, and CIEN E4241 are on the core list and are also part of certain concentrations. If there is an overlap, you can choose to count the courses toward your core requirements or your concentration requirements.
+- Course substitution is available under certain circumstances. Please talk to your faculty advisor if you would like to substitute any courses.
+- The Engineering School does not accept transfer credits towards graduate degree programs.
+Alumni Spotlight
+“Columbia’s Civil Engineering and Engineering Mechanics Master’s program always stood out because of their incredible network of talented faculty, adjuncts and industry professionals. The education I received from professors who are leaders in their field was priceless. It really helped me to forge my own path in the industry”
+-- Andrew Manion, MS Civil Engineering and Engineering Mechanics, Structural Engineering Concentration (2022) Engineering Design Professional at HOK
+Our program is highly competitive and the application requirements reflect the rigorous nature of our training.
+Mandatory requirements:
+- Online application form
+- A bachelor's degree in engineering or a related field from an accredited institution
+- Transcripts from every post-secondary institution attended
+- Three letters of recommendation
+- Résumé or CV
+- Personal statement
+- $85 non-refundable application fee
+- International applicants, or applicants whose undergraduate degree was received in a country in which English is not the official spoken language, must submit:
+- Results of an English language test. Accepted tests include the Test of English as a Foreign Language iBT (TOEFL) — including TOEFL iBT Home Edition, International English Language Testing System Academic (IELTS), Pearson Test of English (PTE Academic), or Duolingo English Test (DET). The ETS School Code for the Fu Foundation School of Engineering and Applied Science is 2111.
+- Translation of the official transcript(s) and degree/diploma certificate(s) if the institution(s) attended does not issue transcripts in English. The translation must be conducted by a reputable service provider.
+- Video interview upon submitting your application
+Optional requirements:
+- Any publications that you have written
+- Graduate Record Examination (GRE) General Test Scores (School Code: 2111)
+Our MS graduates are prepared with the technical knowledge and professional insight to join top engineering, construction, and consulting firms, pursue advanced degrees in civil engineering or related fields, and help solve the critical challenges of the 21st century.
+Our graduates have found positions with employers including:
+- Black & Veatch
+- HNTB
+- Turner Construction
+- AECOM
+- WSP
+- STV Inc.
+- Mace
+- Arcadis
+- Turner & Townsend
+- Skanska
+- Thornton Tomasetti
+- Langan
+- The Boeing Company
+Program Chairs
+Professor Raimondo Betti received his Laurea degree magna cum laude in Civil Engineering from the University of Rome “La Sapienza” in 1985 and his Master of Science in Structural Mechanics (1988) and PhD in Civil Engineering (1991) from the University of Southern California. In the fall of 1991, Dr. Betti joined the Department of Civil Engineering and Engineering Mechanics at Columbia University as an Assistant Professor and has been there since, being promoted to Associate Professor (1998) and to Full Professor (2002). As a professor at Columbia, he has received in 1995 the National Science Foundation Young Investigator Award and the 1997 Foreign Specialist Award from the Public Work Research Institute in Japan. For his outstanding teaching, he received, in 1996, the Distinguished Teaching Award from the School of Engineering and Applied Science at Columbia and the Great Teacher Award in 2000. For his work on structural health monitoring of suspension bridges, Dr. Betti was awarded the Aftab Mufti Medal by the International Society for Structural Health Monitoring of Intelligent Infrastructure (2017) and the ASCE Norman Medal (2024). His research interests focus on monitoring the structural health of buildings and bridges, with particular emphasis on rapid damage assessment through dynamic structural response measurements, on vibration-based identification of reliable structural models, and on deterioration mechanisms in structures.
+Dr Ibrahim Odeh is the Founding Director of the Global Leaders in Construction Management (GLCM) program and Chair of the Engineering and Construction Management Program at Columbia University. A globally recognized strategist, academic, and innovator, his work bridges industry and academia, advising leading construction firms and global organizations—including the World Economic Forum, Turner & Townsend, and Turner Construction—on digital transformation and strategic growth.
+He has served on advisory boards for the G20’s GI Hub, Financial Times’ Future of Construction Summit, and numerous startups and firms in construction tech. Odeh pioneered the first Construction Management MOOCs on Coursera, reaching over 700,000 learners in 190 countries. A sought-after speaker and award-winning educator, his accolades include the McGraw Hill Pathfinder Award and Columbia University’s Presidential Award for Outstanding Teaching. He holds a PhD in Civil Engineering and an MBA.

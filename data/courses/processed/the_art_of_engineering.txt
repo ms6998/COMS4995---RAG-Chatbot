@@ -1,0 +1,4 @@
+TITLE: THE ART OF ENGINEERING
+SUBJECT: Engineering
+INSTRUCTOR: David G Vallancourt
+DESCRIPTION: Bridge between the science-oriented, high school way of thinking and the engineering point of view. Fundamental concepts of math and science reviewed and re-framed in an engineering context; numerous examples of each concept drawn from all disciplines of engineering represented at Columbia. Non-technical issues of importance in professional engineering practice such as ethics, engineering project management, and societal impact. Only open to Columbia Engineering first-year undergraduate students or second-year transfer students. Lab fee: $150.

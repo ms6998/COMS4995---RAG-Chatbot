@@ -1,0 +1,4 @@
+TITLE: MODEL RISK MANAGEMENT
+SUBJECT: Enterprise Risk Mgmt
+INSTRUCTOR: Peter L Russo
+DESCRIPTION: Given the ever growing reliance on models, Model risk affects financial institutions at almost every level of their organization including pricing, risk, finance, and marketing. Model risk management (MRM) is now one of the primary focuses of operational risk management at modern financial institutions. In this class, the ERM skill sets of risk identification, risk quantification, and risk decision making are applied to the kinds of models seen in large, complex financial institutions. Through readings, lecture, assignments, and in-class discussions, students learn the principles and concepts that a robust MRM function uses to manage model risk.

@@ -1,0 +1,4 @@
+TITLE: Future Energy: Economics, Systems, Polic
+SUBJECT: Electrical Engineering
+INSTRUCTOR: Debasis Mitra
+DESCRIPTION: Holistic understanding of the science and socioeconomic modelling of climate change, the properties of renewable energy sources, their economic and engineering implications, and the policy decisions in the transition to future energy. Fundamentals of systems needed to support deep penetration of renewable energy, including grid stability, transmission and storage systems, and the design and operations of carbonaware datacenters.

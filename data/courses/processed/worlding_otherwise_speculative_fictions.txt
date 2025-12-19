@@ -1,0 +1,4 @@
+TITLE: Worlding Otherwise: Speculative Fictions
+SUBJECT: Art History
+INSTRUCTOR: Jozefina Chetko
+DESCRIPTION: Worlding Otherwise is a studio course exploring how artists use game engines to craft speculative and ecological narratives. Using tools like Unreal Engine and Blender, students will visualize alternate futures, mythologies, and socio-political realities through creating immersive virtual environments. Key questions include: How might the game environment lend itself to storytelling? How can speculative fiction act as a method of critique? What can we learn from artists who blend technology with mythology and alternative futures? The semester culminates in a final project: a short cinematic piece, interactive environment, or hybrid installation created within a game engine.

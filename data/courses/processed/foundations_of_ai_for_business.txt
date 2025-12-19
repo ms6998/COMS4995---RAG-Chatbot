@@ -1,0 +1,4 @@
+TITLE: Foundations of AI for Business
+SUBJECT: Decision,risk & Operations Mgt
+INSTRUCTOR: Hongseok Namkoong
+DESCRIPTION: 

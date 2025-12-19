@@ -1,0 +1,4 @@
+TITLE: TOPICS IN SIGNAL PROCESSING
+SUBJECT: Electrical Engineering
+INSTRUCTOR: Deepak S Turaga
+DESCRIPTION: Advanced topics in signal processing, such as multidimensional signal processing, image feature extraction, image/video editing and indexing, advanced digital filter design, multirate signal processing, adaptive signal processing, and wave-form coding of signals. Content varies from year to year, and different topics rotate through the course numbers 6880 to 6889.  Topic: Large Data Stream Processing.

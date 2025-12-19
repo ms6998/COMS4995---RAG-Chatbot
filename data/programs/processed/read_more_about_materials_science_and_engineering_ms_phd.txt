@@ -1,0 +1,149 @@
+Application Requirements
+Review this information carefully before beginning your graduate application to Columbia Engineering.
+Program Eligibility
+The basic requirement for admission as a graduate student is the bachelor's degree received from an institution of acceptable standing. Ordinarily, applicants will have majored in the field in which graduate study is intended, but in certain programs preparation in a related field of engineering or science is acceptable. You will be admitted only if your undergraduate record shows promise of productive and effective graduate work.
+The Master of Science (MS) degree is required for admission into the PhD and EngScD degree programs. If you hold an appropriate bachelor's degree in engineering, you may apply for admission to either the MS only or MS leading to PhD program. If you have not already earned an MS degree and are looking to pursue a doctoral degree, you should apply for admission to the MS/PhD track program, with the exception of the Computer Science PhD program. All doctoral applicants to the Computer Science Department should apply for admission to the PhD program, regardless of whether they have completed an MS degree or not.
+Students enrolled in the MS/PhD program are considered doctoral students and are eligible to receive equivalent funding. More information about the doctoral degree can be found in the bulletin.
+The admission committee will base its decision not only on the prior studies you have completed but also on the quality of your record and the evidence your application supplies concerning your fitness to pursue professional work.
+Overview of Requirements
+This is an overview of the materials that must accompany the online application for on-campus graduate programs. You can find a detailed description of each item in a separate section below.
+- Transcripts from every post-secondary institution attended
+- Three letters of recommendation
+- Official Graduate Record Examination (GRE) General Test Scores*
+- School Code: 2111
+- Optional for the 2026 Admission Cycle
+- Personal statement
+- Resumé or Curriculum Vitae
+- Publications (optional)
+- An interview may be requested
+- $85 non-refundable application fee (payable by a major credit card through the online application system)
+- International applicants or applicants whose undergraduate degree was received in a country in which English is not the official and widely spoken language must submit the following additional requirements with the application for admission:
+- Results of an English language test. Accepted tests include the Test of English as a Foreign Language iBT (TOEFL) - including TOEFL iBT Home Edition, International English Language Testing System Academic (IELTS), Pearson Test of English (PTE Academic), or Duolingo English Test (DET). The ETS School Code for the Fu Foundation School of Engineering and Applied Science is 2111.
+- Translation of the official transcript(s) and degree/diploma certificate(s) if the institution(s) attended does not issue transcripts in English. The translation must be conducted by a reputable service provider.
+If you have questions about any of the application requirements, please visit our FAQ.
+If you are applying via an alternative application (MS Express, Integrated BS/MS, Barnard 4+1 Pathways, MD/MS in Biomedical Engineering) refer to the application requirements as listed with the appropriate application.
+*Applied Physics Doctoral applicants may also submit Official GRE Physics Subject Test Scores
+Deadlines
+You are encouraged to apply by the deadlines listed below. All application materials should be submitted and received within two to four weeks after the posted deadline. Columbia Engineering reserves the right to review and render decisions on applications that remain incomplete following the posted deadlines.
+Admissions decisions are released in the months following the posted deadlines. You will be notified of the result of the application review as soon as possible. Please be aware that this can take several months.
+We recommend international students who will require a student visa apply before the deadline to ensure sufficient time to secure their visa. Deferrals will not be offered.
+Apply for the term you intend to enroll in.
+-
+Doctoral: MS/PhD, PhD, EngScD
+All programs: December 15
+-
+Master of Science
+Program Priority Deadline Regular Deadline Business Analytics January 15 February 15 Chemical Engineering January 15 February 15 Civil Engineering Programs February 1 February 15 Computer Science January 15 February 15 Data Science January 15 February 15 Electrical Engineering January 15 February 15 Financial Engineering - January 15 Industrial Engineering January 15 February 15 Management Science and Engineering January 15 February 15 Operations Research January 15 February 15 All Other MS Programs - February 15 -
+MS Express
+February 15 (regular deadline), May 1 (final deadline)
+-
+Integrated BS/MS
+April 30 (of junior year)
+-
+Barnard 4+1 Pathway
+February 15 (of junior year)
+-
+Certificates
+Certificate in Data Science - February 15
+CAMPEP Accredited Certificate of Professional Achievement in Medical Physics - August 1
+-
+Spring Applications
+Master of Science + Doctoral (MS/Ph.D., Ph.D., Eng.Sc.D) - October 15
+Note: The following programs will not accept applications for the Spring 2026 term:
+- Applied Mathematics Doctoral
+- Applied Physics (MS and Doctoral)
+- Biomedical Engineering (Eng.Sc.D. and MD/MS)
+- Business Analytics MS
+- Chemical Engineering (MS/PhD)
+- Computer Engineering MS
+- Computer Science (CS@CU Bridge and Eng.Sc.D)
+- Data Science (Cert. and MS)
+- Electrical Engineering MS
+- Financial Engineering MS
+- Industrial Engineering Doctoral
+- Management Science and Engineering MS
+- Materials Science and Engineering (MS and Doctoral)
+- Mechanical Engineering Doctoral
+- Medical Physics (Cert. and MS)
+- Operations Research Doctoral
+- Quantum Science and Technology MS
+Detailed Instructions for Application Materials
+Below find further instructions about the components listed in the overview section above.
+Important: You must submit all materials directly, not through an agent or third-party vendor, with the sole exception of submissions by the U.S. Department of State’s Fulbright Program and its three partner agencies IIE, LASPAU, and AMIDEAST, and by the Danish-American Fulbright Commission (DAF), Deutscher Akademischer Austauschdienst (DAAD), and Vietnam Education Fund (VEF).
+In addition, you will be required to attest to the accuracy and authenticity of all information and documents submitted to Columbia. If you have any questions about this requirement, please contact the admissions office at [email protected].
+Academic integrity: Academic integrity is the cornerstone of a university education. Failure to submit complete, accurate, and authentic application documents consistent with these instructions may result in denial or revocation of admission, cancellation of academic credit, suspension, expulsion, or eventual revocation of degree. You may be required to assist admissions staff and faculty involved in admission reviews in the verification of all documents and statements made in documents submitted as part of the application review process.
+-
+Transcripts
+On your application, you must list all colleges and universities you have attended for at least one term and from which you have received academic credit, regardless of the number of credits received. This includes professional schools and summer study programs.
+After listing each institution, you will be prompted to upload a copy of your transcript. The transcript copy you upload onto your online application should be a copy of your official transcript or a student copy of your transcript. We ask that you not upload screenshots of your online student portal. Uploading anything other than a copy of your official transcript, or student copy, may cause a delay in the review of your application.
+If you are a currently enrolled graduate student at Columbia Engineering applying again to another department or degree level you must upload a copy of your transcript to your online application.
+Official transcripts do not need to be sent from your institution to Columbia Engineering until after you are admitted and have accepted your offer of admission. Do not have your institution send us transcripts prior to this.
+-
+Letters of Recommendation
+Columbia Engineering requires three letters of recommendation.
+Letters should be written by faculty members with whom you have studied; who can assess your academic work, intellectual ability, and academic potential for graduate work; who can address your suitability for the program; and who can speak to your ability to commit to the rigorous curriculum.
+You may also submit letters of recommendation from current or former supervisors.Personal references are not appropriate.
+Upon entering your recommendation providers' contact information in your application, your recommendation providers will be contacted to supply the letter of recommendation. Under no circumstance should you write any portion of the evaluation, nor have any involvement in its drafting or submission.
+-
+Test Scores
+Score Reports
+Please upload a copy of the corresponding score report for any test scores you have provided in your application. This is the only score report required at the time of application. Your self-reported scores will be verified during the post-admit verification process.
+After admission, you should have official scores sent to us directly from your testing agency (ETS code 2111). If we cannot verify your test scores, we will contact you. Please do not contact our office to confirm if your scores were received, as this will create a backlog.
+Graduate Record Examination (GRE)
+The Graduate Record Examination (GRE) is not required for the 2026 admission cycle. This includes Spring 2026 and Fall 2026. If you have taken the exam and would like to provide your scores, you may, but it is not required. Students who do not submit scores will not be penalized in the graduate admissions review process. Students who do submit scores will be required to submit official test scores should they be admitted.
+Students applying to the Applied Physics PhD or Applied Physics MS/PhD track program may supply GRE Physics subject test scores, although it is not required.
+English Language Proficiency Exams
+Applicants who earned their undergraduate degree in a country other than Australia, Canada, Ghana, Ireland, Kenya, New Zealand, Nigeria, Singapore, the UK, and the United States of America must submit an official score from either the TOEFL, IELTS, PTE Academic test, or Duolingo English Test with their application.
+This includes students who transferred from or have participated in a combined or joint degree program in a country outside of Australia, Canada, Ghana, Ireland, Kenya, New Zealand, Nigeria, Singapore, the UK, or the United States of America. This requirement applies to applicants from Bangladesh, Nepal, India, Pakistan, Latin America, the Middle East, Israel, the People’s Republic of China, Japan, Korea, and most European countries, countries in Africa, and countries in Southeast Asia.
+An exception will be made for applicants who have earned or will complete a Master's degree in Australia, Canada, Ghana, Ireland, Kenya, New Zealand, Nigeria, Singapore, the UK, and the United States of America. In this case, the applicant is not required to submit English language proficiency exam scores for admission.
+Columbia Engineering accepts the following exams: Test of English as a Foreign Language iBT (TOEFL) - including TOEFL iBT Home Edition, International English Language Testing System Academic (IELTS), Pearson Test of English (PTE Academic), or Duolingo English Test (DET). Only one English language test is required.
+Additional Policies
+All self-reported scores will be verified during the review process.
+If you have taken any of the standardized tests on multiple occasions, please enter a complete set of scores from the test you wish to be considered with your application for admission. “Superscoring" test scores is not allowed.
+Please ensure your test scores are still valid. Expired test scores will not be accepted. All standardized test scores need to remain valid through the start of your first semester. GRE scores expire in five years. TOEFL, IELTS, and Duolingo scores expire in two years. If your scores will expire prior to this, we strongly encourage you to retake the exam or submit your official test scores to us prior to their expiration.
+-
+Personal Statement
+The purpose of the Personal Statement is for you to share more about your past experiences and to discuss how they have contributed to your personal and professional growth. It allows you the opportunity to explain to the admission committee the distinct qualities and commitment you can bring to your department and to the overall Columbia Engineering community.
+We recommend your Personal Statement be between 250 and 1,000 words. Your application will not be negatively impacted should you exceed this recommendation. Please do not email us to request permission to exceed this recommendation, no permission is necessary.
+If possible, we prefer you follow the following formatting guidelines:
+- All margins should be at least one inch, and the left and right margins should be equal.
+- Text should be double spaced.
+- The preferred fonts are 10-point Arial or 12-point Times New Roman; however, any legible serif or sans-serif standard font may be used. Do not use script or ornamental fonts.
+- Your name should appear in the Header or Footer of every page.
+It is essential to the admissions process that you write and submit this Personal Statement on your own. Any evidence of plagiarized materials may result in denial or revocation of admission.
+A few topics that you may want to address in your Personal Statement include:
+- Describe how your background has prepared you to pursue an advanced degree in the field of engineering or applied science at Columbia University.
+- Describe the reasons you are interested in this program and discuss any relevant past experience.
+- If you have relevant work or research experience, please indicate how it helped you decide on your career path.
+- What are your post-graduation plans or career goals?
+- What do you hope to gain from this program?
+- What about this program excites you?
+- If there are any special circumstances that need to be brought to the attention of the Admission Committee, please include that information.
+-
+Resumé/CV
+This document should outline clearly and briefly the following:
+- Employment held (include title of jobs and start/end dates)
+- Research activities
+- Academic honors, including fellowships you have been awarded
+- Volunteer or community service
+- Extracurricular activities
+- Honorary societies and awards for service or leadership you have received
+- Publications
+-
+Publications
+If you have made contributions to a publication, you may provide those details and upload a copy. You will be asked to describe your contributions to the paper and provide a professor or advisor's email who can confirm your involvement.
+-
+Video Interview
+The Video Interview is a mandatory component of the Master of Science application. It will only be available once your application is submitted and the application fee is paid. You will access the Video Interview via your application Status Portal.
+The Video Interview will help the Admissions Committee assess your communication skills and your ability to think quickly and effectively. You will be asked three randomly selected questions, be given 90 seconds to consider your responses, and have three minutes to record your answer to all three questions. The questions will be behavioral in nature. You do not need to prepare anything in advance.
+Please note: The use of a VPN may interfere with the submission of your Video Interview. We recommend that you log out of any type of VPN prior to starting the Video Interview.
+Multiple Applications
+It is against school policy to apply to more than one program at the Fu Foundation School of Engineering and Applied Science per term, including Columbia Video Network (CVN). Doing so may cause applications to be invalidated and application fees paid for additional applications will not be refunded. Do not create a new application account in order to circumvent this policy.
+If you have questions, please contact the Office of Graduate Admissions at [email protected] for clarification.
+Application Accommodations
+If you are affected by special hardships (for example, region-wide internet outages), you may request deadline extensions or other application accommodations by emailing [email protected].
+Application Fee Waiver
+Eligible students are welcome to apply for an application fee waiver. Waivers may be available for students who meet certain criteria, including U.S. citizens or permanent residents currently enrolled in a U.S. School with financial need, U.S. Military personnel/veterans, and students who participate in special programs (listed on the waiver form).
+To apply follow the steps in the order listed below:
+- Create an online application account to begin to apply for admission and complete the program selection page.
+- Complete and submit the Application Fee Waiver Request Form with the required documentation.

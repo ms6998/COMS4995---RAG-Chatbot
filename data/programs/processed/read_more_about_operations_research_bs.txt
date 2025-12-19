@@ -1,0 +1,34 @@
+Operations Research (BSOR)
+Dive Into Quantitative Decision-making
+Operations Research is an applied science, and is concerned with quantitative decision problems, generally involving the allocation and control of limited resources. At the undergraduate level, it offers foundational courses in probability, statistics, applied mathematics, simulation, optimization, with professionally oriented operations research courses. The curriculum is well suited for students with an aptitude for mathematics applications. It prepares graduates for professional employment as operations research analysts, e.g., with professional services, financial services, and big technology organizations. We also cultivate students for continued graduate studies in operations research, business, medicine, law, or other disciplines.
+Suggested Electives for the Operations Research Program
+- ORCA 2500: Foundations of Data Science (only if taken by the end of sophomore year)
+- APMA E4300: Introduction to Numerical Models
+- CIEN E4138: Real Estate Finance for Construction Management
+- COMS W3157: Advanced Programming
+- COMS W3203: Discrete Mathematics
+- COMS W3261: Computer Science Theory
+- CSOR E4231: Analysis of Algorithms
+- ECON GU4020: Economics of Uncertainty and Information
+- IEME E4810: Introduction to Human Space Flight
+- IEOR E4418: Transportation Analytics and Logistics
+- IEOR E4500: Applications Programming for Financial Engineering
+- IEOR E4505: Operations Research in Public Policy
+- IEOR E4506: Designing Digital Operating Models
+- IEOR E4507: Healthcare Operations Management
+- IEOR E4510: Project Management
+- IEOR E4520: Applied Systems Engineering
+- IEOR E4521: Systems Engineering: Tools and Methods
+- IEOR E4525: Machine Learning for OR & FE
+- IEOR E4526: Analytics on the Cloud
+- IEOR E4540: Data Mining for Engineers
+- IEOR E4212: Data Analytics and Machine Learning for OR
+- IEOR E4601: Dynamic Pricing and Revenue Management
+- IEOR E4650: Business Analytics
+- IEOR E4700: Introduction to Financial Engineering
+- IEOR E4711: Global Capital Markets
+- MATH V4061: Introduction to Modern Analysis Intro to Modern Analysis, I
+- MATH V4062: Introduction to Modern Analysis Intro to Modern Analysis, II
+- ORCS E4200: Data Driven Decision Modeling
+- ORCS E4529: Reinforcement Learning
+A comprehensive list of electives can be found here. The BSOR program requires 15 Technical Elective credits (including 6 credits of IEOR coursework) and 3 Management Elective credits.

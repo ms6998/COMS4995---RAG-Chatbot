@@ -14,7 +14,7 @@ LLM_TEMPERATURE = 0.3
 MAX_TOKENS = 2000
 
 # Vector Database
-VECTOR_DB_TYPE = "chroma"  # or "faiss"
+VECTOR_DB_TYPE = "chroma"
 VECTOR_DB_PATH = "./vector_db"
 COLLECTION_NAME_REQUIREMENTS = "degree_requirements"
 COLLECTION_NAME_PROFESSORS = "professor_ratings"

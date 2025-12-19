@@ -1,0 +1,4 @@
+TITLE: PROBABILITY
+SUBJECT: Statistics
+INSTRUCTOR: Marco A Avella Medina
+DESCRIPTION: Prerequisites: At least one semester of calculus. A calculus-based introduction to probability theory. Topics covered include random variables, conditional probability, expectation, independence, Bayes rule, important distributions, joint distributions, moment generating functions, central limit theorem, laws of large numbers and Markovs inequality.

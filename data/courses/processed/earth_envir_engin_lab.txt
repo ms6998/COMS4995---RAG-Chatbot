@@ -1,0 +1,4 @@
+TITLE: EARTH & ENVIR ENGIN LAB
+SUBJECT: Earth & Environmental Engin
+INSTRUCTOR: 
+DESCRIPTION: Experiments on fundamental aspects of Earth and environmental engineering with emphasis on the applications of chemistry, biology and thermodynamics to environmental processes: energy generation, analysis and purification of water, environmental biology, and biochemical treatment of wastes. Students will learn the laboratory procedures and use analytical equipment firsthand, hence demonstrating experimentally the theoretical concepts learned in class.

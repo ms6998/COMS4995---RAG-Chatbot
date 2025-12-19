@@ -1,0 +1,4 @@
+TITLE: Data Engineering with Python
+SUBJECT: Industrl Engin-operations Rsch
+INSTRUCTOR: Yi Zhang
+DESCRIPTION: Introduction to essential data engineering methods. Potential topics include Arrays, Linked Lists, Stacks and Queues, Trees and Graphs, Hash Tables, Search Algorithms and Efficiency, Relational databases, SQL, NoSQL, and Data Wrangling. Practice both theory and applications using Python programming.

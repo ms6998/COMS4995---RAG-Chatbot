@@ -1,0 +1,4 @@
+TITLE: INTRO-IMPLIED VOLATILITY SMILE
+SUBJECT: Industrl Engin-operations Rsch
+INSTRUCTOR: Amal Moussa
+DESCRIPTION: During the past 15 years the behavior of market options prices have shown systematic deviations from the classic Black-Scholes model. Examines the empirical behavior of implied volatilities, in particular the volatility smile that now characterizes most markets, the mathematics and intuition behind new models that can account for the smile, and their consequences for hedging and valuation.

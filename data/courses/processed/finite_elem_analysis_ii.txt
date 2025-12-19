@@ -1,0 +1,4 @@
+TITLE: FINITE ELEM ANALYSIS II
+SUBJECT: Engineering Mechanics
+INSTRUCTOR: Haim Waisman
+DESCRIPTION: FE formulation for beams and plates. Generalized eigenvalue problems (vibrations and buckling). FE formulation for time-dependent parabolic and hyperbolic problems. Nonlinear problems, linearization, and solution algorithms. Geometric and material nonlinearities. Introduction to continuum mechanics. Total and updated Lagrangian formulations. Hyperelasticity and plasticity. Special topics: fracture and damage mechanics, extended finite element method.

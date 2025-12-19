@@ -1,0 +1,4 @@
+TITLE: Computer Vision II: Learning
+SUBJECT: Computer Science
+INSTRUCTOR: Aleksander Holynski
+DESCRIPTION: Advanced course in computer vision. Topics include convolutional networks and back-propagation, object and action recognition, self-supervised and few-shot learning, image synthesis and generative models, object tracking, vision and language, vision and audio, 3D representations, interpretability, and bias, ethics, and media deception.

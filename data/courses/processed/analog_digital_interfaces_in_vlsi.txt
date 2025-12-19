@@ -1,0 +1,4 @@
+TITLE: Analog-Digital Interfaces in VLSI
+SUBJECT: Electrical Engineering
+INSTRUCTOR: Timothy Dickson
+DESCRIPTION: Analog-to-digital and digital-to-analog conversion techniques for very large scale integrated circuits and systems. Precision sampling; quantization; A/D and D/A converter architectures and metrics; Nyquist architectures; oversampling architectures; correction techniques; system considerations. A design project is an integral part of this course.

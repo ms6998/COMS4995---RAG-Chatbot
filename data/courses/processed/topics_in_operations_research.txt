@@ -1,0 +1,4 @@
+TITLE: TOPICS IN OPERATIONS RESEARCH
+SUBJECT: Industrl Engin-operations Rsch
+INSTRUCTOR: Devon Peticolas
+DESCRIPTION: This Columbia University course offers a project-based learning experience focused on systematic quantitative investment. It covers the full data science workflow, from concept to performance evaluation. Students will engage in a real-time financial forecasting competition, using open-source financial and alternative data, to make and present investment decisions. Ideally, this course suits students aspiring to careers as quants or data scientists in the financial sector.

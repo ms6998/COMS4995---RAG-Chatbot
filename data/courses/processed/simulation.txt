@@ -1,0 +1,4 @@
+TITLE: SIMULATION
+SUBJECT: Industrl Engin-operations Rsch
+INSTRUCTOR: Henry Lam
+DESCRIPTION: Generation of random numbers from given distributions; variance reduction; statistical output analysis; introduction to simulation languages; application to financial, telecommunications, computer, and production systems. Graduate students must register for 3 points. Undergraduate students must register for 4 points. Note: Students who have taken IEOR E4703 Monte Carlo simulation may not register for this course for credit. Recitation section required.

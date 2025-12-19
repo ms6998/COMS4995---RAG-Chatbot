@@ -1,0 +1,4 @@
+TITLE: Finance for Technology Leaders
+SUBJECT: Technology Management
+INSTRUCTOR: Conrad Fernandes
+DESCRIPTION: An exploration of the central concepts of corporate finance for those who already have some basic knowledge of finance and accounting. This case-based course considers project valuation; cost of capital; capital structure; firm valuation; the interplay between financial decisions, strategic consideration, and economic analyses; and the provision and acquisition of funds. These concepts are analyzed in relation to agency problems: market domination, risk profile, and risk resolution; and market efficiency or the lack thereof. The validity of analytic tools is tested on issues such as highly leveraged transactions, hybrid securities, volatility in initial public offerings, mergers and acquisitions, divestitures, acquisition and control premiums, corporate restructurings, and sustainable and unsustainable market inefficiencies.

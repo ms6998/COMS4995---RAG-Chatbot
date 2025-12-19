@@ -1,0 +1,4 @@
+TITLE: TOPICS IN ELECTRICAL AND COMPUTER ENGINE
+SUBJECT: Electrical Engineering
+INSTRUCTOR: Xiaofan Jiang
+DESCRIPTION: Selected topics in electrical and computer engineering. Content varies from year to year, and different topics rotate through the course numbers 6900 to 6909.

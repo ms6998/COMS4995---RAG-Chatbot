@@ -1,0 +1,4 @@
+TITLE: SECURITY ANALYSIS
+SUBJECT: Prof. Studies Management
+INSTRUCTOR: Panos Mourdoukoutas
+DESCRIPTION: Prerequisites: BUSI PS5001 Intro to Finance and BUSI PS5003 Corporate Finance or Professor Approval required. If you have not taken PS5001 or PS5003 at Columbia University, please contact the course instructor for approval. Students will learn about the valuation of publicly traded equity securities. By the end of the semester students will be able to perform fundamental analysis (bottoms-up, firm-level, business and financial analysis), prepare pro forma financial statements, estimate free cash flows and apply valuation models.

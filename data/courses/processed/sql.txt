@@ -1,0 +1,4 @@
+TITLE: SQL
+SUBJECT: Applied Analytics
+INSTRUCTOR: Nikolaos Machairas
+DESCRIPTION: 

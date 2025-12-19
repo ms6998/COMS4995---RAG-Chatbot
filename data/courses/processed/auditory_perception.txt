@@ -1,0 +1,4 @@
+TITLE: AUDITORY PERCEPTION
+SUBJECT: Psychology
+INSTRUCTOR: Sarah Woolley
+DESCRIPTION: Prerequisites: PSYC UN1010 PSYC UN1010 or equivalent; background in statistics/research methods recommended How does the human brain make sense of the acoustic world? What aspects of auditory perception do humans share with other animals? How does the brain perform the computations necessary for skills such as soundlocalization? How do we focus our auditory attention on one voice in a crowd? What acoustic cues are important for speech perception? How is music perceived? These are the types of questions we will address by studyingthe basics of auditory perception from textbook readings and reviews, and reading classic and current literatureto understand scientific progress in the field today.

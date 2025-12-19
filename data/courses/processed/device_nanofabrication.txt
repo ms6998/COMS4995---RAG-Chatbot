@@ -1,0 +1,4 @@
+TITLE: DEVICE NANOFABRICATION
+SUBJECT: Electrical Engineering
+INSTRUCTOR: Jose A Bahamonde
+DESCRIPTION: This course provides an understanding of the methods used for structuring matter on the nanometer length: thin-film technology; lithographic patterning and technologies including photon, electron, ion and atom, scanning probe, soft lithography, and nanoimprinting; pattern transfer; self-assembly; process integration; and applications.

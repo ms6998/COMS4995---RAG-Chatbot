@@ -1,0 +1,4 @@
+TITLE: Epidemiology and Control of Tuberculosis
+SUBJECT: Epidemiology
+INSTRUCTOR: Barun Mathema
+DESCRIPTION: P8442 offers students an in-depth look at the epidemiology and control of tuberculosis (TB). Students are lectured by specialists and leaders in the field on topics including TB epidemiology in the US and abroad, clinical aspects of TB disease and latent TB infection, TB/HIV, molecular epidemiology of TB, TB control from the perspective of health departments and hospitals, TB drug and vaccine development, social aspects of TB and TB advocacy. Students are expected to master the field of infectious disease epidemiology and control as it applies to TB. Course readings cover state-of-the-art and historical articles.

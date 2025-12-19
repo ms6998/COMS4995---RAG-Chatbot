@@ -1,0 +1,21 @@
+Certification of Professional Achievement in Data Sciences
+The Certification of Professional Achievement in Data Sciences prepares students to expand their career prospects or change career paths by developing foundational data science skills.
+Candidates for the Certification of Professional Achievement in Data Sciences, a non-degree, part-time program, are required to complete a minimum of 12 credits, including four required courses: Algorithms for Data Science, Probability and Statistics for Data Science, Machine Learning for Data Science, and Exploratory Data Analysis and Visualization.
+This program is jointly offered in collaboration with the Graduate School of Arts and Sciences and The Fu Foundation School of Engineering and Applied Sciences. Join us from anywhere in the world as the program is now also offered online.
+Tuition and Fees
+-
+Students enrolled in the Certification of Professional Achievement program pay Columbia Engineering’s rate of tuition. Tuition and fees are prescribed by statute and are subject to change at the discretion of the Trustees. For more information on rates of tuition and other applicable fees, refer to Student Financial Services and the Columbia Engineering Bulletin. Note the online certification program has an additional non-refundable technology fee of $395 per course.
+Required/Core Courses
+-
+Candidates for the Certification of Professional Achievement in Data Sciences are required to complete a minimum of 12 credits, including four required courses, which may be eligible for advance standing towards the MS in Data Science program upon admission to the MS in Data Science program. Since Columbia University’s policy prohibits the double counting of coursework between programs, certification students admitted to and enrolled in the MS in Data Science program will forgo their certification to allow these courses to count towards their MS in Data Science.Please refer to our course inventory for the most up-to-date course offering and schedule information.
+-
+Prerequisites: basic knowledge in programming (e.g., at the level of COMS W1007), a basic grounding in calculus and linear algebra.
+Methods for organizing data, e.g. hashing, trees, queues, lists, priority queues. Streaming algorithms for computing statistics on the data. Sorting and searching. Basic graph models and algorithms for searching, shortest paths, and matching. Dynamic programming. Linear and convex programming. Floating point arithmetic, stability of numerical algorithms, Eigenvalues, singular values, PCA, gradient descent, stochastic gradient descent, and block coordinate descent. Conjugate gradient, Newton and quasi-Newton methods. Large scale applications from signal processing, collaborative filtering, recommendations systems, etc.
+-
+Prerequisite: Calculus.
+This course covers the following topics: Fundamentals of probability theory and statistical inference used in data science; Probabilistic models, random variables, useful distributions, expectations, law of large numbers, central limit theorem; Statistical inference; point and confidence interval estimation, hypothesis tests, linear regression.
+-
+Prerequisites: Background in linear algebra and probability and statistics.
+COMS 4721 is a graduate-level introduction to machine learning. The course covers basic statistical principles of supervised machine learning, as well as some common algorithmic paradigms. Additional topics, such as representation learning and online learning, may be covered if time permits.
+-
+Prerequisites: Programming. This course covers the following topics: fundamentals of data visualization, layered grammar of graphics, perception of discrete and continuous variables, introduction to Mondran, mosaic pots, parallel coordinate plots, introduction to ggobi, linked pots, brushing, dynamic graphics, model visualization, clustering and classification.

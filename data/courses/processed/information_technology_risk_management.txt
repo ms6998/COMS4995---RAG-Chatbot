@@ -1,0 +1,4 @@
+TITLE: INFORMATION TECHNOLOGY RISK MANAGEMENT
+SUBJECT: Enterprise Risk Mgmt
+INSTRUCTOR: Mike Wilkes
+DESCRIPTION: Students will learn how to better identify and manage a wide range of IT risks as well as better inform IT investment decisions that support the business strategy. Students will develop an instinct for where to look for technological risks, and how IT risks may be contributing factors toward key business risks. This course includes a review of IT risks, including those related to governance, general controls, compliance, cybersecurity, data privacy, and project management. Students will learn how to use a risk-based approach to identify and mitigate cybersecurity and privacy related risks and vulnerabilities. No prior experience or technical skills required to successfully complete this course.

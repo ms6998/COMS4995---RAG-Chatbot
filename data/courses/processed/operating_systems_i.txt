@@ -1,0 +1,4 @@
+TITLE: OPERATING SYSTEMS I
+SUBJECT: Computer Science
+INSTRUCTOR: Hubertus Franke
+DESCRIPTION: Design and implementation of operating systems. Topics include process management, process synchronization and interprocess communication, memory management, virtual memory, interrupt handling, processor scheduling, device management, I/O, and file systems. Case study of the UNIX operating system. A programming project is required.

@@ -1,0 +1,4 @@
+TITLE: DIGITAL COMMUNICATIONS
+SUBJECT: Electrical Engineering
+INSTRUCTOR: Alexei Ashikhmin
+DESCRIPTION: Digital communications for both point-to-point and switched applications is further developed. Optimum receiver structures and transmitter signal shaping for both binary and M-ary signal transmission. An introduction to block codes and convolutional codes, with application to space communications.

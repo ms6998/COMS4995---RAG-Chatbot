@@ -1,0 +1,4 @@
+TITLE: TOPICS IN COGNITIVE SCIENCE AND PHILOSOP
+SUBJECT: Philosophy
+INSTRUCTOR: Joshua J Kramer
+DESCRIPTION: This course will focus on one topic at the intersection of cognitive science and philosophy. Potential topics include free will, consciousness, modularity, mental representation, probabilistic inference, the language of thought, and the computational theory of mind.

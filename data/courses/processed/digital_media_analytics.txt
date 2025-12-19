@@ -1,0 +1,4 @@
+TITLE: DIGITAL MEDIA & ANALYTICS
+SUBJECT: Strategic Communication
+INSTRUCTOR: Lilian Ore
+DESCRIPTION: Digital media opens new opportunities for increasingly targeted communications across a variety of channels, which rapidly expands the importance of analytics in tracking and measuring key performance indicators (KPIs). This course prepares students to work within data- and model-driven environments with an emphasis on using analytics to develop insights and support strategic decisions.

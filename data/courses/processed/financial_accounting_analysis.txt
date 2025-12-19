@@ -1,0 +1,4 @@
+TITLE: Financial Accounting & Analysis
+SUBJECT: School Of Int & Public Affairs
+INSTRUCTOR: Norman Bartczak
+DESCRIPTION: MPA Financial Management Core I and II. This course introduces the principles and practices of financial reporting, with the goal of enabling students to become informed users of financial information in both public and private sector contexts. Emphasis is placed on understanding the three primary financial statements: the balance sheet, income statement, and statement of cash flows; and the accounting concepts and rules that shape them. Students will examine how financial information is prepared, disclosed, and interpreted, and will develop analytical tools to assess an organization’s financial health and operational effectiveness. Real-world financial statements will be used throughout the course to build fluency in the language and application of accounting.

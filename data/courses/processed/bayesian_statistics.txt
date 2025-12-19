@@ -1,0 +1,4 @@
+TITLE: BAYESIAN STATISTICS
+SUBJECT: Statistics
+INSTRUCTOR: Dobrin Marchev
+DESCRIPTION: This course introduces the Bayesian paradigm for statistical inference.  Topics covered include prior and posterior distributions: conjugate priors, informative and non-informative priors; one- and two-sample problems; models for normal data, models for binary data, Bayesian linear models; Bayesian computation: MCMC algorithms, the Gibbs sampler; hierarchical models; hypothesis testing, Bayes factors, model selection; use of statistical software. Prerequisites: A course in the theory of statistical inference, such as STAT GU4204 a course in statistical modeling and data analysis, such as STAT GU4205.

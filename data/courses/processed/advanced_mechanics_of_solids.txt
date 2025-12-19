@@ -1,0 +1,4 @@
+TITLE: ADVANCED MECHANICS OF SOLIDS
+SUBJECT: Engineering Mechanics
+INSTRUCTOR: Huiming Yin
+DESCRIPTION: Stress and deformation formulation in two-and three-dimensional solids; viscoelastic and plastic material in one and two dimensions energy methods.

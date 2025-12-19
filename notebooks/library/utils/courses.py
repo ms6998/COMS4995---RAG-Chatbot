@@ -1,4 +1,5 @@
 import os
+import re
 from dataclasses import dataclass
 from pprint import pprint
 
@@ -12,6 +13,8 @@ class Course:
     semester: str
     instructor: str
     subject: str
+    url: str
+    course_code: str
     file_name: str = ""
 
 
@@ -229,10 +232,28 @@ class ColumbiaCourseData:
         subject_cell = cells[4]
         subject = subject_cell.get_text(" ", strip=True)
 
+        # URL -> course code
+        url = ""
+        course_code = ""
+
+        url_div = course.find("div", class_="url")
+        if url_div:
+            link = url_div.find("a", href=True)
+            if link:
+                url = link["href"].strip()
+
+                m = re.search(r"subj/([^/]+)/([^-\/]+)", url)
+                if m:
+                    dept = m.group(1).replace("%20", " ").strip()
+                    num = m.group(2).strip()
+                    course_code = f"{dept} {num}"
+
         return Course(
             title=title,
             description=description,
             semester=semester,
             instructor=instructor,
             subject=subject,
+            url=url,
+            course_code=course_code,
         )

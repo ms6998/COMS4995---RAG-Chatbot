@@ -1,0 +1,4 @@
+TITLE: Computing with Brain Circuits of Model O
+SUBJECT: Elen-comp Sci-biomedical Engin
+INSTRUCTOR: Aurel A Lazar
+DESCRIPTION: Building the functional map of the fruit fly brain. Molecular transduction and spatio-temporal encoding in the early visual system. Predictive coding in the Drosophila retina. Canonical circuits in motion detection. Canonical navigation circuits in the central complex. Molecular transduction and combinatorial encoding in the early olfactory system. Predictive coding in the antennal lobe. The functional role of the mushroom body and the lateral horn. Canonical circuits for associative learning and innate memory. Projects in Python.

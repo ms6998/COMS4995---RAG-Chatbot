@@ -1,0 +1,4 @@
+TITLE: Digital Transformation
+SUBJECT: Technology Management
+INSTRUCTOR: Richard R. Ranade
+DESCRIPTION: This course explores the principles, strategies, and challenges of technology-driven transformation in organizations. Students will examine emerging technologies, digital disruption, and frameworks for implementing large-scale change. This course provides a comprehensive understanding of digital transformation, focusing on how businesses leverage technology to drive transformation based on various drivers including efficiency, productivity, competitive advantage, and compliance. Students will explore key topics such as product development, systems development lifecycle, enterprise architecture, IT capabilities, and automation. Through case studies, research, and hands-on projects, students will develop the skills needed to lead strategic and technical skills necessary to lead and manage digital transformation initiatives.

@@ -1,0 +1,4 @@
+TITLE: BLOCKCHAIN AND ERM
+SUBJECT: Enterprise Risk Mgmt
+INSTRUCTOR: Ivan Bakrac
+DESCRIPTION: Using Blockchain, decisions can be made without relying on a single centralized authority, allowing for greater transparency and trust between participants. By using smart contracts and distributed ledgers, users can easily create, modify, and manage agreements between stakeholders, ensuring that all parties have access to the same information and can make informed decisions. As a result, Blockchain technology reduces the risks associated with decision-making, and improves efficiency and accuracy. This course first examines the risks and rewards of implementing Blockchain at large organizations engaging in decentralized decision-making processes. The course then explores the Blockchain as a tool for risk management.

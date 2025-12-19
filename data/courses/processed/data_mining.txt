@@ -1,0 +1,4 @@
+TITLE: DATA MINING
+SUBJECT: Industrl Engin-operations Rsch
+INSTRUCTOR: Krzysztof M Choromanski
+DESCRIPTION: Course covers major statistical learning methods for data mining under both supervised and unsupervised settings. Topics covered include linear regression and classification, model selection and regularization, tree-based methods, support vector machines, and unsupervised learning. Students learn about principles underlying each method, how to determine which methods are most suited to applied settings, concepts behind model fitting and parameter tuning, and how to apply methods in practice and assess their performance. Emphasizes roles of statistical modeling and optimization in data mining.

@@ -1,0 +1,4 @@
+TITLE: AI/ML for Leaders
+SUBJECT: Technology Management
+INSTRUCTOR: Raghvender Arni
+DESCRIPTION: Generative AI represents a pivotal technological evolution with profound implications for the global economy and modern society. This course delves into the decades-long development of AI and machine learning, emphasizing its emergence as a critical economic and strategic force. As we explore this technology, we will assess its potential to revolutionize industries, enhance capabilities, and introduce complex challenges related to security, identity, and ethical considerations. In this dynamic landscape, both incumbent businesses and governmental bodies face the urgent need to adapt to this disruption and the transformative changes it heralds. This course seeks to unpack the catalysts of this technological surge, its foundational principles, and the critical knowledge required for modern leadership in the AI era.

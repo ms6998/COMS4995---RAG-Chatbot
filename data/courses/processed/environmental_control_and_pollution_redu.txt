@@ -1,0 +1,4 @@
+TITLE: ENVIRONMENTAL CONTROL AND POLLUTION REDU
+SUBJECT: Eaee & Ceem
+INSTRUCTOR: 
+DESCRIPTION: Sources of solid/gaseous air pollution and the technologies used for modern methods of abatement. Air pollution and its abatement from combustion of coal, oil, and natural gas and the thermodynamics of heat engines in power generation. Catalytic emission control is contrasted to thermal processes for abating carbon monoxide, hydrocarbons, oxides of nitrogen and sulfur from vehicles and stationary sources. Processing of petroleum for generating fuels. Technological challenges of controlling greenhouse gas emissions. Biomass and the hydrogen economy coupled with fuel cells as future sources of energy.

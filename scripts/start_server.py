@@ -26,27 +26,29 @@ def main():
     print("  - POST /professors - Query professor ratings")
     print("=" * 60)
     print("\nPress Ctrl+C to stop the server\n")
-    
+
     # Check if config exists
     config_path = Path("config.py")
-    if not config_path.exists():
-        print("⚠ Warning: config.py not found!")
-        print("  Please copy config_example.py to config.py and fill in your API keys.")
+    env_path = Path(".env")
+    if not config_path.exists() and not env_path.exists():
+        print("⚠ Warning: config not found!")
+        print("  Please copy config_example.py to config.py or .env and fill in your API keys.")
         print("  The server will start but some features may not work without proper config.\n")
-    
+
     # Check if vector DB exists
     vector_db_path = Path("./vector_db")
     if not vector_db_path.exists():
         print("⚠ Warning: Vector database not found!")
         print("  Please run 'python scripts/build_index.py' first to build the indices.")
         print("  The server will start but will not be able to answer questions.\n")
-    
+
     # Start server
     uvicorn.run(
         "src.api.app:app",
         host="0.0.0.0",
         port=8000,
         reload=True,
+        reload_dirs=["src"],
         log_level="info"
     )
 

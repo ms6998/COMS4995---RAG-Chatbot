@@ -1,0 +1,4 @@
+TITLE: EE SENIOR DESIGN PROJECT
+SUBJECT: Electrical Engineering
+INSTRUCTOR: David G Vallancourt
+DESCRIPTION: Students work in teams to specify, design, implement and test an engineering prototype. Involves technical as well as non-technical considerations, such as manufacturability, impact on the environment, economics, adherence to engineering standards, and other real-world constraints. Projects are presented publicly by each design team in a school-wide expo.

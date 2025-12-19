@@ -1,0 +1,4 @@
+TITLE: STRATEGIC RISK MANAGEMENT
+SUBJECT: Enterprise Risk Mgmt
+INSTRUCTOR: Carlo Di Florio
+DESCRIPTION: Review of the types of strategic risks, such as a flawed strategy, inability to execute the strategy, competitor risk, supply chain risk, governance risk, regulatory risk, M&A risk, international risk, etc. Includes case studies, research, and common mitigation techniques, such as strategic planning practices, management techniques, governance practices, supply-chain management, etc.

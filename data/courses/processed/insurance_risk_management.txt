@@ -1,0 +1,4 @@
+TITLE: INSURANCE RISK MANAGEMENT
+SUBJECT: Enterprise Risk Mgmt
+INSTRUCTOR: Ding Dai
+DESCRIPTION: Review of types of insurance risk, such as pricing risk, underwriting risk, reserving risk, etc. Includes case studies, risk quantification methods (e.g., market-consistent economic capital models, dynamic financial analysis (DFA) models, catastrophe models, etc.), and common mitigation techniques, such as asset-liability management (ALM), reinsurance, etc. Also addresses traditional risk management at insurance companies and ERM actuarial standards of practice (ASOPs).

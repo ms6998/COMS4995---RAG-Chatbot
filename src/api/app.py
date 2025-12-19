@@ -1,19 +1,19 @@
 """
 FastAPI application for PathWise RAG system.
 """
+import asyncio
+import inspect
+import logging
+import json
+import os
+import re
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-import logging
-import json
-import re
 from typing import Optional
 
-import os
 from dotenv import load_dotenv
 
-load_dotenv()
-api_key = os.getenv("GEMINI_API_KEY")
 
 from .models import (
     QuestionRequest, QuestionResponse, Source,
@@ -25,6 +25,9 @@ from ..rag.embeddings import EmbeddingGenerator
 from ..rag.vector_store import create_vector_store
 from ..rag.retriever import RAGRetriever, ProfessorRatingsRetriever
 from ..rag.llm_interface import create_llm_interface, PromptTemplate
+
+# Load '.env' if provided
+load_dotenv()
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -52,78 +55,160 @@ requirements_retriever: Optional[RAGRetriever] = None
 professor_retriever: Optional[ProfessorRatingsRetriever] = None
 llm_interface = None
 
+SYSTEM_NOT_READY = "System is still initializing. Please try again in a moment."
+
+
+def _system_is_ready() -> bool:
+    """
+    Checks required sub-systems, logs information about system
+    readiness, and returns whether the system is ready.
+
+    :return: Whether the system is ready
+    :rtype: bool
+    """
+    system_is_ready = True
+
+    if not requirements_retriever:
+        system_is_ready = False
+        logger.warning(
+            "Requirements retriever is not ready (is None)"
+        )
+    if not professor_retriever:
+        system_is_ready = False
+        logger.warning(
+            "Professor retriever is not ready (is None)"
+        )
+    if not llm_interface:
+        system_is_ready = False
+        logger.warning(
+            "LLM interface is not ready (is None)"
+        )
+
+    return system_is_ready
+
+
+async def run_endpoint(
+    endpoint, *args,
+    run_sync_in_thread: bool=True,
+    skip_system_check: bool=False,
+    **kwargs,
+):
+    """
+    Wrap endpoint runs in an exception handler for debugging. Reconsider
+    this design in a production system
+    """
+    if not _system_is_ready() and not skip_system_check:
+        raise HTTPException(
+            status_code=503,
+            detail=SYSTEM_NOT_READY,
+        )
+
+    try:
+        if inspect.iscoroutinefunction(endpoint):
+            return await endpoint(*args, **kwargs)
+
+        if run_sync_in_thread:
+            return await asyncio.to_thread(endpoint, *args, **kwargs)
+
+        return endpoint(*args, **kwargs)
+
+    except Exception as e:
+        logger.error(f"Error in endpoint {endpoint.__name__}: {e}")
+        if os.environ["DEBUG"]:
+            raise e
+        raise HTTPException(
+            status_code=500,
+            detail="Internal server error",
+        )
+
+
+async def _startup_event(*args, **kwargs) -> None:
+    """
+    Initialize components on startup
+    """
+    global embedder, requirements_retriever, professor_retriever, llm_interface
+    logger.info("Initializing PathWise RAG system...")
+
+    # Load configuration
+    # This can be handled better and more consistently
+    try:
+        from config import (
+            EMBEDDING_MODEL, VECTOR_DB_TYPE, VECTOR_DB_PATH,
+            COLLECTION_NAME_REQUIREMENTS, COLLECTION_NAME_PROFESSORS,
+            TOP_K_RETRIEVAL, GEMINI_API_KEY, LLM_MODEL
+        )
+    except ImportError:
+        # EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+        # VECTOR_DB_TYPE = "chroma"
+        # VECTOR_DB_PATH = "./vector_db"
+        # COLLECTION_NAME_REQUIREMENTS = "degree_requirements"
+        # COLLECTION_NAME_PROFESSORS = "professor_ratings"
+        # TOP_K_RETRIEVAL = 5
+        # GEMINI_API_KEY = api_key
+        # LLM_MODEL = "gemini-2.5-pro"
+        logger.warning("Config file not found. Trying environment.")
+        EMBEDDING_MODEL = os.environ["EMBEDDING_MODEL"]
+        VECTOR_DB_TYPE = os.environ["VECTOR_DB_TYPE"]
+        VECTOR_DB_PATH = os.environ["VECTOR_DB_PATH"]
+        COLLECTION_NAME_REQUIREMENTS = os.environ["COLLECTION_NAME_REQUIREMENTS"]
+        COLLECTION_NAME_PROFESSORS = os.environ["COLLECTION_NAME_PROFESSORS"]
+        TOP_K_RETRIEVAL = os.environ["TOP_K_RETRIEVAL"]
+        ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
+        GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
+        OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
+        LLM_MODEL = os.environ["LLM_MODEL"]
+
+    if os.environ["DEBUG"]:
+        # WARNING: very bad to reflect sensitive config to logs, do not
+        # run with debug on in production without removing this
+        logging.info(f"Gemini api key: {GEMINI_API_KEY}")
+        logging.info(f"OpenAI api key: {OPENAI_API_KEY}")
+        logging.info(f"Anthropic api key: {ANTHROPIC_API_KEY}")
+
+    # Initialize embedder
+    logger.info(f"Loading embedding model: {EMBEDDING_MODEL}")
+    embedder = EmbeddingGenerator(EMBEDDING_MODEL)
+
+    # Initialize vector stores
+    logger.info("Connecting to vector stores...")
+    requirements_store = create_vector_store(
+        store_type=VECTOR_DB_TYPE,
+        collection_name=COLLECTION_NAME_REQUIREMENTS,
+        persist_directory=VECTOR_DB_PATH
+    )
+
+    professor_store = create_vector_store(
+        store_type=VECTOR_DB_TYPE,
+        collection_name=COLLECTION_NAME_PROFESSORS,
+        persist_directory=VECTOR_DB_PATH
+    )
+
+    # Initialize retrievers
+    requirements_retriever = RAGRetriever(
+        embedder=embedder,
+        vector_store=requirements_store,
+        top_k=TOP_K_RETRIEVAL
+    )
+
+    professor_retriever = ProfessorRatingsRetriever(
+        embedder=embedder,
+        vector_store=professor_store
+    )
+
+    # Initialize LLM
+    # TODO: do not default to Gemini here?
+    logger.info(f"Initializing LLM: {LLM_MODEL}")
+    llm_interface = create_llm_interface(
+        provider="gemini",
+        api_key=GEMINI_API_KEY,
+    )
+
+    logger.info("PathWise RAG system initialized successfully!")
+
 
 @app.on_event("startup")
 async def startup_event():
-    """Initialize components on startup."""
-    global embedder, requirements_retriever, professor_retriever, llm_interface
-    
-    try:
-        logger.info("Initializing PathWise RAG system...")
-        
-        # Load configuration (in production, use proper config management)
-        try:
-            from config import (
-                EMBEDDING_MODEL, VECTOR_DB_TYPE, VECTOR_DB_PATH,
-                COLLECTION_NAME_REQUIREMENTS, COLLECTION_NAME_PROFESSORS,
-                TOP_K_RETRIEVAL, GEMINI_API_KEY, LLM_MODEL
-            )
-        except ImportError:
-            logger.warning("Config file not found. Using defaults.")
-            EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-            VECTOR_DB_TYPE = "chroma"
-            VECTOR_DB_PATH = "./vector_db"
-            COLLECTION_NAME_REQUIREMENTS = "degree_requirements"
-            COLLECTION_NAME_PROFESSORS = "professor_ratings"
-            TOP_K_RETRIEVAL = 5
-            GEMINI_API_KEY = api_key
-            LLM_MODEL = "gemini-2.5-pro"
-        
-        # Initialize embedder
-        logger.info(f"Loading embedding model: {EMBEDDING_MODEL}")
-        embedder = EmbeddingGenerator(EMBEDDING_MODEL)
-        
-        # Initialize vector stores
-        logger.info("Connecting to vector stores...")
-        requirements_store = create_vector_store(
-            store_type=VECTOR_DB_TYPE,
-            collection_name=COLLECTION_NAME_REQUIREMENTS,
-            embedding_dim=embedder.embedding_dim,
-            persist_directory=VECTOR_DB_PATH
-        )
-        
-        professor_store = create_vector_store(
-            store_type=VECTOR_DB_TYPE,
-            collection_name=COLLECTION_NAME_PROFESSORS,
-            embedding_dim=embedder.embedding_dim,
-            persist_directory=VECTOR_DB_PATH
-        )
-        
-        # Initialize retrievers
-        requirements_retriever = RAGRetriever(
-            embedder=embedder,
-            vector_store=requirements_store,
-            top_k=TOP_K_RETRIEVAL
-        )
-        
-        professor_retriever = ProfessorRatingsRetriever(
-            embedder=embedder,
-            vector_store=professor_store
-        )
-        
-        # Initialize LLM
-        logger.info(f"Initializing LLM: {LLM_MODEL}")
-        llm_interface = create_llm_interface(
-            provider="gemini",
-            api_key=GEMINI_API_KEY,
-            model=LLM_MODEL
-        )
-        
-        logger.info("PathWise RAG system initialized successfully!")
-        
-    except Exception as e:
-        logger.error(f"Error during startup: {e}")
-        # Don't fail the startup, but log the error
+    return await run_endpoint(_startup_event, skip_system_check=True)
 
 
 @app.get("/", response_model=dict)
@@ -145,226 +230,145 @@ async def root():
 async def health_check():
     """Health check endpoint."""
     return HealthResponse(
-        status="healthy" if embedder and requirements_retriever else "initializing",
+        status="healthy" if _system_is_ready() else "Initializing",
         version="0.1.0",
-        embedder_loaded=embedder is not None,
-        vector_store_connected=requirements_retriever is not None
+        embedder_available=embedder is not None,
+        requirements_retriever_available=requirements_retriever is not None,
+        professor_retriever_available=professor_retriever is not None,
+        llm_interface_available=llm_interface is not None,
+    )
+
+
+async def _info_requirements_retriever():
+    """
+    Return various metadata about the requirements retriever and its
+    vector store
+    """
+    return {
+        "count": requirements_retriever.vector_store.count_documents()
+    }
+
+
+@app.get("/info/retriever/requirements")
+async def info_requirements_retriever():
+    return await run_endpoint(_info_requirements_retriever)
+
+
+async def _info_professor_retriever():
+    """
+    Return various metadata about the professor retriever and its
+    vector store
+    """
+    return {
+        "count": professor_retriever.vector_store.count_documents()
+    }
+
+
+@app.get("/info/retriever/professor")
+async def info_professor_retriever():
+    return await run_endpoint(_info_professor_retriever)
+
+
+async def _info_retrievers():
+    return {
+        "requirments": await _info_requirements_retriever(),
+        "professor": await _info_professor_retriever(),
+    }
+
+
+@app.get("/info/retriever")
+async def info_retrievers():
+    return await run_endpoint(_info_retrievers)
+
+
+async def _ask_question(request: QuestionRequest, *args, **kwargs):
+    """
+    Answer a question about degree requirements.
+
+    Args:
+        request: Question request with user query and optional profile
+
+    Returns:
+        Answer with sources and citations
+    """
+    logger.info(f"Received question: {request.question}")
+
+    # Build user profile for filtering if provided
+    user_profile_dict = None
+    if request.user_profile:
+        user_profile_dict = request.user_profile.dict()
+
+    # Retrieve relevant documents
+    retrieval_result = requirements_retriever.retrieve_with_context(
+        query=request.question,
+        user_profile=None,
+        k=request.top_k
+    )
+
+    retrieved_docs = retrieval_result['results']
+
+    if not retrieved_docs:
+        return QuestionResponse(
+            question=request.question,
+            answer="I couldn't find relevant information in the knowledge base to answer your question. Please contact your academic advisor for assistance.",
+            sources=[]
+        )
+
+    # Format context for LLM
+    context = requirements_retriever.format_context_for_llm(retrieved_docs)
+
+    # Build prompt
+    messages = PromptTemplate.build_qa_prompt(
+        query=request.question,
+        context=context,
+        user_profile=user_profile_dict
+    )
+
+    # Generate answer
+    answer = llm_interface.generate(messages)
+
+    # Format sources
+    sources = [
+        Source(
+            text=doc['text'][:200] + "..." if len(doc['text']) > 200 else doc['text'],
+            source=doc['metadata'].get('source', 'Unknown'),
+            program=doc['metadata'].get('program'),
+            catalog_year=doc['metadata'].get('catalog_year'),
+            similarity=doc.get('similarity', 0)
+        )
+        for doc in retrieved_docs[:5]
+    ]
+
+    return QuestionResponse(
+        question=request.question,
+        answer=answer,
+        sources=sources
     )
 
 
 @app.post("/ask", response_model=QuestionResponse)
 async def ask_question(request: QuestionRequest):
-    """
-    Answer a question about degree requirements.
-    
-    Args:
-        request: Question request with user query and optional profile
-        
-    Returns:
-        Answer with sources and citations
-    """
-    if not requirements_retriever or not llm_interface:
-        raise HTTPException(
-            status_code=503,
-            detail="System is still initializing. Please try again in a moment."
-        )
-    
-    try:
-        logger.info(f"Received question: {request.question}")
-        
-        # Build user profile for filtering if provided
-        user_profile_dict = None
-        if request.user_profile:
-            user_profile_dict = request.user_profile.dict()
-        
-        # Retrieve relevant documents
-        retrieval_result = requirements_retriever.retrieve_with_context(
-            query=request.question,
-            user_profile=None,
-            k=request.top_k
-        )
-        
-        retrieved_docs = retrieval_result['results']
-        
-        if not retrieved_docs:
-            return QuestionResponse(
-                question=request.question,
-                answer="I couldn't find relevant information in the knowledge base to answer your question. Please contact your academic advisor for assistance.",
-                sources=[]
-            )
-        
-        # Format context for LLM
-        context = requirements_retriever.format_context_for_llm(retrieved_docs)
-        
-        # Build prompt
-        messages = PromptTemplate.build_qa_prompt(
-            query=request.question,
-            context=context,
-            user_profile=user_profile_dict
-        )
-        
-        # Generate answer
-        answer = llm_interface.generate(messages)
-        
-        # Format sources
-        sources = [
-            Source(
-                text=doc['text'][:200] + "..." if len(doc['text']) > 200 else doc['text'],
-                source=doc['metadata'].get('source', 'Unknown'),
-                program=doc['metadata'].get('program'),
-                catalog_year=doc['metadata'].get('catalog_year'),
-                similarity=doc.get('similarity', 0)
-            )
-            for doc in retrieved_docs[:5]
-        ]
-        
-        return QuestionResponse(
-            question=request.question,
-            answer=answer,
-            sources=sources
-        )
-        
-    except Exception as e:
-        logger.error(f"Error processing question: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
-
-
-@app.post("/plan", response_model=PlanResponse)
-async def create_plan(request: PlanRequest):
-    """
-    Create a personalized degree plan.
-    
-    Args:
-        request: Planning request with user profile
-        
-    Returns:
-        Semester-by-semester course plan with professor recommendations
-    """
-    if not requirements_retriever or not professor_retriever or not llm_interface:
-        raise HTTPException(
-            status_code=503,
-            detail="System is still initializing. Please try again in a moment."
-        )
-    
-    try:
-        logger.info(f"Creating plan for: {request.user_profile.program}")
-        
-        user_profile_dict = request.user_profile.dict()
-        
-        # Retrieve degree requirements
-        req_query = f"degree requirements and course list for {request.user_profile.program}"
-        req_docs = requirements_retriever.retrieve(
-            query=req_query,
-            k=10,
-            filter_dict={
-                'program': request.user_profile.program,
-                'catalog_year': request.user_profile.catalog_year
-            }
-        )
-        
-        requirements_context = requirements_retriever.format_context_for_llm(req_docs)
-        
-        # Get professor ratings for relevant courses
-        # Extract course codes from requirements
-        course_codes = set()
-        for doc in req_docs:
-            codes = doc['metadata'].get('course_codes', [])
-            course_codes.update(codes)
-        
-        # Get professor info
-        prof_info_parts = []
-        for course_code in list(course_codes)[:20]:  # Limit to avoid too long context
-            profs = professor_retriever.get_professors_for_course(course_code, k=3)
-            if profs:
-                prof_info_parts.append(f"\n{course_code}:")
-                for prof in profs:
-                    prof_info_parts.append(f"  - {professor_retriever.format_professor_info(prof)}")
-        
-        professor_info = "\n".join(prof_info_parts) if prof_info_parts else "No professor rating data available."
-        
-        # Build planning prompt
-        messages = PromptTemplate.build_planning_prompt(
-            user_profile=user_profile_dict,
-            requirements_context=requirements_context,
-            professor_info=professor_info
-        )
-        
-        # Generate plan
-        plan_text = llm_interface.generate(messages, max_tokens=3000)
-        
-        # Parse JSON from response
-        semesters, notes, explanation = parse_planning_response(plan_text)
-        
-        return PlanResponse(
-            user_profile=request.user_profile,
-            semesters=semesters,
-            notes=notes,
-            explanation=explanation
-        )
-        
-    except Exception as e:
-        logger.error(f"Error creating plan: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
-
-
-@app.post("/professors", response_model=ProfessorQueryResponse)
-async def query_professors(request: ProfessorQueryRequest):
-    """
-    Query professor ratings for specific courses.
-    
-    Args:
-        request: List of course codes
-        
-    Returns:
-        Professor ratings for each course
-    """
-    if not professor_retriever:
-        raise HTTPException(
-            status_code=503,
-            detail="Professor ratings system not initialized."
-        )
-    
-    try:
-        result = {}
-        
-        for course_code in request.course_codes:
-            profs = professor_retriever.get_professors_for_course(course_code, k=5)
-            
-            result[course_code] = [
-                ProfessorRating(
-                    course_code=p['metadata']['course_code'],
-                    prof_name=p['metadata'].get('prof_name', p['metadata'].get('professor_name', 'Unknown Professor')),
-                    rating=p['metadata']['rating'],
-                    tags=p['metadata'].get('tags', '')
-                )
-                for p in profs
-            ]
-        
-        return ProfessorQueryResponse(professors=result)
-        
-    except Exception as e:
-        logger.error(f"Error querying professors: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+    return await run_endpoint(_ask_question, request)
 
 
 def parse_planning_response(plan_text: str) -> tuple:
     """
     Parse LLM planning response to extract structured data.
-    
+
     Args:
         plan_text: Raw LLM response
-        
+
     Returns:
         Tuple of (semesters, notes, explanation)
     """
     # Try to extract JSON
     json_match = re.search(r'\{[\s\S]*"semesters"[\s\S]*\}', plan_text)
-    
+
     if json_match:
         try:
             json_str = json_match.group(0)
             plan_data = json.loads(json_str)
-            
+
             semesters = []
             for sem_data in plan_data.get('semesters', []):
                 courses = [
@@ -376,24 +380,126 @@ def parse_planning_response(plan_text: str) -> tuple:
                     courses=courses,
                     total_credits=sum(c.credits for c in courses)
                 ))
-            
+
             notes = plan_data.get('notes', [])
-            
+
             # Extract explanation (text before JSON)
             explanation = plan_text[:json_match.start()].strip()
-            
+
             return semesters, notes, explanation
-            
+
         except json.JSONDecodeError:
             logger.warning("Failed to parse JSON from planning response")
-    
+
     # Fallback: return text only
     return [], ["Unable to generate structured plan. See explanation."], plan_text
 
 
+async def _create_plan(request: PlanRequest, *args, **kwargs):
+    """
+    Create a personalized degree plan.
+
+    Args:
+        request: Planning request with user profile
+
+    Returns:
+        Semester-by-semester course plan with professor recommendations
+    """
+    logger.info(f"Creating plan for: {request.user_profile.program}")
+
+    user_profile_dict = request.user_profile.dict()
+
+    # Retrieve degree requirements
+    req_query = f"degree requirements and course list for {request.user_profile.program}"
+    req_docs = requirements_retriever.retrieve(
+        query=req_query,
+        k=10,
+        filter_dict={
+            'program': request.user_profile.program,
+            'catalog_year': request.user_profile.catalog_year
+        }
+    )
+
+    requirements_context = requirements_retriever.format_context_for_llm(req_docs)
+
+    # Get professor ratings for relevant courses
+    # Extract course codes from requirements
+    course_codes = set()
+    for doc in req_docs:
+        codes = doc['metadata'].get('course_codes', [])
+        course_codes.update(codes)
+
+    # Get professor info
+    prof_info_parts = []
+    for course_code in list(course_codes)[:20]:  # Limit to avoid too long context
+        profs = professor_retriever.get_professors_for_course(course_code, k=3)
+        if profs:
+            prof_info_parts.append(f"\n{course_code}:")
+            for prof in profs:
+                prof_info_parts.append(f"  - {professor_retriever.format_professor_info(prof)}")
+
+    professor_info = "\n".join(prof_info_parts) if prof_info_parts else "No professor rating data available."
+
+    # Build planning prompt
+    messages = PromptTemplate.build_planning_prompt(
+        user_profile=user_profile_dict,
+        requirements_context=requirements_context,
+        professor_info=professor_info
+    )
+
+    # Generate plan
+    plan_text = llm_interface.generate(messages, max_tokens=3000)
+
+    # Parse JSON from response
+    semesters, notes, explanation = parse_planning_response(plan_text)
+
+    return PlanResponse(
+        user_profile=request.user_profile,
+        semesters=semesters,
+        notes=notes,
+        explanation=explanation
+    )
+
+
+@app.post("/plan", response_model=PlanResponse)
+async def create_plan(request: PlanRequest):
+    return await run_endpoint(_create_plan, request)
+
+
+async def _query_professors(request: ProfessorQueryRequest, *args, **kwargs):
+    """
+    Query professor ratings for specific courses.
+
+    Args:
+        request: List of course codes
+
+    Returns:
+        Professor ratings for each course
+    """
+    result = {}
+
+    for course_code in request.course_codes:
+        profs = professor_retriever.get_professors_for_course(course_code, k=5)
+
+        result[course_code] = [
+            ProfessorRating(
+                course_code=p['metadata']['course_code'],
+                prof_name=p['metadata'].get('prof_name', p['metadata'].get('professor_name', 'Unknown Professor')),
+                rating=p['metadata']['rating'],
+                tags=p['metadata'].get('tags', '')
+            )
+            for p in profs
+        ]
+
+    return ProfessorQueryResponse(professors=result)
+
+
+@app.post("/professors", response_model=ProfessorQueryResponse)
+async def query_professors(request: ProfessorQueryRequest):
+    return await run_endpoint(_query_professors, request)
+
+
 if __name__ == "__main__":
     import uvicorn
+
     uvicorn.run(app, host="0.0.0.0", port=8000)
-
-
-

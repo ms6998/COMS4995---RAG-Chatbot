@@ -1,0 +1,4 @@
+TITLE: DESIGN OF LARGE SCALE BRIDGES
+SUBJECT: Civil Engineering
+INSTRUCTOR: Theodore Zoli
+DESCRIPTION: Design of large-scale and complex bridges with emphasis on cable-supported structures. Static and dynamic loads, component design of towers, superstructures and cables; conceptual design of major bridge types including arches, cable stayed bridges and suspension bridges.

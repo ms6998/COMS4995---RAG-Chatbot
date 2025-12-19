@@ -1,0 +1,4 @@
+TITLE: CAPITAL MARKETS & INVESTMENTS
+SUBJECT: Finance
+INSTRUCTOR: Simon Oh
+DESCRIPTION: This course provides students with a rigorous foundation in capital markets and investments, emphasizing asset valuation from an applied perspective. It covers valuation techniques for financial securities, essential to portfolio management and risk management applications. Key topics include arbitrage, the term structure of interest rates, portfolio theory, diversification, equilibrium asset pricing models such as the CAPM, market efficiency and inefficiencies, performance evaluation, analysis of common pooled investment vehicles, behavioral finance, and tax-aware investment strategies. Through interactive activities, case studies, and simulations utilizing real-world market data, students will acquire analytical skills and foundational knowledge required for advanced finance courses and practical roles within the investment industry

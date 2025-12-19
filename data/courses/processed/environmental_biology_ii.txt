@@ -1,0 +1,4 @@
+TITLE: ENVIRONMENTAL BIOLOGY II
+SUBJECT: Ecology,evolution & Envir Biol
+INSTRUCTOR: Matthew I Palmer
+DESCRIPTION: Prerequisites: EEEB UN2001 Second semester of introductory biology sequence for majors in enviromnental biology and environmental science, emphasizing the ecological and evolutionary aspects of biology. Also intended for those interested in an introduction to the principles of ecology and evolutionary biology.

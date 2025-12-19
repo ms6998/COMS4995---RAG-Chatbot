@@ -1,0 +1,4 @@
+TITLE: Introduction to Geographical Information
+SUBJECT: Ecology,evolution & Envir Biol
+INSTRUCTOR: Viorel Popescu
+DESCRIPTION: Geographic information systems (GIS) are powerful tools for analyzing fundamental geographic questions. GIS involves generating, linking, manipulating, and analyzing different sorts of spatial data; creating outputs commonly visualized as two- and sometimes three- dimensional maps. This course will cover major topics in GIS with applications for the broad field of biology and natural sciences, using QGIS and R. The goal of this course is to teach students a level of GIS proficiency such that they will be self-sufficient in their further learning and use of GIS.

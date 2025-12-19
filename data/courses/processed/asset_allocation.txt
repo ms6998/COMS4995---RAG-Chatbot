@@ -1,0 +1,4 @@
+TITLE: ASSET ALLOCATION
+SUBJECT: Industrl Engin-operations Rsch
+INSTRUCTOR: Christopher A Perez
+DESCRIPTION: Models for pricing and hedging equity, fixed-income, credit-derivative securities, standard tools for hedging and risk management, models and theoretical foundations for pricing equity options (standard European, American equity options, Asian options), standard Black-Scholes model (with multiasset extension), asset allocation, portfolio optimization, investments over longtime horizons, and pricing of fixed-income derivatives (Ho-Lee, Black-Derman-Toy, Heath-Jarrow-Morton interest rate model).

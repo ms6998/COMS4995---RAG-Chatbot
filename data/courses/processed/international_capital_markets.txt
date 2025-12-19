@@ -1,0 +1,4 @@
+TITLE: International Capital Markets
+SUBJECT: Intl Finance & Economic Policy
+INSTRUCTOR: 
+DESCRIPTION: This course provides a practitioner’s perspective on how global capital markets operate, focusing on the instruments, institutions, and frameworks that channel capital to companies, households, and governments. Students will explore interest rate and FX swaps, derivatives, credit default swaps, asset-backed securities, and structured finance, alongside tools for interpreting yield curves and understanding credit markets. The course integrates current developments, including monetary policy, inflation trends, and systemic risk, with a close look at how financial actors respond. Unlike Economics of Finance , which emphasizes theory, this course emphasizes institutional function and market behavior. The course is structured to help students think critically and confidently about real-world financial markets

@@ -1,0 +1,4 @@
+TITLE: The Analytics Advantage
+SUBJECT: Decision,risk & Operations Mgt
+INSTRUCTOR: Assaf Zeevi
+DESCRIPTION: This class will focus on how analytics have generated value in a broad range of industries. Each class will be taught by a different faculty member with specific subject matter expertise and will focus on one specific industry and on how it has been transformed through the use of analytics. DROMB8152

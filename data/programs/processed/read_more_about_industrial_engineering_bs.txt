@@ -1,0 +1,22 @@
+Industrial Engineering (BSIE) at Columbia University
+Leading Undergraduate Program in Quantitative Approaches & Modern Methodologies
+Designed to develop the technical skills and intellectual discipline needed to become leaders in industrial engineering and related professions, the Industrial Engineering undergraduate program is distinctive in its emphasis on quantitative, economic, and computer-aided approaches to production and service management problems. We focus on providing an experimental and mathematical problem-formulating and problem-solving framework for industrial engineering work, with a broad foundation in the current ideas, models, and methods of industrial engineering.
+Suggested Electives for the Industrial Engineering Program
+- ORCA E2500: Foundations of Data Science (only if taken by the end of sophomore year)
+- IEOR E4418: Transportation Analytics and Logistics
+- IEOR E4212: Data Analytics and Machine Learning for OR
+- IEOR E4407: Game Theoretic Models for OR
+- IEOR E4507: Healthcare Operations Management
+- IEOR E4520: Applied Systems Engineering
+- IEOR E4525: Machine Learning for OR & FE
+- IEOR E4526: Analytics on the Cloud
+- IEOR E4530 AI, Games, & Markets
+- IEOR E4540: Data Mining for Engineers
+- IEOR E4650: Business Analytics
+- IEOR E4700: Introduction to Financial Engineering
+- IEOR E4711: Global Capital Markets
+- IEME E4200: Human-Centered Design
+- COMS W3203: Discrete Math
+- ECON W4860: Behavioral Finance
+- IEME E4810: Introduction to Humans in Space Flight
+A comprehensive list of electives can be found here. The BSIE program requires 15 Technical Elective credits (including 6 credits of IEOR coursework) and 3 Management Elective credits.

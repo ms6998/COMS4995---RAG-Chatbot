@@ -1,0 +1,4 @@
+TITLE: Economic Development for International A
+SUBJECT: Development And Governance
+INSTRUCTOR: Andrew Simons
+DESCRIPTION: The course has two broad objectives: 1) to explore how economics can be used to understand various facets of development and 2) to provide tools and skills useful in policy work. In the course, we will describe the basic facts surrounding the development process and use economic theory to make sense of these facts and to identify gaps in our understanding. We will also learn about the tools that development economists use to fill in those gaps. These will include analyzing real-world data and thinking in terms of causality and its relevance for policy. Specific modules/topics in the class include: 1) What is Development, 2) Distribution of Income and Human Resources, 3) Randomized Controlled Trials, 4) Growth Models, 5) Trade and Development, 6) Sustainability Topics

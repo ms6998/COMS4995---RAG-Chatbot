@@ -1,0 +1,4 @@
+TITLE: PUBLIC-PRIVATE PARTNERSHIP IN GLOBAL INF
+SUBJECT: Civil Engineering
+INSTRUCTOR: Patrick Foye
+DESCRIPTION: Delivery of infrastructure assets through Public-Private Partnerships (PPP). Value for Money analysis. Project organization. Infrastructure sector characterization. Risk analysis, allocation and mitigation. Monte Carlo methods and Real Options. Project finance and financing instruments. Case studies from transportation, water supply and energy sectors.

@@ -1,0 +1,4 @@
+TITLE: OBSERVATIONAL ASTRONOMY
+SUBJECT: Astronomy
+INSTRUCTOR: David Schiminovich
+DESCRIPTION: Prerequisites: one year of general astronomy Introduction to the basic techniques used in obtaining and analyzing astronomical data. Focus on ground-based methods at optical, infrared, and radio wavelengths. Regular use of the telescope facilities atop the roof of the Pupin Labs and at Harriman Observatory. The radio-astronomy portion consists mostly of computer labs, In research projects, students also work on the analysis of data obtained at National Observatories.

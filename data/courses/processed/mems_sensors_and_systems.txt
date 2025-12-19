@@ -1,0 +1,4 @@
+TITLE: MEMS Sensors and Systems
+SUBJECT: Mechanical Engineering
+INSTRUCTOR: 
+DESCRIPTION: Connects basic MEMS transduction elements to applications by analyzing the analog signal chain, sensor packaging, and sensor integration into larger systems. Underlying concepts of analog instrumentation such as filtering and digitization covered. Hands-on projects involve off-the-shelf sensors and single-board computers to create self-contained sensor systems that demonstrate relevant issues.

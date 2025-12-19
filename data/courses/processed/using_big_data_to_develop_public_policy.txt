@@ -1,0 +1,4 @@
+TITLE: Using Big Data to Develop Public Policy
+SUBJECT: Urban & Social Policy
+INSTRUCTOR: Francesco Brindisi
+DESCRIPTION: This applied course provides students with foundational skills to analyze and interpret publicly available datasets for public policy decision-making. Emphasizing hands-on learning, the course covers data sourcing, cleaning, research design, statistical analysis, and data visualization using Stata. Students will explore real-world challenges across topics such as poverty, education, housing, and public health, culminating in a data-based policy memo developed through collaborative group work.

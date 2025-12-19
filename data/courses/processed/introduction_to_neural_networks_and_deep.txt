@@ -1,0 +1,4 @@
+TITLE: Introduction to Neural Networks and Deep
+SUBJECT: Psychology
+INSTRUCTOR: Nikolaus Kriegeskorte
+DESCRIPTION: This seminar will introduce both the concepts and practical implementation in PyTorch of neural networks and deep learning, with a focus on general principles and examples from vision.

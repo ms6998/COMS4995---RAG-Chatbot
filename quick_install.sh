@@ -6,25 +6,20 @@ echo "PathWise Dependency Quick Install"
 echo "========================================="
 
 echo ""
-echo "Option 1: Use FAISS (recommended, fastest)"
-echo "Option 2: Use ChromaDB (more features)"
-echo "Option 3: Check installed packages"
+echo "Option 1: Use ChromaDB (more features)"
+echo "Option 2: Check installed packages"
 echo ""
 read -p "Select an option (1/2/3): " choice
 
 case $choice in
   1)
-    echo "Installing FAISS option..."
-    pip install sentence-transformers faiss-cpu beautifulsoup4 lxml pypdf pandas tqdm
-    ;;
-  2)
     echo "Installing ChromaDB option..."
     pip install sentence-transformers chromadb beautifulsoup4 lxml pypdf pandas tqdm --only-binary :all:
     ;;
-  3)
+  2)
     echo "Checking installed packages..."
     python << 'PYEOF'
-packages = ['sentence_transformers', 'chromadb', 'faiss', 'pandas', 'pypdf', 'bs4']
+packages = ['sentence_transformers', 'chromadb', 'pandas', 'pypdf', 'bs4']
 for p in packages:
     try:
         __import__(p)

@@ -1,0 +1,4 @@
+TITLE: PRACTICUM IN DATA ANALYSIS II
+SUBJECT: Quant Methods-social Sciences
+INSTRUCTOR: Nicole C Dicrecchio
+DESCRIPTION: This practicum will mimic the typical conditions that students would face in an internship in a large data-intense institution. The practicum will focus on four core elements involved in most internships: • developing the intuition and skills to properly scope ambiguous project ideas; • practicing organizing and accessing a variety of large-scale data sources and formats; • conducting basic and advanced analysis of big data; and • communicating and “productizing” results and findings from the earlier steps, in things like dashboards, reports, interactive graphics, or apps. The practicum will also give students time to reflect on their work, and how it would best translate into corporate, non-profit, start-up and other contexts.

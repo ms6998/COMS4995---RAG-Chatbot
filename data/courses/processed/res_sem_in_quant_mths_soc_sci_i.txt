@@ -1,0 +1,4 @@
+TITLE: RES SEM IN QUANT MTHS-SOC SCI I
+SUBJECT: Quant Methods-social Sciences
+INSTRUCTOR: Sandhya Kajeepeta
+DESCRIPTION: This course is designed to expose students in the QMSS degree program to different methods and practices of social science research. Seminar presentations are given on a wide range of topics by faculty from Columbia and other New York City universities, as well as researchers from private, government, and non-profit settings. QMSS students participate in a weekly seminar. Speakers include faculty from Columbia and other universities, and researchers from the numerous corporate, government, and non-profit settings where quantitative research tools are used. Topics have included: Now-Casting and the Real-Time Data-Flow; Art, Design - Science in Data Visualization; Educational Attainment and School Desegregation: Evidence from Randomized Lotteries; Practical Data Science: North American Oil and Gas Drilling Data.

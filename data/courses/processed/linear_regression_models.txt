@@ -1,0 +1,4 @@
+TITLE: LINEAR REGRESSION MODELS
+SUBJECT: Statistics
+INSTRUCTOR: Yisha Yao
+DESCRIPTION: Prerequisites: STAT GU4204 or the equivalent, and a course in linear algebra. Theory and practice of regression analysis. Simple and multiple regression, testing, estimation, prediction, and confidence procedures, modeling, regression diagnostics and plots, polynomial regression, colinearity and confounding, model selection, geometry of least squares. Extensive use of the computer to analyse data.

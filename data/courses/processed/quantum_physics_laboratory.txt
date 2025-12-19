@@ -1,0 +1,4 @@
+TITLE: QUANTUM PHYSICS LABORATORY
+SUBJECT: Physics
+INSTRUCTOR: Reshmi Mukherjee
+DESCRIPTION: Experiments illustrating phenomenological aspects of the early quantum theory: (i) Hydrogenic Spectra: Balmer Series - Bohr-Sommerfeld Model; (ii) Photoelectric Effect: Millikans Determination of h/e; (iii) Franck-Hertz Experiment; and (iv) Electron Diffraction Phenomena. Substantial preparation required, including written and oral presentations, as well as an interest in developing the knack and intuition of an experimental physicist. This course is best taken concurrently with PHYS BC3006 Quantum Physics.

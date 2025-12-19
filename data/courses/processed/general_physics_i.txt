@@ -1,0 +1,4 @@
+TITLE: GENERAL PHYSICS I
+SUBJECT: Physics
+INSTRUCTOR: Mark Ross-Lonergan
+DESCRIPTION: Prerequisites: some basic background in calculus or be concurrently taking MATH UN1101 Calculus I. The accompanying laboratory is PHYS UN1291-UN1292 The course will use elementary concepts from calculus. The accompanying laboratory is PHYS UN1291 - UN1292. Basic introduction to the study of mechanics, fluids, thermodynamics, electricity, magnetism, optics, special relativity, quantum mechanics, atomic physics, and nuclear physics.

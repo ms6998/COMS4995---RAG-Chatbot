@@ -1,0 +1,4 @@
+TITLE: INTRO TO THE MATH OF FINANCE
+SUBJECT: Mathematics
+INSTRUCTOR: Mikhail Smirnov
+DESCRIPTION: Prerequisites: MATH UN1102 and MATH UN1201 , or their equivalents. Introduction to mathematical methods in pricing of options, futures and other derivative securities, risk management, portfolio management and investment strategies with an emphasis of both theoretical and practical aspects. Topics include: Arithmetic and Geometric Brownian ,motion processes, Black-Scholes partial differential equation, Black-Scholes option pricing formula, Ornstein-Uhlenbeck processes, volatility models, risk models, value-at-risk and conditional value-at-risk, portfolio construction and optimization methods.

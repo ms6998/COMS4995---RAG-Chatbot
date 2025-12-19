@@ -1,0 +1,44 @@
+Operations Research: Analytics (BSOR:A)
+Advanced Quantitative Models, Algorithms, and Data
+The analytics concentration within the operations research program trains students to leverage advanced quantitative models, algorithms, and data for making actionable decisions to improve business operations. Examples include staffing and scheduling at hospitals, ride matching and pricing for on-demand car services, personalized promotions in online retail, and smarter energy consumption.
+Suggested Electives for the Operations Research Analytics Program
+- IEOR 4525 - Machine Learning for FE & OR
+- IEOR 4526 - Analytics on the Cloud
+- IEOR 4540 - Data Mining
+- IEOR 4742 - Deep Learning for OR and FE
+- STAT 4224 - Bayesian Statistics
+- STAT 4221 - Time Series Analysis
+- CSOR 4231 - Analysis of Algorithms
+- ORCS 4200 - Data Driven Decision Modeling
+- ORCS 4529 - Reinforcement Learning
+- ECON 3412 - Introduction to Econometrics
+- APMA 4300 - Computation Math: Intro to Numerical Methods
+- IEOR 3402 - Production & Inventory Planning
+- IEOR 4405 -Scheduling
+- IEOR 4407 - Game Theoretic Models for OR
+- IEOR 4418 - Transportation Analytics & Logistics
+- IEOR 4530 - AI, Games, & Markets
+- IEOR 4601 - Dynamic Pricing & Revenue Mgmt.
+- IEOR 4507 - Healthcare Operations Mgmt.
+- IEOR 4700 - Intro to Financial Engineering
+- IEOR 4108 - Supply Chain Analytics
+- IEOR 4003 - Corporate Finance for Engineers
+- IEOR 4505 - OR in Public Policy
+- IEOR 4506 - Designing Digital Operating Models
+- IEOR 4510 - Project Management
+- IEME 4200 - Human Centered Design and Innovation
+- IEOR 4520 - Applied Systems Engineering
+- IEOR 4711 - Global Capital Markets
+- IEOR 4721 - AI Applications in Finance
+- COMS 3203 - Discrete Math
+- COMS 3261 - Computer Science Theory
+- COMS 3157 - Advanced Programming
+- COMS 4701 - Artificial Intelligence
+- COMS 4705 - Natural Language Processing
+- COMS 4731 - Computer Vision I First Principles
+- ECON 3025 - Financial Economics
+- ECON 4500 - International Trade
+- MATH 2030 - Ordinary Differential Equations
+- MATH 4061 - Intro to Modern Analysis I
+- MATH 4062 - Intro to Modern Analysis II
+A comprehensive list of electives can be found here. The BSOR:A program requires 15 Technical Elective credits (including 6 credits of IEOR coursework) and 3 Management Elective credits.

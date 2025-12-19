@@ -1,0 +1,4 @@
+TITLE: CONTEMPORARY BIOLOGY LAB
+SUBJECT: Biology
+INSTRUCTOR: Joshua M Abrams
+DESCRIPTION: Prerequisite or corequisite: BIOL UN2005 or BIOL UN2401. Contemporary Biology Lab is designed to provide students with hands-on exploration of fundamental and contemporary biological tools and concepts. Activities include in depth study of mammalian anatomy and physiology through dissection and histology, as well as a series of experiments in genetics and molecular biology, with emphasis on data analysis and experimental technique.

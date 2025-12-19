@@ -1,0 +1,4 @@
+TITLE: INTERNATIONAL MACROECONOMICS
+SUBJECT: Economics
+INSTRUCTOR: Stephanie Schmitt-Grohe
+DESCRIPTION: Prerequisites: ECON UN3211 and ECON UN3213. Econ GU4505 is an elective in the economics major. The course develops models for the analysis of the determinants of international capital flows, trade imbalances, and exchange rates. The models are then used as the basis for the discussion of topics such as Global Imbalances, Uncertainty and the Current Account, The Global Saving Glut, Purchasing Power Parity, Sudden Stops, Real Exchange Rates and Productivity, Covered Interest Rate Parity, Uncovered Interest Rate Parity, Borrowing Externalities and Optimal Capital Controls, Overborrowing,  Macroeconomic Adjustment under Flexible and Fixed Exchange Rates,  Twin Deficits, and Balance of Payment Crises.

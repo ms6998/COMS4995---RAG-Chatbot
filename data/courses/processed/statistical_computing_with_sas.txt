@@ -1,0 +1,4 @@
+TITLE: Statistical Computing with SAS
+SUBJECT: Biostatistics
+INSTRUCTOR: Brady Rippon
+DESCRIPTION: This is a Public Health Course. Public Health classes are offered on the Health Services Campus at 168th Street. For more detailed course information, please go to Mailman School of Public Health Courses website at http://www.mailman.hs.columbia.edu/academics/courses

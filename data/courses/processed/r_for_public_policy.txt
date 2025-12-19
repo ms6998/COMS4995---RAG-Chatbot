@@ -1,0 +1,4 @@
+TITLE: R For Public Policy
+SUBJECT: School Of Int & Public Affairs
+INSTRUCTOR: Mike Q Zhu
+DESCRIPTION: MIA and MPA Policy Skills II Core. Priority Registration: MIA and MPA. This 7-week mini-course leads the students into the R world, helps them master the basics, and establishes a platform for future self-study. The course offers students basic programming knowledge and effective data analysis skills in R in the context of public policy-making and policy evaluation. Students will learn how to install R and RStudio, understand and use R data objects, and become familiar with base R and several statistical and graphing packages. The course will also emphasize use cases for R in public policy domains, focusing on cleaning, exploring, and analyzing data.

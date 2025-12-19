@@ -1,0 +1,204 @@
+Doctoral Program in Applied Physics
+We offer Applied Physics doctoral studies in theoretical and experimental plasma physics (fusion and space plasmas); solid state physics (semiconductor, surface, low-dimensional physics, molecular electronics); optical and laser physics (laser interactions with matter), and nuclear science (medical applications)
+Overview
+Doctoral students specialize in one applied physics field.
+- Plasma Physics: theoretical and experimental plasma physics (fusion and space plasmas)
+- Solid State Physics (semiconductor, surface, low-dimensional physics, molecular electronics)
+- Optical and laser physics (laser interactions with matter)
+Students wishing to puruse an MS degree which continues directly into a PhD program, should apply to the MS / PhD Track Program in Applied Physics. Students who have already earned an MS degree should apply to the Doctor of Philosophy (PhD) or the Doctor of Engineering Science (EngScD or DES) degree programs. Financial aid is available for students pursuing a doctorate. Fellowships, scholarships, teaching assistantships, and graduate research assistantships are awarded on a competitive basis.
+For more information, please see the Columbia Engineering Bulletin: Applied Physics (PhD, EngScD)
+Plasma Physics Graduate Specialty
+Columbia, one of the leading university centers for training in plasma physics, offers a graduate program leading to the Master of Science (MS), Master of Philosophy (MPhil), Doctor of Philosophy (PhD) and Doctor of Engineering Science (EngScD or DES) degrees. The program builds a foundation in the science and application of plasma physics and features a specialty in the high-temperature plasma physics needed for controlled fusion energy. Besides a sound basic training in relevant areas of applied physics, students develop expertise in experimental, theoretical, and computational plasma physics. This instruction provides the background needed to conduct research in Columbia University’s Plasma Research Laboratory and in other national plasma research facilities. Since its inception in 1960, the program at Columbia has granted more than 110 doctoral degrees with many of our graduates playing leading roles in all phases of plasma physics, including, in particular, the worldwide program to develop controlled fusion energy.
+Degree Requirements for Master of Science (MS) in Applied Physics
+- 30 points (usually 10 courses) of courses taken for a letter grade with a 3.0 Minimum GPA
+- There are no specific course requirements for this degree, it is tailored to the student’s interests, but will usually include at least 5 core courses with an APPH designator and additional courses with PHYS/ELEN designators or advisor-approved courses from other departments.
+- Students with an interest in Plasma Physics should take the following courses:
+- APPH E4018: Applied physics laboratory (2 pts)
+- APPH E4200: Physics of fluids (3 pts)
+- APPH E4300: Applied electrodynamics (3 pts)
+- APPH E6101: Plasma physics I (3 pts)
+- APPH E6102: Plasma physics II (3 pts)
+- APPH E9142 or APPH E9143, or equivalents taken at another university
+Degree Requirements for Doctor of Philosophy (PhD) in Applied Physics: Plasma Physics
+- Complete requirements for the MS with a 3.0 Minimum GPA (unless a Master’s Degree from another institution has already been earned, in which case students receive 30 points and 2 Residence Units of advanced standing) /li>
+- Complete requirements for the Master of Philosophy (MPhil) Degree
+- Written Qualifying Examination: Courses suggested for preparation at the level of the general, and solid state and optical physics parts of the written qualifying examination are listed in the qualifying examination memorandum.
+- 30 points of courses and/or research (beyond MS) taken for a letter grade with minimum 3.0 GPA: Can be fulfilled with core and related courses of specialization not used for the MS degree as well as research points, but no more than 15 points of research can be applied to this 30 point requirement
+- 6 Residence Units: Students who have earned the MS register for 1 Residence Unit per semester not including summer
+- Oral Exam (usually Spring of 2nd year)
+- Thesis proposal (usually Spring of 3rd year)
+- Ethics requirements: Online ethics course during Fall of 1st, year, attend departmental ethics seminar during Spring of 1st and 2nd years
+- Master of Philosophy Degree awarded
+- Complete Dissertation
+- Successful Defense
+Degree Requirements for Doctor of Engineering Science (EngScD or DES) in Applied Physics: Plasma Physics
+- Complete requirements for the MS with a 3.0 Minimum GPA (unless a Master’s Degree from another institution has already been earned, in which case student receives 30 points and 2 Residence Units of advanced standing)
+- Written Qualifying Examination Courses suggested for preparation at the level of the general and plasma physics parts of the written qualifying examination are listed in the qualifying examination memorandum
+- Ethics requirement Online ethics course during Fall of 1st year, attend departmental ethics seminar during Spring of 1st and 2nd years
+- Oral Exam (usually Spring of 2nd year)
+- 30 points of courses and/or research (beyond MS taken for a letter grade with 3.0 GPA Can be fulfilled with core and related courses of specialization not used for the MS degree as well as research points, but no more than 15 points of research can be applied toward this 30 point requirement
+- 12 points of APAM E9800: Doctoral Research Instruction
+- Thesis proposal (usually Spring of 3rd year)
+- Complete Dissertation
+- Successful Defense
+Core Courses
+- APPH E4018: Applied physics laboratory (2 pts)
+- APPH E4100: Quantum physics of matter (3 pts)
+- APPH E4112: Laser physics (3 pts)
+- APPH E4200: Physics of fluids ( 3 pts)
+- APPH E4300: Applied electrodynamics (3 pts)
+- APPH E4301: Introduction to plasma physics (3 pts)
+- APPH E6101: Plasma physics I (3 pts)
+- APPH E6102: Plasma physics II (3 pts)
+- APPH E9142-E9143: Applied physics seminar (3 pts)
+- APAM E6650: Research project (1-6 pts)
+- APMA E4200: Partial differential equations (3 pts)
+- CHEM G4230: Statistical thermodynamics (4.5 pts)
+- ELEN E6403 or PHYS G6092-G6093: Electromagnetic theory (4.5 pts)
+- PHYS G4003: Advanced mechanics (3 pts)
+Related Courses of Specialization
+- APPH E4110: Modern optics (3 pts)
+- APPH E6110: Laser interactions with matter (3 pts)
+- APPH E4010: Introduction to nuclear science (3 pts)
+- APMA E4204: Functions of a complex variable (3 pts)
+- APMA E6209: Approximation theory (3 pts)
+- APMA E6301: Analytic methods for PDE's (3 pts)
+- APMA E6302: Numerical methods for PDE's (3 pts)
+- APMA E6304: Integral transforms (3 pts)
+- APMA E6901: Special topics in applied math (3 pts)
+- APMA E8308: Asymptotic methods in applied math (3 pts)
+- ASTR G6004: Stellar structure and evolution (3 pts)
+- ASTR G4002: Astrophysics II
+- ELEN E4405: Classical nonlinear optics (3 pts)
+- ELEN E4420: Topics in electromagnetics (3 pts)
+- ELEN E4501: Electromagnetic devices and energy conversion (3 pts)
+- PHYS G4019: Mathematical methods in physics (3 pts)
+- PHYS G6036: Statistical mechanics (4.5 pts)
+- PHYS G6037-G6038: Quantum mechanics (4.5 pts)
+Plasma Physics Faculty
+Allen H. Boozer
+Michael E. Mauel
+Gerald A. Navratil
+Elizabeth Paul
+Carlos Paz-Soldan - AP Academic Program Coordinator
+Research Scientists and External Advisors
+Admitted students may work with scientific advisors external to the applied physics faculty, as long as student secures funding from said faculty. Examples of other researchers or faculty external to the department include:
+Steven Sabbagh, Adjunct Professor & Research Scientist/PPPL
+Solid State & Optical Physics Graduate Specialties
+Solid State Physics Graduate Specialty
+This graduate specialty encompasses the study of the electrical, optical, magnetic, thermal, high-pressure, and ultrafast dynamical properties of solids, with an aim to understanding them in terms of the atomic and electronic structure. The field emphasizes the formation, processing, and properties of thin films, low-dimensional structures—such as one- and two-dimensional electron gases, nanocrystals, surfaces of electronic and optoelectronic interest, and molecules. Facilities include a microelectronics laboratory, high-pressure diamond anvil cells, a molecular beam epitaxy machine, ultrahigh vacuum systems, lasers, equipment for the study of optical properties and transport on the nanoscale, and the instruments in the shared facilities overseen by the Columbia Nano Initiative. There are also significant resources for electrical and optical experimentation at low temperatures and high magnetic fields. Specific course requirements for the solid-state physics doctoral specialization are set with the academic adviser, in consultation with the Committee on Materials Science and Engineering/Solid-State Science and Engineering.
+Optical Physics Graduate Specialty
+This graduate specialty involves a basic training in relevant areas of applied physics with emphasis in quantum mechanics, quantum electronics, and related areas of specialization. Some active areas of research in which the student may concentrate are laser modification of surfaces, optical diagnostics of film processing, inelastic light scattering in nanomaterials, nonlinear optics, ultrafast optoelectronics photonic switching, optical physics of surfaces, and photon integrated circuits. Specific course requirements for the optical and laser physics doctoral specialization are set with the academic adviser.
+Degree Requirements for Master of Science (MS) in Applied Physics
+- 30 points (usually 10 courses) of courses taken for a letter grade with a 3.0 Minimum GPA
+- There are no specific course requirements for this degree, it is tailored to the student’s interests, but will usually include at least 5 core courses with an APPH designator and additional courses with PHYS/ELEN designators or advisor-approved courses from other departments.
+- Students with an interest in Solid State Physics should take the following courses:
+APPH E4018: Applied physics laboratory (2 pts)
+APPH E4112: Laser physics (3 pts)
+ELEN E4301: Introduction to semiconductor devices (3 pts)
+ELEN E6331-2: Principles of semiconductor physics I and II (3 pts)
+MSAE E4206: Electronic and magnetic properties of solids (3 pts) or their equivalent for solid state
+Students with an interest in Optical Physics should take the following courses:
+APPH E4018: Applied physics laboratory (2 pts)
+APPH E4100: Quantum physics of matter (3 pts)
+APPH E4110: Modern optics (3 pts)
+APPH E4112: Laser physics (3 pts)
+APPH E6110: Laser interactions with matter (3 pts)
+ELEN E9402: Seminar in quantum electronics (3 pts) or their equivalent for optical physics
+Degree Requirements for Doctor of Philosophy (PhD) in Applied Physics: Solid State or Optical Physics
+- Complete requirements for the MS with a 3.0 Minimum GPA
+(unless a Master’s Degree from another institution has already been earned, in which case students receive 30 points and 2 Residence Units of advanced standing) - Complete requirements for the Master of Philosophy (MPhil) Degree
+- Written Qualifying Examination
+Courses suggested for preparation at the level of the general, and solid state and optical physics parts of the written qualifying examination are listed in the qualifying examination memorandum. - 30 points of courses and/or research (beyond MS) taken for a letter grade with minimum 3.0 GPA
+Can be fulfilled with core and related courses of specialization not used for the MS degree as well as research points, but no more than 15 points of research can be applied to this 30 point requirement - 6 Residence Units - Students who have earned the MS register for 1 Residence Unit per semester not including summer
+- Oral Exam (usually Spring of 2nd year)
+- Thesis proposal (usually Spring of 3rd year)
+- Ethics requirements
+Online ethics course during Fall of 1st, year, attend departmental ethics seminar during Spring of 1st and 2nd years - Master of Philosophy Degree awarded
+- Written Qualifying Examination
+- Complete Dissertation
+- Successful Defense
+Degree Requirements for Doctor of Engineering Science (EngScD or DES) in Applied Physics: Solid State or Optical Physics
+- Complete requirements for the MSwith a 3.0 Minimum GPA - (unless a Master’s Degree from another institution has already been earned, in which case student receives 30 points of advanced standing)
+- Written Qualifying Examination - Courses suggested for preparation at the level of the general, and solid state and optical physics parts of the written qualifying examination are listed in the qualifying examination memorandum.
+- Ethics requirement - Online ethics course during Fall of 1st year, attend departmental ethics seminar during Spring of 1st and 2nd years
+- Oral Exam (usually Spring of 2nd year)
+- 30 points of courses and/or research (beyond MS taken for a letter grade with 3.0 GPA - Can be fulfilled with core and related courses of specialization not used for the MS degree as well as research points, but no more than 15 points of research can be applied toward this 30 point requirement
+- 12 points of APAM E9800: Doctoral Research Instruction
+- Thesis proposal (usually Spring of 3rd year)
+- Complete Dissertation
+- Successful Defense
+Core Courses
+- APPH E4018: Applied physics laboratory
+- APPH E4100: Quantum physics of matter
+- APPH E4110: Modern optics
+- APPH E4112: Laser physics
+- APPH E6081-6082: Solid state physics, I, II
+- APPH E6110: Laser interactions with matter
+- APAM E6650: Research project
+- CHAP E4120: Statistical mechanics or CHEM G4230: Statistical thermodynamics
+- ELEN E4301: Introduction to semiconductor devices
+- ELEN E4405: Classical nonlinear optics
+- ELEN E4411: Fundamentals of photonics
+- ELEN E6331-6332: Principles of semiconductor physics, I, II
+- ELEN E6412: Lightwave devices
+- ELEN E9402: Seminar in quantum electronics
+- ELEN E9403: Seminar in photonics
+- MSAE E6220: Crystal physics
+- MSAE E6241: Theory of solids
+- PHYS G4018: Physics of the solid state
+- PHYS G4019: Mathematical methods in physics
+- PHYS G6036: Statistical mechanics
+- PHYS G6037-6038: Quantum mechanics
+Related Courses of Specialization
+- APMA E4204: Functions of a complex variable
+- APMA E6301: Analytic methods for PDE's
+- APMA E6302: Numerical analysis of PDE's
+- CHEM G4230: Statistical thermodynamics
+- CHEM G4231: Chemical kinetics
+- CHEM G6222: Quantum chemistry, II
+- CHEM G8223: Quantum chemistry, III
+- ELEN E4401: Wave transmission and fiber optics
+- ELEN E4944: Principles of device microfabrication
+- ELEN E6140: Gallium arsenide materials processing
+- ELEN E6151: Surface physics and analysis of electronic materials
+- ELEN E6331-6332: Principles of semiconductor physics
+- ELEN E6413: Lightwave systems
+- ELEN E6414: Photonic integrated circuits
+- ELEN E9101: Seminar in physical electronics
+- ELEN E9402: Seminar in quantum electronics
+- ELEN E9404: Seminar in lightwave communications
+- MSAE E6090: Nanotechnology
+- MSAE E6221: Introduction to dislocation theory
+- MSAE E6225: Techniques in x-ray and neutron diffraction
+- MSAE E6229: Energy and particle beam processing of materials
+- MSAE E6230: Kinetics of phase transformations
+- MSAE E6240: Impurities and defects in semiconductor materials
+- MSAE E6251: Thin films and layers
+- MSAE E8235: Selected topics in materials science
+- MSAE E8236: Anelastic relaxations in crystals
+- PHYS G8048: Advanced quantum mechanics, II
+- PHYS G8050: Advanced mathematical methods in physics
+- PHYS G8066: Theoretical solid state physics, I
+Solid-State Physics and Optical & Laser Physics Faculty
+William E. Bailey
+Katayun Barmak
+Simon Billinge
+Siu-Wai Chan
+Aravind Devarakonda
+Alexander Gaeta
+Oleg Gang
+James S. Im
+Chris A. Marianetti
+I.C. Noyan
+Latha Venkataraman
+Wen I. Wang, EE & APAM
+Nanfang Yu
+Multidisciplinary and External Advisors
+Admitted students may work with scientific advisors external to the applied physics faculty, as long as student secures funding from said faculty. Examples of other faculty in areas closely related to applied physics include:
+Louis Brus, Chemical Engineering and Chemistry
+Kenneth Eisenthal, Chemistry
+Richard Friesner, Chemistry
+Yasutomo Uemura, Physics
+Advising
+Have a question? Feel free to contact our Student Services Coordinator or reach out to a 1st Year Doctoral Applied Physics Advisor.

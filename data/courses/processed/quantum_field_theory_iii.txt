@@ -1,0 +1,4 @@
+TITLE: QUANTUM FIELD THEORY III
+SUBJECT: Physics
+INSTRUCTOR: Sebastian Mizera
+DESCRIPTION: Advanced topics at the discretion of the instructor, including string theory, supersymmetry and other aspects of beyond-standard-model physics.

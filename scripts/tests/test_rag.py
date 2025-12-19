@@ -19,11 +19,11 @@ def test_requirements_retrieval():
     print("\n" + "="*60)
     print("Testing Degree Requirements Retrieval")
     print("="*60)
-    
+
     # Initialize components
     print("\nInitializing embedder...")
     embedder = EmbeddingGenerator()
-    
+
     print("Connecting to vector store...")
     vector_store = create_vector_store(
         store_type="chroma",
@@ -31,10 +31,10 @@ def test_requirements_retrieval():
         embedding_dim=embedder.embedding_dim,
         persist_directory="./vector_db"
     )
-    
+
     print("Creating retriever...")
     retriever = RAGRetriever(embedder, vector_store, top_k=3)
-    
+
     # Test queries
     test_queries = [
         "What are the core courses for MS in Computer Science?",
@@ -42,13 +42,13 @@ def test_requirements_retrieval():
         "What is the GPA requirement for graduation?",
         "Can I transfer credits from another university?",
     ]
-    
+
     for i, query in enumerate(test_queries, 1):
         print(f"\n--- Query {i} ---")
         print(f"Q: {query}")
-        
+
         results = retriever.retrieve(query, k=3)
-        
+
         if results:
             print(f"\nFound {len(results)} relevant documents:")
             for j, result in enumerate(results, 1):
@@ -58,7 +58,7 @@ def test_requirements_retrieval():
                 print(f"   Text: {result['text'][:150]}...")
         else:
             print("No results found.")
-    
+
     # Test context formatting
     print(f"\n--- Context Formatting Test ---")
     query = test_queries[0]
@@ -73,11 +73,11 @@ def test_professor_ratings():
     print("\n" + "="*60)
     print("Testing Professor Ratings Retrieval")
     print("="*60)
-    
+
     # Initialize components
     print("\nInitializing embedder...")
     embedder = EmbeddingGenerator()
-    
+
     print("Connecting to professor ratings store...")
     vector_store = create_vector_store(
         store_type="chroma",
@@ -85,24 +85,24 @@ def test_professor_ratings():
         embedding_dim=embedder.embedding_dim,
         persist_directory="./vector_db"
     )
-    
+
     print("Creating professor retriever...")
     prof_retriever = ProfessorRatingsRetriever(embedder, vector_store)
-    
+
     # Test courses
     test_courses = ["COMS 4111", "COMS 4701", "IEOR 4150"]
-    
+
     for course_code in test_courses:
         print(f"\n--- {course_code} ---")
         professors = prof_retriever.get_professors_for_course(course_code, k=3)
-        
+
         if professors:
             print(f"Found {len(professors)} professors:")
             for prof in professors:
                 print(f"  • {prof_retriever.format_professor_info(prof)}")
         else:
             print(f"No ratings found for {course_code}")
-    
+
     # Test best professor selection
     print(f"\n--- Best Professors ---")
     for course_code in test_courses:
@@ -116,23 +116,23 @@ def main():
     print("\n" + "="*60)
     print("PathWise RAG System Test")
     print("="*60)
-    
+
     # Check if indices exist
     vector_db_path = Path("./vector_db")
     if not vector_db_path.exists():
         print("\n✗ Error: Vector database not found!")
         print("Please run 'python scripts/build_index.py' first to build the indices.")
         sys.exit(1)
-    
+
     try:
         # Run tests
         test_requirements_retrieval()
         test_professor_ratings()
-        
+
         print("\n" + "="*60)
         print("✓ All tests completed successfully!")
         print("="*60 + "\n")
-        
+
     except Exception as e:
         print(f"\n✗ Error during testing: {e}")
         import traceback

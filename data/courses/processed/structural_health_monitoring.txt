@@ -1,0 +1,4 @@
+TITLE: STRUCTURAL HEALTH MONITORING
+SUBJECT: Engineering Mechanics
+INSTRUCTOR: Raimondo Betti
+DESCRIPTION: Principles of traditional and emerging sensors, data acquisition and signal processing techniques, experimental modal analysis (input-output), operational modal analysis (output-only), model-based diagnostics of structural integrity, data-based diagnostics of structural integrity, long-term monitoring and intelligent maintenance. Lectures and demonstrations, hands-on laboratory experiments.

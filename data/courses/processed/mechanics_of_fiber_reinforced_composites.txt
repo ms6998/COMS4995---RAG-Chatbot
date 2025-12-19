@@ -1,0 +1,4 @@
+TITLE: Mechanics of Fiber-Reinforced Composites
+SUBJECT: Engineering Mechanics
+INSTRUCTOR: Marianna Maiaru
+DESCRIPTION: Overview of composite materials, including history, background, and manufacturing processes. Macro-mechanics: anisotropic elasticity and stress transformation. Micro-mechanics: Rule of Mixture, Composites Cylinder Model (CCM) and other models. Macro-mechanics: Classic Lamination Theory (CLT). Hygrothermal effects, residual stresses, Composite mechanical testing, fabrication. Failure modes and lamina-based failure theories. Bending and Buckling of composite plates. ICME of Composites (nano-, micro-, meso- and macro-scale analysis, experimental validation, process modeling, integration).

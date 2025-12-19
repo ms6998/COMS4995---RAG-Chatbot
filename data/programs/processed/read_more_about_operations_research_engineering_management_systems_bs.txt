@@ -1,0 +1,51 @@
+Operations Research: Engineering Management Systems (BSOR:EMS)
+Merging Technology & Management
+The Engineering Management Systems concentration within the operations research program provides students with an understanding of contemporary technology and management. It is for students who are interested in a technical management background rather than one in a traditional engineering field. Its required courses in industrial engineering and operations research, economics, business, and computer science provide a foundation for dealing with engineering and management systems problems.
+Suggested Electives in Engineering Management Systems
+- ECON V3025: Financial Economics
+- ECON V3265: The Economics of Money and Banking
+- ECON W4251: Industrial Organization
+- ECON G4301: Economic Growth and Development
+- ECON W4321: Economic Development
+- ECON W4370: Political Economy
+- ECON W4400: Labor Economics
+- ECON W4465: Public Economics
+- ECON W4500: International Trade
+- ECON W4505: International Macroeconomics
+- ECON W4625: Economics of the Environment
+- ENGI E4100: Research to Revenue
+- IEME E4200: Human-centered Design & Innovation
+- IEOR E4207: Human Factors: Performance
+- SOCI W3490: Mistakes, Misconduct, Disaster
+- SOCI W3675: Organizing Innovation
+- ORCA 2500: Foundations of Data Science (only if taken by the end of sophomore year)
+- APMA E4300: Introduction to Numerical Models
+- CIEN E4138: Real Estate Finance for Construction Management
+- COMS W3157: Advanced Programming
+- COMS W3203: Discrete Mathematics
+- COMS W3261: Computer Science Theory
+- CSOR E4231: Analysis of Algorithms
+- ECON W4020: Economics of Uncertainty and Information
+- MEIE E4810: Introduction to Humans in Space Flight
+- IEOR E4212: Data Analytics and Machine Learning
+- IEORE 4407: Game Theoretic Models of Operations
+- IEOR E4418: Transportation Analytics and Logistics
+- IEOR E4500: Applications Programming for Financial Engineering
+- IEOR E4505: Operations Research in Public Policy
+- IEOR E4506: Designing Digital Operating Models
+- IEOR E4507: Healthcare Operations Management
+- IEOR E4510: Project Management
+- IEOR E4520: Applied Systems Engineering
+- IEOR E4525: Machine Learning for OR & FE
+- IEOR E4526: Analytics on the Cloud
+- IEOR E4530: AI, Games, and Markets
+- IEOR E4540: Data Mining for Engineers
+- IEOR E4601: Dynamic Pricing and Revenue Management
+- IEOR E4650: Business Analytics
+- IEOR E4700: Introduction to Financial Engineering
+- IEOR E4711: Global Capital Markets
+- MATH V4061: Introduction to Modern Analysis Intro to Modern Analysis, I
+- MATH V4062: Introduction to Modern Analysis Intro to Modern Analysis, II
+- ORCS E4200: Data Driven Decision Modeling
+- ORCS E4529: Reinforcement Learning
+A comprehensive list of electives can be found here. The BSOR:EMS program requires 12 Technical Elective credits (including 6 credits of IEOR coursework) and 6 Management Elective credits.

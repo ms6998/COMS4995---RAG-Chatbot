@@ -1,0 +1,4 @@
+TITLE: SOLID EARTH DYNAMICS
+SUBJECT: Earth & Environmental Sciences
+INSTRUCTOR: Meredith Nettles
+DESCRIPTION: Prerequisites: any 1000-level or 2000-level EESC course; MATH UN1101 Calculus I and PHYS UN1201 General Physics I or their equivalents. Concurrent enrollment in PHYS UN1201 is acceptable with the instructors permission. Properties and processes affecting the evolution and behavior of the solid Earth. This course will focus on the geophysical processes that build mountains and ocean basins, drive plate tectonics, and otherwise lead to a dynamic planet. Topics include heat flow and mantle circulation, earthquakes and seismic waves, gravity, Earths magnetic field, and flow of glaciers and ice sheets.

@@ -1,0 +1,4 @@
+TITLE: TOOLS FOR RISK MANAGEMENT
+SUBJECT: Enterprise Risk Mgmt
+INSTRUCTOR: Barney Baldwin
+DESCRIPTION: Tools for Risk Management examines how risk technology platforms assess risks. These platforms gather, store, and analyze data; and transform that data to actionable information. This course explores how the platforms are implemented, customized, and evaluated. Topics include business requirements specification, data modeling, risk analytics and reporting, systems integration, regulatory issues, visualization, and change processes. Hands-on exercises using selected vendor tools will give students the opportunity to see what these tools can offer.

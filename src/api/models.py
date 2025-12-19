@@ -102,14 +102,13 @@ class HealthResponse(BaseModel):
     """Health check response."""
     status: str = Field(..., description="Service status")
     version: str = Field(..., description="API version")
-    embedder_loaded: bool = Field(..., description="Whether embedder is loaded")
-    vector_store_connected: bool = Field(..., description="Whether vector store is connected")
+    embedder_available: bool = Field(..., description="Whether embedder is loaded")
+    requirements_retriever_available: bool = Field(..., description="Whether requirements retriever is loaded")
+    professor_retriever_available: bool = Field(..., description="Whether professor retriever is loaded")
+    llm_interface_available: bool = Field(..., description="Whether llm interface is loaded")
 
 
 class ErrorResponse(BaseModel):
     """Error response model."""
     error: str = Field(..., description="Error message")
     detail: Optional[str] = Field(None, description="Detailed error information")
-
-
-

@@ -1,0 +1,4 @@
+TITLE: BIOGEOSCIENCE SEMINAR
+SUBJECT: Earth & Environmental Sciences
+INSTRUCTOR: Galen A Mckinley
+DESCRIPTION: The course will focus on reading and discussing recent papers from the primary literature. Students will gain exposure to the primary literature, gain skills in evaluating published research, and acquire presentation experience.  In spring 2026, we will explore modern topics in geoengineering, including carbon capture and storage (CCS) and solar radiation management (SRM). For CCS, strategies to capture CO2 and store it in geologic reservoirs, in the terrestrial biosphere, and in the oceans will be covered. For SRM, recent global modeling studies will be discussed. Some course meetings will include guest lectures from members of the LDEO community and from outside experts.

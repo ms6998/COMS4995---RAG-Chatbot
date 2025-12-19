@@ -1,0 +1,4 @@
+TITLE: MATH MTHDS-FIN PRICE ANALYSIS
+SUBJECT: Mathematics
+INSTRUCTOR: Alexei Chekhlov
+DESCRIPTION: Course covers modern statistical and physical methods of analysis and prediction of financial price data. Methods from statistics, physics and econometrics will be presented with the goal to create and analyze different quantitative investment models.

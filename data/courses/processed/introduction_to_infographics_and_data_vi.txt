@@ -1,0 +1,4 @@
+TITLE: Introduction to Infographics and Data Vi
+SUBJECT: School Of Int & Public Affairs
+INSTRUCTOR: Douglas Williamson
+DESCRIPTION: MIA and MPA Policy Skills II Core. Priority Registration: MIA and MPA. This course introduces students to the principles and practices of data visualization as a powerful tool for interpreting and communicating complex information. As large datasets become increasingly available across sectors, the ability to transform raw data into clear, compelling visuals is essential for insight and decision-making. Students will learn to select appropriate visualization types, apply design techniques that balance form and function, and tell analytic stories with clarity and impact. Through hands-on assignments and guided case studies, the course builds practical skills in visualizing data to uncover patterns, reveal trends, and engage diverse audiences.

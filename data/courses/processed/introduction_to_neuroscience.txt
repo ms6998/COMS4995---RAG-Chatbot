@@ -1,0 +1,4 @@
+TITLE: INTRODUCTION TO NEUROSCIENCE
+SUBJECT: Neuroscience And Behavior
+INSTRUCTOR: Alexis S Hill
+DESCRIPTION: This course is required for all the other courses offered in Neuroscience and Behavior. The course introduces students to the anatomy and physiology of the nervous system. The topics include the biological structure of the nervous system and its different cell types, the basis of the action potential, principles of neurotransmission, neuronal basis of behavior, sleep/wake cycles, and basic aspects of clinical neuroscience.

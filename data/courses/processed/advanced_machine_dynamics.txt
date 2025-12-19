@@ -1,0 +1,4 @@
+TITLE: ADVANCED MACHINE DYNAMICS
+SUBJECT: Mechanical Engineering
+INSTRUCTOR: 
+DESCRIPTION: Review of classical dynamics, including Lagrange’s equations. Analysis of dynamic response of high-speed machine elements and systems, including mass-spring systems, cam-follower systems, and gearing; shock isolation; introduction to gyrodynamics.

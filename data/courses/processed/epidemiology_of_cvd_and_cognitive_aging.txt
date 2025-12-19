@@ -1,0 +1,4 @@
+TITLE: Epidemiology of CVD and Cognitive Aging
+SUBJECT: Epidemiology
+INSTRUCTOR: Adina Zeki Al Hazzouri
+DESCRIPTION: The course will provide an introduction to substantive cardiovascular disease epidemiology as well as important methodological concepts pertaining to risk factor epidemiology. It will also cover new directions and some controversies. Because pathophysiology understanding is important to public health, some necessary aspects will also be covered.

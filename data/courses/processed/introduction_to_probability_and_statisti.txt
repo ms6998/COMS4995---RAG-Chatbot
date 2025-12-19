@@ -1,0 +1,4 @@
+TITLE: INTRODUCTION TO PROBABILITY AND STATISTI
+SUBJECT: Statistics
+INSTRUCTOR: Alberto Gonzalez Sanz
+DESCRIPTION: Prerequisites: Calculus through multiple integration and infinite sums. A calculus-based tour of the fundamentals of probability theory and statistical inference. Probability models, random variables, useful distributions, conditioning, expectations, law of large numbers, central limit theorem, point and confidence interval estimation, hypothesis tests, linear regression. This course replaces SIEO 4150.

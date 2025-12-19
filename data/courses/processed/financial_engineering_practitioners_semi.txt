@@ -1,0 +1,4 @@
+TITLE: Financial Engineering Practitioners Semi
+SUBJECT: Industrl Engin-operations Rsch
+INSTRUCTOR: Ali Hirsa
+DESCRIPTION: Degree requirement for all MSFE first-year students. Topics in Financial Engineering. Past seminar topics include Evolving Financial Intermediation, Measuring and Using Trading Algorithms Effectively, Path-Dependent Volatility, Artificial Intelligence and Data Science in modern financial decision making, Risk-Based Performance Attribution, and Financial Machine Learning. Meets select Monday evenings.

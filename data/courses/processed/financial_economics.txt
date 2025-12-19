@@ -1,0 +1,4 @@
+TITLE: FINANCIAL ECONOMICS
+SUBJECT: Economics
+INSTRUCTOR: Waldo Ojeda
+DESCRIPTION: Prerequisites: ECON UN3211 and ECON UN3213 and STAT UN1201 Institutional nature and economic function of financial markets. Emphasis on both domestic and international markets (debt, stock, foreign exchange, eurobond, eurocurrency, futures, options, and others). Principles of security pricing and portfolio management; the Capital Asset Pricing Model and the Efficient Markets Hypothesis.

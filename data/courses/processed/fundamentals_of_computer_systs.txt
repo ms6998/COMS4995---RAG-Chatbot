@@ -1,0 +1,4 @@
+TITLE: FUNDAMENTALS OF COMPUTER SYSTS
+SUBJECT: Computer Sci-electrical Engin
+INSTRUCTOR: Daniel S Rubenstein
+DESCRIPTION: Fundamentals of computer organization and digital logic. Boolean algebra, Karnaugh maps, basic gates and components, flipflops and latches, counters and state machines, basics of combinational and sequential digital design. Assembly language, instruction sets, ALU’s, single-cycle and multi-cycle processor design, introduction to pipelined processors, caches, and virtual memory.

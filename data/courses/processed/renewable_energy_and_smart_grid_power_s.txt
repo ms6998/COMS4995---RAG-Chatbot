@@ -1,0 +1,4 @@
+TITLE: Renewable Energy and  Smart Grid Power S
+SUBJECT: Electrical Engineering
+INSTRUCTOR: Sindhu Suresh
+DESCRIPTION: Renewable energy such as wind and photovoltaics, hydrogen, electric vehicles, and building decarbonization; geothermal energy and resources; data centers; smart inverters; energy storage technologies; automated metering infrastructure (AMI); distributed energy resource management (DERMS); cybersecurity for the grid.

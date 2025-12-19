@@ -1,0 +1,4 @@
+TITLE: KINETICS OF TRANSFORMATIONS
+SUBJECT: Materials Sci & Engineering
+INSTRUCTOR: James Im
+DESCRIPTION: Review of thermodynamics, irreversible thermodynamics, diffusion in crystals and noncrystalline materials, phase transformations via nucleation and growth, overall transformation analysis and time-temperature-transformation (TTT) diagrams, precipitation, grain growth, solidification, spinodal and order-disorder transformations, martensitic transformation.

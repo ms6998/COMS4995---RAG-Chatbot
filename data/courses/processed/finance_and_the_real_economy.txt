@@ -1,0 +1,4 @@
+TITLE: FINANCE AND THE REAL ECONOMY
+SUBJECT: Economics
+INSTRUCTOR: Matthieu Gomez
+DESCRIPTION: Prerequisites: (Econ UN3211) and (ECON UN3213) and (STAT UN1201) This course uses economic theory and empirical evidence to study the links between financial markets and the real economy. We will consider questions such as: What is the welfare role of finance? How do financial markets affect consumers and firms? How do shocks to the financial system transmit to the real economy? How do financial markets impact inequality?

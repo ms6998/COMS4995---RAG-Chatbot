@@ -1,0 +1,4 @@
+TITLE: ARTIFICIAL INTELLIGENCE
+SUBJECT: Computer Science
+INSTRUCTOR: Adam Lin
+DESCRIPTION: Prior knowledge of Python is recommended. Provides a broad understanding of the basic techniques for building intelligent computer systems. Topics include state-space problem representations, problem reduction and and-or graphs, game playing and heuristic search, predicate calculus, and resolution theorem proving, AI systems and languages for knowledge representation, machine learning and concept formation and other topics such as natural language processing may be included as time permits.

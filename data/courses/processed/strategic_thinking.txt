@@ -1,0 +1,4 @@
+TITLE: Strategic Thinking
+SUBJECT: Political Analytics
+INSTRUCTOR: Michael Ting
+DESCRIPTION: Politics involves a complex interaction of competing interests.  For practitioners, it is crucial to understand how efforts are met with responses, and predicting those responses is critical to designing successful strategies.  Game theory is the formal mathematical analysis of strategic interaction across the social sciences.  This course provides a general theoretical language to the theory of games, examining the intentional thought process of rational actors in strategic environments.  Students will acquire tools for understanding the dynamics that lead to the success of a political campaign or policy-making effort.  Course topics include two-person games, dynamic games, bargaining, and signaling. Students will also examine a variety of cases.

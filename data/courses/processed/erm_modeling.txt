@@ -1,0 +1,4 @@
+TITLE: ERM MODELING
+SUBJECT: Enterprise Risk Mgmt
+INSTRUCTOR: Julian Horky
+DESCRIPTION: Equips students with the basics of risk measurement and simulation using a hands-on approach to ERM modeling. Using industry-standard simulation software, students build systems of risk drivers for finance and insurance companies. Topics include risk correlations, VaR and TVaR, capital modeling, capital allocation, and parameter, process, and model Risk. Students acquire both quantitative experience building models and qualitative appreciation for model weaknesses.

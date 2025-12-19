@@ -1,0 +1,4 @@
+TITLE: IGNORANCE
+SUBJECT: Science
+INSTRUCTOR: Stuart J Firestein
+DESCRIPTION: Scientific knowledge increases at an exponential rate. Curiously ignorance does not similarly decrease.  The basic activity of science is to engage ignorance.  In this course we will examine the scientific approach to ignorance, primarily through invited lectures from working scientists. They will discuss the state of ignorance in their field and in their individual laboratories.  We hope to gain an understanding of the scientific process by analyzing how it approaches what it doesn’t know.

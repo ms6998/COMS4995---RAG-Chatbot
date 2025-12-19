@@ -1,0 +1,4 @@
+TITLE: Intro Social Data Analysis II
+SUBJECT: Sociology
+INSTRUCTOR: Gerard Torrats-Espinosa
+DESCRIPTION: Corequisites: SOCI G4076 This course examines quantitative methods used in sociology. Students will need to have completed SOCI GR4074 before enrolling. The approach taken in this class is highly applied with an emphasis on developing practical skills for data analysis. We begin with a focus on linear models, discussing the regression model as a tool for data description and causal analysis. We then introduce generalized linear models and conclude by reviewing some special applied including weighting and missing data. Data analysis for the course will be conducted in Stata which is available for download from the department of Sociology.

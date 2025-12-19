@@ -1,0 +1,4 @@
+TITLE: FE CONTINUOUS TIME MODELS
+SUBJECT: Industrl Engin-operations Rsch
+INSTRUCTOR: Xunyu Zhou
+DESCRIPTION: This graduate course is only for MS program in FE students. Modeling, analysis, and computation of derivative securities. Applications of stochastic calculus and stochastic differential equations. Numerical techniques: finite-difference, binomial method, and Monte Carlo.

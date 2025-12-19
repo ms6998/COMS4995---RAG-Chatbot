@@ -1,0 +1,4 @@
+TITLE: INTRODUCTION TO STATISTICS
+SUBJECT: Statistics
+INSTRUCTOR: Alex Pijyan
+DESCRIPTION: Prerequisites: intermediate high school algebra. Designed for students in fields that emphasize quantitative methods. Graphical and numerical summaries, probability, theory of sampling distributions, linear regression, analysis of variance, confidence intervals and hypothesis testing. Quantitative reasoning and data analysis. Practical experience with statistical software. Illustrations are taken from a variety of fields. Data-collection/analysis project with emphasis on study designs is part of the coursework requirement.

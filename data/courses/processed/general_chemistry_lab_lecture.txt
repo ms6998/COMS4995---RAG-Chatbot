@@ -1,0 +1,4 @@
+TITLE: GENERAL CHEMISTRY LAB-LECTURE
+SUBJECT: Chemistry
+INSTRUCTOR: Joseph C Ulichny
+DESCRIPTION: Corequisites: CHEM UN1500 Lab lecture for CHEM UN1500 General Chemistry Laboratory.

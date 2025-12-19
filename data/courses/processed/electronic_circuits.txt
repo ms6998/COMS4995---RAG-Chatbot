@@ -1,0 +1,4 @@
+TITLE: ELECTRONIC CIRCUITS
+SUBJECT: Electrical Engineering
+INSTRUCTOR: David G Vallancourt
+DESCRIPTION: Operational amplifier circuits. Diodes and diode circuits. MOS and bipolar junction transistors. Biasing techniques. Small-signal models. Single-stage transistor amplifiers. Analysis and design of CMOS logic gates. A/D and D/A converters.

@@ -1,0 +1,4 @@
+TITLE: RISK REGULATIONS IN FINANCE
+SUBJECT: Enterprise Risk Mgmt
+INSTRUCTOR: Eric Goetz
+DESCRIPTION: This course examines post-financial crisis regulations including Basel III, Fundamental Review of the Trading Book (FRTB), Dodd-Frank Act, Supervision and Regulation Letter 11-7 (SR 11-7), and others.  Case studies will explore the technical details of these new rules; and guest lectures from industry experts will bring the material to life.  Areas of focus include: model risk management, stress testing, derivatives, and insurance.  By the end of this course students will be able to: Evaluate the purpose and limitations of risk regulations in finance. Identify and communicate weaknesses in a financial firm. Communicate with regulators. Understand Recovery and Resolution Plans or “Living Wills” for a financial firm.

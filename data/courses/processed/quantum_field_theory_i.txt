@@ -1,0 +1,4 @@
+TITLE: QUANTUM FIELD THEORY I
+SUBJECT: Physics
+INSTRUCTOR: Frederik Denef
+DESCRIPTION: Lagrangian density formalism of Lorentz scalar, Dirac and Weyl spinor, and vector gauge fields. Action variations, symmetries, conservation laws. Canonical quantization, Fock space. Interacting local fields, temporal evolution. Wicks theorem, propagators, and vertex functions, Feynman rules and diagrams. Scattering S matrix examples with tree level amplitudes. Path quantization. 1-loop intro to renormalization.

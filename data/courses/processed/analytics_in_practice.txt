@@ -1,0 +1,4 @@
+TITLE: ANALYTICS IN PRACTICE
+SUBJECT: Industrl Engin-operations Rsch
+INSTRUCTOR: Hardeep Johar
+DESCRIPTION: MSBA students only. Groups of students will work on real world projects in analytics, focusing on three aspects: identifying client analytical requirements; assembling, cleaning, and organizing data; identifying and implementing analytical techniques (statistics, OR, machine learning); and delivering results in a client-friendly format. Each project has a well-defined goal, comes with sources of data preidentified, and has been structured so that it can be completed in one semester. Client-facing class with numerous on-site client visits; students should keep Fridays clear for this purpose.

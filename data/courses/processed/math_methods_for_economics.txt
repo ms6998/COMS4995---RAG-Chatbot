@@ -1,0 +1,4 @@
+TITLE: MATH METHODS FOR ECONOMICS
+SUBJECT: Economics
+INSTRUCTOR: Sharon Harrison
+DESCRIPTION: Covers basic mathematical methods required for intermediate theory courses and upper level electives in economics, with a strong emphasis on applications. Topics include simultaneous equations, functions, partial differentiation, optimization of functions of more than one variable, constrained optimization, and financial mathematics. This course satisfies the Calculus requirement for the Barnard Economics major. NOTE: students who have previously taken Intermediate Micro Theory (ECON BC3035 or the equivalent) are *not* allowed to take Math Methods for Economics.

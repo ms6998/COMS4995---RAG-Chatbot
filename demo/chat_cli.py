@@ -20,31 +20,31 @@ def chat():
     print("=" * 60)
     print("\nType your questions about MS programs.")
     print("Commands: 'quit' to exit, 'help' for examples\n")
-    
+
     # User profile (optional)
     profile = {
         "program": "MS Computer Science",
         "catalog_year": 2023
     }
-    
+
     while True:
         try:
             question = input("\n🎓 You: ").strip()
-            
+
             if not question:
                 continue
-            
+
             if question.lower() in ['quit', 'exit', 'q']:
                 print("\nGoodbye! 👋")
                 break
-            
+
             if question.lower() == 'help':
                 print_help()
                 continue
-            
+
             # Send to chatbot
             print("🤖 Bot: ", end="", flush=True)
-            
+
             response = requests.post(
                 f"{API_URL}/ask",
                 json={
@@ -53,18 +53,18 @@ def chat():
                 },
                 timeout=30
             )
-            
+
             if response.status_code == 200:
                 data = response.json()
                 print(data['answer'])
-                
+
                 # Show sources
                 if data.get('sources'):
                     print(f"\n   📚 Sources: {len(data['sources'])} documents")
             else:
                 print(f"Error: {response.status_code}")
                 print(response.text)
-        
+
         except requests.exceptions.ConnectionError:
             print("\n❌ Error: Cannot connect to chatbot backend!")
             print("   Make sure the server is running:")
@@ -108,14 +108,14 @@ def test_connection():
 def main():
     """Main function."""
     print("Checking server connection...")
-    
+
     if not test_connection():
         print("\n❌ Cannot connect to chatbot backend!")
         print("\nPlease start the server first:")
         print("  python scripts/start_server.py")
         print("\nThen run this script again.")
         sys.exit(1)
-    
+
     print()
     chat()
 
