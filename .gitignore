@@ -38,6 +38,7 @@ venv/
 # Environment variables
 .env
 .env.local
+config.py
 
 # Data files
 data/raw/*
