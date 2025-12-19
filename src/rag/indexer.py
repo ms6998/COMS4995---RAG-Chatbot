@@ -62,16 +62,37 @@ class DocumentIndexer:
 
         all_chunks = []
 
-        # Process all documents
+        # Process all documents (support file or directory)
         for doc_info in tqdm(documents, desc="Processing documents"):
-            chunks = self.processor.process_degree_requirement_doc(
-                file_path=doc_info["file_path"],
-                program=doc_info["program"],
-                degree=doc_info["degree"],
-                catalog_year=doc_info["catalog_year"],
-                source_url=doc_info.get("source_url", "")
-            )
-            all_chunks.extend(chunks)
+            raw_path = Path(doc_info["file_path"])
+            file_paths = []
+
+            if raw_path.is_dir():
+                # adjust patterns as needed
+                for ext in ("*.pdf", "*.txt", "*.md"):
+                    file_paths.extend(sorted(raw_path.rglob(ext)))
+            else:
+                file_paths = [raw_path]
+
+            if not file_paths:
+                logger.warning(f"No files found for path: {raw_path}")
+                continue
+
+            for fp in file_paths:
+                try:
+                    chunks = self.processor.process_degree_requirement_doc(
+                        file_path=str(fp),
+                        program=doc_info.get("program", ""),
+                        degree=doc_info.get("degree", ""),
+                        catalog_year=doc_info.get("catalog_year"),
+                        source_url=doc_info.get("source_url", "")
+                    )
+                    if chunks:
+                        all_chunks.extend(chunks)
+                    else:
+                        logger.debug(f"No chunks produced for file: {fp}")
+                except Exception as e:
+                    logger.exception(f"Error processing {fp}: {e}")
 
         if not all_chunks:
             logger.warning("No chunks generated from documents")
