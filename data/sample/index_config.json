@@ -1,0 +1,35 @@
+{
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "chunk_size": 600,
+  "chunk_overlap": 100,
+  "vector_db": {
+    "type": "chroma",
+    "persist_directory": "./vector_db"
+  },
+  "degree_requirements": {
+    "collection_name": "degree_requirements",
+    "documents": [
+      {
+        "file_path": "data/sample/ms_cs_requirements.txt",
+        "program": "MS Computer Science",
+        "degree": "MS",
+        "catalog_year": 2023,
+        "source_url": "https://www.cs.columbia.edu/education/ms/"
+      },
+      {
+        "file_path": "data/sample/ms_ds_requirements.txt",
+        "program": "MS Data Science",
+        "degree": "MS",
+        "catalog_year": 2023,
+        "source_url": "https://datascience.columbia.edu/education/programs/"
+      }
+    ]
+  },
+  "professor_ratings": {
+    "collection_name": "professor_ratings",
+    "ratings_file": "data/sample/prof_ratings.csv"
+  }
+}
+
+
+

@@ -1,0 +1,168 @@
+MS Data Science - Degree Requirements (2023 Catalog)
+
+Program Overview:
+The Master of Science in Data Science is a 30-credit program that combines statistical methodology, computational thinking, and real-world applications. The program prepares students for careers as data scientists in industry, government, and academia.
+
+Core Courses (15 credits):
+All students must complete the following FIVE core courses:
+
+1. COMS 4721 Machine Learning for Data Science (3 credits)
+   Introduction to supervised and unsupervised learning methods
+
+2. STAT 5702 Exploratory Data Analysis and Visualization (3 credits)
+   Statistical methods and visualization techniques
+
+3. COMS 4995 Applied Machine Learning (3 credits)
+   Practical implementation of ML algorithms
+
+4. IEOR 4540 Data Mining (3 credits)
+   Techniques for discovering patterns in large datasets
+
+5. STAT 5703 Statistical Inference and Modeling (3 credits)
+   Foundation in statistical theory and methods
+
+Elective Requirements (12 credits):
+Students must complete 12 credits of electives chosen from approved courses in:
+- Computer Science (COMS)
+- Statistics (STAT)
+- Industrial Engineering (IEOR)
+- Electrical Engineering (ELEN)
+
+Recommended Electives:
+Computer Science:
+- COMS 4111 Introduction to Databases
+- COMS 4705 Natural Language Processing
+- COMS 4771 Machine Learning
+- COMS 4995 Deep Learning
+
+Statistics:
+- STAT 5704 Linear Regression Models
+- STAT 5705 Generalized Linear Models
+- STAT 5706 Time Series Analysis
+
+Industrial Engineering:
+- IEOR 4510 Project Management
+- IEOR 4650 Business Analytics
+- IEOR 4742 Deep Learning
+
+At least 6 credits must be at the 6000-level or above.
+
+Capstone Project (3 credits):
+All students must complete a capstone project:
+- STAT 5293 Data Science Capstone (3 credits)
+
+The capstone involves:
+- Working with real-world data from industry partners
+- Team-based project (3-4 students)
+- Final presentation and written report
+- Completed in final semester
+
+Prerequisites:
+Students should have background in:
+- Calculus and Linear Algebra (equivalent to MATH 1201-1202, MATH 2010)
+- Probability and Statistics (STAT 1001 or equivalent)
+- Programming (Python preferred, or R, Java, C++)
+- Data Structures (helpful but not required)
+
+Deficiency Courses:
+If prerequisites are not met, students may need to take:
+- STAT 4001 Introduction to Probability
+- COMS 4156 Data Structures in Python
+- MATH 2015 Linear Algebra and Applications
+
+These do NOT count toward the 30-credit requirement.
+
+Tracks:
+Students can specialize in one of three tracks:
+
+Computational Track:
+Focus on algorithms, systems, and scalability
+Required courses:
+- COMS 4111 Databases
+- COMS 4121 Computer Systems for Data Science
+- Plus 2 computational electives
+
+Statistical Track:
+Focus on statistical theory and inference
+Required courses:
+- STAT 5704 Linear Regression
+- STAT 5705 Generalized Linear Models
+- Plus 2 statistical electives
+
+Application Track:
+Focus on domain-specific applications
+Required courses:
+- Choose domain: Finance, Healthcare, Social Science, etc.
+- Complete 4 electives in chosen domain
+- Examples: Financial Analytics, Health Analytics, Text Analytics
+
+Academic Requirements:
+- Minimum cumulative GPA: 3.0
+- No more than one grade below B- in core courses
+- All courses must be taken for a letter grade (no pass/fail)
+
+Program Policies:
+
+Time to Completion:
+- Full-time: 3-4 semesters (18 months typical)
+- Part-time: Up to 5 years
+
+Course Load:
+- Full-time: 9-15 credits per semester
+- Part-time: 6-8 credits per semester
+- Summer: Optional, 3-6 credits
+
+Transfer Credits:
+- Maximum 6 credits may be transferred
+- Must be graduate-level courses
+- Grade of B or better required
+- Requires departmental approval
+
+Academic Standing:
+Students must maintain:
+- Cumulative GPA ≥ 3.0
+- Satisfactory academic progress
+- Completion of core courses within first two semesters
+
+Professional Development:
+All students are encouraged to:
+- Attend Data Science Institute seminars
+- Participate in industry networking events
+- Complete internship (optional, summer between years)
+- Join data science student organizations
+
+Graduation Requirements Summary:
+☑ 30 credits total
+☑ 15 credits of core courses (all 5 required)
+☑ 12 credits of electives (6 at 6000-level)
+☑ 3 credits capstone project
+☑ Cumulative GPA ≥ 3.0
+☑ Completed within time limit
+
+Resources:
+Data Science Institute
+Columbia University
+8th Floor, Northwest Corner Building
+550 West 120th Street
+New York, NY 10027
+
+Website: https://datascience.columbia.edu
+Email: datascience@columbia.edu
+Phone: (212) 854-8753
+
+Academic Advising:
+Walk-in hours: Tuesday and Thursday, 2-4pm
+Or by appointment: advising@datascience.columbia.edu
+
+Career Services:
+The Data Science Institute offers:
+- Resume reviews
+- Interview preparation
+- Industry connections
+- Job placement assistance
+
+Last Updated: September 2023
+Catalog Year: 2023-2024
+
+
+
