@@ -35,14 +35,21 @@ class LLMInterface:
 class GeminiInterface(LLMInterface):
     """Interface for Google Gemini models using the unified google-genai SDK."""
 
-    def __init__(self, api_key: str, model: str = "gemini-2.5-pro"):
+    def __init__(self, api_key: str, model: str = "models/gemini-2.5-pro"):
         """
         Initialize Gemini interface.
         """
         try:
             from google import genai
+
             # The new SDK uses a Client object
             self.client = genai.Client(api_key=api_key)
+
+            # List available models
+            logger.info("Available Gemini models:")
+            for m in list(self.client.models.list()):
+                logger.info(f"  {m.name}")
+
             self.model_id = model
             logger.info(f"Initialized Gemini interface with model: {model}")
         except ImportError:
@@ -66,14 +73,14 @@ class GeminiInterface(LLMInterface):
             history = []
 
             for msg in messages:
-                if msg['role'] == 'system':
-                    system_instruction = msg['content']
+                if msg["role"] == "system":
+                    system_instruction = msg["content"]
                 else:
-                    # The new SDK expects role to be 'user' or 'model'
-                    role = 'user' if msg['role'] == 'user' else 'model'
+                    # The new SDK expects role to be "user" or "model"
+                    role = "user" if msg["role"] == "user" else "model"
                     history.append(types.Content(
                         role=role,
-                        parts=[types.Part.from_text(text=msg['content'])]
+                        parts=[types.Part.from_text(text=msg["content"])]
                     ))
 
             # Modern configuration using GenerateContentConfig
@@ -156,13 +163,17 @@ def create_llm_interface(
     p = provider.lower()
     if p == 'openai':
         return OpenAIInterface(api_key, model or "gpt-4o")
+
     elif p == 'gemini':
         # Removed the 'models/' prefix requirement as the SDK handles it
-        return GeminiInterface(api_key, model or "gemini-1.5-pro")
+        return GeminiInterface(api_key, model or "models/gemini-2.5-pro")
+
     elif p == 'anthropic':
         from anthropic_interface import AnthropicInterface
+
         return AnthropicInterface(api_key, model or "claude-3-5-sonnet-latest")
     else:
+
         raise ValueError(f"Unknown provider: {provider}")
 
 

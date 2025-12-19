@@ -196,11 +196,11 @@ async def _startup_event(*args, **kwargs) -> None:
     )
 
     # Initialize LLM
+    # TODO: do not default to Gemini here?
     logger.info(f"Initializing LLM: {LLM_MODEL}")
     llm_interface = create_llm_interface(
         provider="gemini",
         api_key=GEMINI_API_KEY,
-        model=LLM_MODEL
     )
 
     logger.info("PathWise RAG system initialized successfully!")
