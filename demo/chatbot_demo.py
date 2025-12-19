@@ -17,7 +17,7 @@ def main():
     print("="*60)
     print("PathWise Chatbot - LangChain RAG Demo")
     print("="*60)
-    
+
     # Check API key
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
@@ -26,7 +26,7 @@ def main():
         print("  export OPENAI_API_KEY='your-key-here'")
         print("\nOr create config.py with your key")
         sys.exit(1)
-    
+
     # Initialize RAG
     print("\nInitializing RAG system...")
     try:
@@ -34,27 +34,27 @@ def main():
     except Exception as e:
         print(f"❌ Error initializing RAG: {e}")
         sys.exit(1)
-    
+
     print("\n✅ Chatbot ready!")
     print("\nType your questions (or 'quit' to exit, 'help' for examples)")
     print("="*60)
-    
+
     while True:
         try:
             print("\n🎓 You: ", end="")
             question = input().strip()
-            
+
             if not question:
                 continue
-            
+
             if question.lower() in ['quit', 'exit', 'q']:
                 print("\nGoodbye! 👋")
                 break
-            
+
             if question.lower() == 'help':
                 print_examples()
                 continue
-            
+
             # Detect query type
             if any(word in question.lower() for word in ['professor', 'teacher', 'instructor', 'rating']):
                 query_type = "professor"
@@ -62,17 +62,17 @@ def main():
                 query_type = "program"
             else:
                 query_type = "general"
-            
+
             # Get answer
             print("\n🤖 PathWise: ", end="", flush=True)
-            
+
             result = rag.answer_question(question, query_type=query_type)
             print(result['answer'])
-            
+
             # Show sources
             if result.get('sources'):
                 print(f"\n   📚 {result['num_sources']} sources used")
-        
+
         except KeyboardInterrupt:
             print("\n\nGoodbye! 👋")
             break

@@ -22,7 +22,7 @@ def test_health():
 def test_ask():
     """Test ask endpoint."""
     print("\n=== Testing /ask ===")
-    
+
     request_data = {
         "question": "What are the core courses for MS in Computer Science?",
         "user_profile": {
@@ -33,16 +33,16 @@ def test_ask():
         },
         "top_k": 5
     }
-    
+
     print(f"Request: {json.dumps(request_data, indent=2)}")
-    
+
     response = requests.post(
         f"{BASE_URL}/ask",
         json=request_data
     )
-    
+
     print(f"\nStatus: {response.status_code}")
-    
+
     if response.status_code == 200:
         data = response.json()
         print(f"\nQuestion: {data['question']}")
@@ -53,7 +53,7 @@ def test_ask():
             print(f"     {source['text'][:100]}...")
     else:
         print(f"Error: {response.text}")
-    
+
     return response.status_code == 200
 
 
@@ -90,7 +90,7 @@ def test_professors():
 def test_plan():
     """Test plan endpoint."""
     print("\n=== Testing /plan ===")
-    
+
     request_data = {
         "user_profile": {
             "program": "MS Computer Science",
@@ -101,16 +101,16 @@ def test_plan():
         },
         "num_semesters": 3
     }
-    
+
     print(f"Request: {json.dumps(request_data, indent=2)}")
-    
+
     response = requests.post(
         f"{BASE_URL}/plan",
         json=request_data
     )
-    
+
     print(f"\nStatus: {response.status_code}")
-    
+
     if response.status_code == 200:
         data = response.json()
         print(f"\nExplanation: {data['explanation'][:200]}...")
@@ -125,7 +125,7 @@ def test_plan():
             print(f"  - {note}")
     else:
         print(f"Error: {response.text}")
-    
+
     return response.status_code == 200
 
 
@@ -136,7 +136,7 @@ def main():
     print("PathWise API Test Suite")
     print("="*60)
     print("\nMake sure the server is running: python scripts/start_server.py")
-    
+
     tests = [
         ("Health Check", test_health),
         ("Question Answering", test_ask),

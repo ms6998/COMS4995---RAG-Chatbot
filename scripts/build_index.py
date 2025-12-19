@@ -20,16 +20,16 @@ def main():
     else:
         # Use default config
         config_path = "data/sample/index_config.json"
-    
+
     if not Path(config_path).exists():
         print(f"Error: Config file not found: {config_path}")
         print(f"\nUsage: python {sys.argv[0]} [config_file]")
         print(f"Example: python {sys.argv[0]} data/sample/index_config.json")
         sys.exit(1)
-    
+
     print(f"Building indices from config: {config_path}")
     print("=" * 60)
-    
+
     try:
         build_indices_from_config(config_path)
         print("\n" + "=" * 60)

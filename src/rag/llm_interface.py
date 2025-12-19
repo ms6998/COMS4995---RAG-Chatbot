@@ -47,7 +47,7 @@ class GeminiInterface(LLMInterface):
             logger.info(f"Initialized Gemini interface with model: {model}")
         except ImportError:
             raise ImportError("google-genai package not installed. Run: pip install google-genai")
-    
+
     def generate(
         self,
         messages: List[Dict[str, str]],
@@ -99,7 +99,7 @@ class GeminiInterface(LLMInterface):
 
 class PromptTemplate:
     """Template for building prompts."""
-    
+
     DEGREE_QA_SYSTEM = """You are PathWise, an academic advisor...""" # Rest of the string
     PLANNING_SYSTEM = """You are PathWise, a planning assistant...""" # Rest of the string
 
@@ -122,7 +122,7 @@ class PromptTemplate:
 
 class OpenAIInterface(LLMInterface):
     """Interface for OpenAI models."""
-    
+
     def __init__(self, api_key: str, model: str = "gpt-4"):
         try:
             from openai import OpenAI
@@ -131,7 +131,7 @@ class OpenAIInterface(LLMInterface):
             logger.info(f"Initialized OpenAI interface with model: {model}")
         except ImportError:
             raise ImportError("openai package not installed. Run: pip install openai")
-    
+
     def generate(self, messages, temperature=0.3, max_tokens=2000) -> str:
         try:
             response = self.client.chat.completions.create(

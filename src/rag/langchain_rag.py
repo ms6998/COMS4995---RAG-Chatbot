@@ -18,28 +18,28 @@ from langchain.schema.output_parser import StrOutputParser
 
 class SimpleVectorStore:
     """Simple vector store wrapper for LangChain."""
-    
+
     def __init__(self, index_dir: str):
         """
         Load a simple numpy-based vector index.
-        
+
         Args:
             index_dir: Directory containing the vector index
         """
         index_path = Path(index_dir)
-        
+
         self.embeddings = np.load(index_path / "embeddings.npy")
-        
+
         with open(index_path / "texts.pkl", 'rb') as f:
             self.texts = pickle.load(f)
-        
+
         with open(index_path / "metadata.pkl", 'rb') as f:
             self.metadatas = pickle.load(f)
-        
+
         print(f"✅ Loaded vector store from {index_dir}")
         print(f"   Documents: {len(self.texts)}")
         print(f"   Embedding dim: {self.embeddings.shape[1]}")
-    
+
     def similarity_search(
         self,
         query_embedding: np.ndarray,
@@ -48,12 +48,12 @@ class SimpleVectorStore:
     ) -> List[Document]:
         """
         Search for similar documents.
-        
+
         Args:
             query_embedding: Query embedding vector
             k: Number of results
             filter_dict: Optional metadata filters
-            
+
         Returns:
             List of LangChain Document objects
         """
@@ -61,21 +61,21 @@ class SimpleVectorStore:
         query_norm = query_embedding / np.linalg.norm(query_embedding)
         doc_norms = self.embeddings / np.linalg.norm(self.embeddings, axis=1, keepdims=True)
         similarities = np.dot(doc_norms, query_norm)
-        
+
         # Get top-k indices
         top_indices = np.argsort(similarities)[::-1]
-        
+
         # Apply filters if provided
         results = []
         for idx in top_indices:
             metadata = self.metadatas[idx]
-            
+
             # Check filters
             if filter_dict:
                 match = all(metadata.get(k) == v for k, v in filter_dict.items())
                 if not match:
                     continue
-            
+
             # Create LangChain Document
             doc = Document(
                 page_content=self.texts[idx],
@@ -85,10 +85,10 @@ class SimpleVectorStore:
                 }
             )
             results.append(doc)
-            
+
             if len(results) >= k:
                 break
-        
+
         return results
 
 
@@ -96,7 +96,7 @@ class PathWiseRAG:
     """
     PathWise RAG system using LangChain.
     """
-    
+
     def __init__(
         self,
         openai_api_key: str,
@@ -107,7 +107,7 @@ class PathWiseRAG:
     ):
         """
         Initialize PathWise RAG system.
-        
+
         Args:
             openai_api_key: OpenAI API key
             professor_db_path: Path to professor vector database
@@ -116,27 +116,27 @@ class PathWiseRAG:
             temperature: LLM temperature
         """
         print("Initializing PathWise RAG with LangChain...")
-        
+
         # Set API key
         os.environ['OPENAI_API_KEY'] = openai_api_key
-        
+
         # Load vector stores
         self.prof_store = SimpleVectorStore(professor_db_path)
         self.programs_store = SimpleVectorStore(programs_db_path)
-        
+
         # Initialize LLM
         self.llm = ChatOpenAI(
             model=model_name,
             temperature=temperature,
             api_key=openai_api_key
         )
-        
+
         # Initialize embeddings (for queries)
         from sentence_transformers import SentenceTransformer
         self.embedder = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
-        
+
         print("✅ PathWise RAG initialized")
-    
+
     def retrieve_context(
         self,
         query: str,
@@ -145,18 +145,18 @@ class PathWiseRAG:
     ) -> List[Document]:
         """
         Retrieve relevant context for a query.
-        
+
         Args:
             query: User query
             query_type: 'professor', 'program', or 'general'
             k: Number of documents to retrieve
-            
+
         Returns:
             List of relevant documents
         """
         # Generate query embedding
         query_embedding = self.embedder.encode(query)
-        
+
         # Choose appropriate database
         if query_type == "professor":
             docs = self.prof_store.similarity_search(query_embedding, k=k)
@@ -167,27 +167,27 @@ class PathWiseRAG:
             prof_docs = self.prof_store.similarity_search(query_embedding, k=k//2)
             prog_docs = self.programs_store.similarity_search(query_embedding, k=k//2)
             docs = prof_docs + prog_docs
-        
+
         return docs
-    
+
     def format_context(self, docs: List[Document]) -> str:
         """Format retrieved documents as context string."""
         if not docs:
             return "No relevant information found."
-        
+
         context_parts = []
         for i, doc in enumerate(docs, 1):
             source = doc.metadata.get('source', 'Unknown')
             similarity = doc.metadata.get('similarity', 0)
-            
+
             context_parts.append(
                 f"[Source {i}: {source}]\n"
                 f"{doc.page_content}\n"
                 f"[Relevance: {similarity:.3f}]"
             )
-        
+
         return "\n\n---\n\n".join(context_parts)
-    
+
     def answer_question(
         self,
         question: str,
@@ -196,23 +196,23 @@ class PathWiseRAG:
     ) -> Dict[str, Any]:
         """
         Answer a question using RAG.
-        
+
         Args:
             question: User question
             query_type: Type of query
             k: Number of context documents
-            
+
         Returns:
             Dictionary with answer and sources
         """
         print(f"\n🔍 Processing question: {question}")
-        
+
         # Retrieve context
         docs = self.retrieve_context(question, query_type=query_type, k=k)
         context = self.format_context(docs)
-        
+
         print(f"   Retrieved {len(docs)} relevant documents")
-        
+
         # Build prompt
         prompt_template = ChatPromptTemplate.from_messages([
             ("system", """You are PathWise, an intelligent academic advisor for Columbia Engineering programs.
@@ -234,7 +234,7 @@ Question: {question}
 
 Please provide a helpful answer based on the context above. Include source citations.""")
         ])
-        
+
         # Create RAG chain
         rag_chain = (
             {
@@ -245,13 +245,13 @@ Please provide a helpful answer based on the context above. Include source citat
             | self.llm
             | StrOutputParser()
         )
-        
+
         # Generate answer
         print("   Generating answer with LLM...")
         answer = rag_chain.invoke(question)
-        
+
         print("   ✅ Answer generated")
-        
+
         return {
             "question": question,
             "answer": answer,
@@ -264,7 +264,7 @@ Please provide a helpful answer based on the context above. Include source citat
             ],
             "num_sources": len(docs)
         }
-    
+
     def find_best_professors(
         self,
         course_name: str = None,
@@ -273,23 +273,23 @@ Please provide a helpful answer based on the context above. Include source citat
     ) -> List[Dict[str, Any]]:
         """
         Find best-rated professors.
-        
+
         Args:
             course_name: Optional course name to search for
             min_rating: Minimum rating threshold
             k: Number of results
-            
+
         Returns:
             List of professor information
         """
         query = f"highly rated professors {course_name}" if course_name else "best professors"
-        
+
         # Get query embedding
         query_embedding = self.embedder.encode(query)
-        
+
         # Search professor database
         docs = self.prof_store.similarity_search(query_embedding, k=k*2)
-        
+
         # Filter by rating
         results = []
         for doc in docs:
@@ -301,15 +301,15 @@ Please provide a helpful answer based on the context above. Include source citat
                     'course': doc.metadata.get('course_code', 'N/A'),
                     'text': doc.page_content
                 })
-            
+
             if len(results) >= k:
                 break
-        
+
         # Sort by rating
         results.sort(key=lambda x: x['rating'], reverse=True)
-        
+
         return results
-    
+
     def generate_degree_plan(
         self,
         program: str,
@@ -319,28 +319,28 @@ Please provide a helpful answer based on the context above. Include source citat
     ) -> Dict[str, Any]:
         """
         Generate a degree plan using RAG.
-        
+
         Args:
             program: Program name (e.g., "MS Computer Science")
             completed_courses: List of completed course codes
             target_semesters: Number of semesters to plan
             prefer_high_rated: Whether to prefer high-rated professors
-            
+
         Returns:
             Dictionary with plan and recommendations
         """
         print(f"\n📅 Generating plan for: {program}")
-        
+
         # Retrieve program requirements
         req_query = f"degree requirements courses for {program}"
         req_docs = self.retrieve_context(req_query, query_type="program", k=8)
         req_context = self.format_context(req_docs)
-        
+
         # Get professor ratings
         prof_query = f"professors teaching courses"
         prof_docs = self.retrieve_context(prof_query, query_type="professor", k=10)
         prof_context = self.format_context(prof_docs)
-        
+
         # Build planning prompt
         prompt_template = ChatPromptTemplate.from_messages([
             ("system", """You are PathWise, an academic planning assistant.
@@ -375,10 +375,10 @@ Professor Ratings:
 
 Please create a personalized course plan.""")
         ])
-        
+
         # Generate plan
         plan_chain = prompt_template | self.llm | StrOutputParser()
-        
+
         plan = plan_chain.invoke({
             "program": program,
             "completed": ", ".join(completed_courses) if completed_courses else "None",
@@ -387,9 +387,9 @@ Please create a personalized course plan.""")
             "requirements": req_context[:2000],  # Limit context size
             "professors": prof_context[:2000]
         })
-        
+
         print("   ✅ Plan generated")
-        
+
         return {
             "program": program,
             "plan": plan,
@@ -405,11 +405,11 @@ def create_pathwise_rag(
 ) -> PathWiseRAG:
     """
     Create a PathWise RAG instance.
-    
+
     Args:
         openai_api_key: OpenAI API key
         model_name: LLM model name
-        
+
     Returns:
         PathWiseRAG instance
     """
@@ -423,38 +423,38 @@ if __name__ == "__main__":
     # Example usage
     print("PathWise LangChain RAG Example")
     print("="*60)
-    
+
     # Check for API key
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         print("\n❌ Please set OPENAI_API_KEY environment variable")
         print("   export OPENAI_API_KEY='your-key-here'")
         sys.exit(1)
-    
+
     # Initialize RAG
     rag = create_pathwise_rag(api_key, model_name="gpt-3.5-turbo")
-    
+
     # Test question answering
     print("\n" + "="*60)
     print("TEST 1: Question Answering")
     print("="*60)
-    
+
     result = rag.answer_question(
         "What are the requirements for MS in Computer Science?",
         query_type="program"
     )
-    
+
     print(f"\nQuestion: {result['question']}")
     print(f"\nAnswer:\n{result['answer']}")
     print(f"\nSources used: {result['num_sources']}")
-    
+
     # Test professor search
     print("\n" + "="*60)
     print("TEST 2: Find Best Professors")
     print("="*60)
-    
+
     profs = rag.find_best_professors(min_rating=4.5, k=5)
-    
+
     print(f"\nTop {len(profs)} Professors (rating >= 4.5):")
     for i, prof in enumerate(profs, 1):
         print(f"{i}. {prof['professor']}: {prof['rating']:.2f}/5.0")

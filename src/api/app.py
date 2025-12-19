@@ -128,7 +128,7 @@ async def _startup_event(*args, **kwargs) -> None:
     """
     global embedder, requirements_retriever, professor_retriever, llm_interface
     logger.info("Initializing PathWise RAG system...")
-        
+
     # Load configuration
     # This can be handled better and more consistently
     try:
@@ -168,7 +168,7 @@ async def _startup_event(*args, **kwargs) -> None:
     # Initialize embedder
     logger.info(f"Loading embedding model: {EMBEDDING_MODEL}")
     embedder = EmbeddingGenerator(EMBEDDING_MODEL)
-    
+
     # Initialize vector stores
     logger.info("Connecting to vector stores...")
     requirements_store = create_vector_store(
@@ -182,7 +182,7 @@ async def _startup_event(*args, **kwargs) -> None:
         collection_name=COLLECTION_NAME_PROFESSORS,
         persist_directory=VECTOR_DB_PATH
     )
-    
+
     # Initialize retrievers
     requirements_retriever = RAGRetriever(
         embedder=embedder,
@@ -284,10 +284,10 @@ async def info_retrievers():
 async def _ask_question(request: QuestionRequest, *args, **kwargs):
     """
     Answer a question about degree requirements.
-    
+
     Args:
         request: Question request with user query and optional profile
-        
+
     Returns:
         Answer with sources and citations
     """
@@ -338,7 +338,7 @@ async def _ask_question(request: QuestionRequest, *args, **kwargs):
         )
         for doc in retrieved_docs[:5]
     ]
-    
+
     return QuestionResponse(
         question=request.question,
         answer=answer,
@@ -354,21 +354,21 @@ async def ask_question(request: QuestionRequest):
 def parse_planning_response(plan_text: str) -> tuple:
     """
     Parse LLM planning response to extract structured data.
-    
+
     Args:
         plan_text: Raw LLM response
-        
+
     Returns:
         Tuple of (semesters, notes, explanation)
     """
     # Try to extract JSON
     json_match = re.search(r'\{[\s\S]*"semesters"[\s\S]*\}', plan_text)
-    
+
     if json_match:
         try:
             json_str = json_match.group(0)
             plan_data = json.loads(json_str)
-            
+
             semesters = []
             for sem_data in plan_data.get('semesters', []):
                 courses = [
@@ -380,17 +380,17 @@ def parse_planning_response(plan_text: str) -> tuple:
                     courses=courses,
                     total_credits=sum(c.credits for c in courses)
                 ))
-            
+
             notes = plan_data.get('notes', [])
-            
+
             # Extract explanation (text before JSON)
             explanation = plan_text[:json_match.start()].strip()
-            
+
             return semesters, notes, explanation
-            
+
         except json.JSONDecodeError:
             logger.warning("Failed to parse JSON from planning response")
-    
+
     # Fallback: return text only
     return [], ["Unable to generate structured plan. See explanation."], plan_text
 
@@ -398,15 +398,15 @@ def parse_planning_response(plan_text: str) -> tuple:
 async def _create_plan(request: PlanRequest, *args, **kwargs):
     """
     Create a personalized degree plan.
-    
+
     Args:
         request: Planning request with user profile
-        
+
     Returns:
         Semester-by-semester course plan with professor recommendations
     """
     logger.info(f"Creating plan for: {request.user_profile.program}")
-        
+
     user_profile_dict = request.user_profile.dict()
 
     # Retrieve degree requirements
@@ -421,14 +421,14 @@ async def _create_plan(request: PlanRequest, *args, **kwargs):
     )
 
     requirements_context = requirements_retriever.format_context_for_llm(req_docs)
-    
+
     # Get professor ratings for relevant courses
     # Extract course codes from requirements
     course_codes = set()
     for doc in req_docs:
         codes = doc['metadata'].get('course_codes', [])
         course_codes.update(codes)
-    
+
     # Get professor info
     prof_info_parts = []
     for course_code in list(course_codes)[:20]:  # Limit to avoid too long context
@@ -437,22 +437,22 @@ async def _create_plan(request: PlanRequest, *args, **kwargs):
             prof_info_parts.append(f"\n{course_code}:")
             for prof in profs:
                 prof_info_parts.append(f"  - {professor_retriever.format_professor_info(prof)}")
-    
+
     professor_info = "\n".join(prof_info_parts) if prof_info_parts else "No professor rating data available."
-    
+
     # Build planning prompt
     messages = PromptTemplate.build_planning_prompt(
         user_profile=user_profile_dict,
         requirements_context=requirements_context,
         professor_info=professor_info
     )
-    
+
     # Generate plan
     plan_text = llm_interface.generate(messages, max_tokens=3000)
-    
+
     # Parse JSON from response
     semesters, notes, explanation = parse_planning_response(plan_text)
-    
+
     return PlanResponse(
         user_profile=request.user_profile,
         semesters=semesters,
@@ -469,18 +469,18 @@ async def create_plan(request: PlanRequest):
 async def _query_professors(request: ProfessorQueryRequest, *args, **kwargs):
     """
     Query professor ratings for specific courses.
-    
+
     Args:
         request: List of course codes
-        
+
     Returns:
         Professor ratings for each course
     """
     result = {}
-    
+
     for course_code in request.course_codes:
         profs = professor_retriever.get_professors_for_course(course_code, k=5)
-        
+
         result[course_code] = [
             ProfessorRating(
                 course_code=p['metadata']['course_code'],
@@ -490,7 +490,7 @@ async def _query_professors(request: ProfessorQueryRequest, *args, **kwargs):
             )
             for p in profs
         ]
-    
+
     return ProfessorQueryResponse(professors=result)
 
 

@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 
 class VectorStore:
     """Base class for vector stores."""
-    
+
     def add_documents(
         self,
         texts: List[str],
@@ -31,7 +31,7 @@ class VectorStore:
         How many documents does the store have?
         """
         raise NotImplementedError
-    
+
     def search(
         self,
         query_embedding: np.ndarray,
@@ -40,7 +40,7 @@ class VectorStore:
     ) -> List[Dict[str, Any]]:
         """Search for similar documents."""
         raise NotImplementedError
-    
+
     def delete_collection(self):
         """Delete the collection."""
         raise NotImplementedError
@@ -48,7 +48,7 @@ class VectorStore:
 
 class ChromaVectorStore(VectorStore):
     """Vector store using ChromaDB."""
-    
+
     def __init__(
         self,
         collection_name: str,
@@ -56,7 +56,7 @@ class ChromaVectorStore(VectorStore):
     ):
         """
         Initialize ChromaDB vector store.
-        
+
         Args:
             collection_name: Name of the collection
             persist_directory: Directory to persist the database
@@ -66,25 +66,25 @@ class ChromaVectorStore(VectorStore):
             from chromadb.config import Settings
         except ImportError:
             raise ImportError("chromadb not installed. Run: pip install chromadb")
-            
+
         self.persist_directory = persist_directory
         Path(persist_directory).mkdir(parents=True, exist_ok=True)
-        
+
         self.client = chromadb.PersistentClient(
             path=persist_directory,
             settings=Settings(anonymized_telemetry=False)
         )
-        
+
         # Get or create collection
         self.collection = self.client.get_or_create_collection(
             name=collection_name,
             metadata={"hnsw:space": "cosine"}
         )
-        
+
         logger.info(f"Initialized ChromaDB collection: {collection_name}")
         logger.info(f"Current document count: {self.collection.count()}")
-            
-    
+
+
     def add_documents(
         self,
         texts: List[str],
@@ -94,7 +94,7 @@ class ChromaVectorStore(VectorStore):
     ):
         """
         Add documents to ChromaDB.
-        
+
         Args:
             texts: List of text strings
             embeddings: Numpy array of embeddings
@@ -103,10 +103,10 @@ class ChromaVectorStore(VectorStore):
         """
         if ids is None:
             ids = [f"doc_{i}" for i in range(len(texts))]
-        
+
         # Convert numpy array to list for ChromaDB
         embeddings_list = embeddings.tolist() if isinstance(embeddings, np.ndarray) else embeddings
-        
+
         # ChromaDB requires metadata values to be strings, ints, or floats
         processed_metadatas = []
         for metadata in metadatas:
@@ -117,14 +117,14 @@ class ChromaVectorStore(VectorStore):
                 else:
                     processed[key] = value
             processed_metadatas.append(processed)
-        
+
         self.collection.add(
             documents=texts,
             embeddings=embeddings_list,
             metadatas=processed_metadatas,
             ids=ids
         )
-        
+
         logger.info(f"Added {len(texts)} documents to ChromaDB")
 
     def count_documents(self):
@@ -138,17 +138,17 @@ class ChromaVectorStore(VectorStore):
     ) -> List[Dict[str, Any]]:
         """
         Search for similar documents in ChromaDB.
-        
+
         Args:
             query_embedding: Query embedding vector
             k: Number of results to return
             filter_dict: Optional metadata filter
-            
+
         Returns:
             List of result dictionaries with text, metadata, and distance
         """
         query_embedding_list = query_embedding.tolist() if isinstance(query_embedding, np.ndarray) else query_embedding
-        
+
         # Build where clause for filtering
         where_clause = None
         if filter_dict:
@@ -157,13 +157,13 @@ class ChromaVectorStore(VectorStore):
                 where_clause = items[0]
             else:
                 where_clause = {"$and": items}
-        
+
         results = self.collection.query(
             query_embeddings=[query_embedding_list],
             n_results=k,
             where=where_clause
         )
-        
+
         # Format results
         formatted_results = []
         if results['documents'][0]:
@@ -176,16 +176,16 @@ class ChromaVectorStore(VectorStore):
                             metadata[key] = json.loads(value)
                         except:
                             pass
-                
+
                 formatted_results.append({
                     'text': results['documents'][0][i],
                     'metadata': metadata,
                     'distance': results['distances'][0][i],
                     'id': results['ids'][0][i]
                 })
-        
+
         return formatted_results
-    
+
     def delete_collection(self):
         """Delete the collection."""
         self.client.delete_collection(self.collection.name)
@@ -200,12 +200,12 @@ def create_vector_store(
     """
     Factory function to create a vector store. Only Chroma is supported
     for the proof-of-concept
-    
+
     Args:
         store_type: Type of store ('chroma')
         collection_name: Name of the collection
         persist_directory: Directory to persist data
-        
+
     Returns:
         VectorStore instance
     """
