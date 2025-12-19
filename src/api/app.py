@@ -9,6 +9,12 @@ import json
 import re
 from typing import Optional
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+api_key = os.getenv("GEMINI_API_KEY")
+
 from .models import (
     QuestionRequest, QuestionResponse, Source,
     PlanRequest, PlanResponse, Semester, Course,
@@ -70,7 +76,7 @@ async def startup_event():
             COLLECTION_NAME_REQUIREMENTS = "degree_requirements"
             COLLECTION_NAME_PROFESSORS = "professor_ratings"
             TOP_K_RETRIEVAL = 5
-            GEMINI_API_KEY = "AIzaSyDpy8DX9xhMYQP515kY9en2C03Wr4H5BWQ"
+            GEMINI_API_KEY = api_key
             LLM_MODEL = "gemini-2.5-pro"
         
         # Initialize embedder
