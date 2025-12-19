@@ -1,0 +1,4 @@
+TITLE: COMPUTATIONAL GENOMICS
+SUBJECT: Computer Sci,bioeng & Med Info
+INSTRUCTOR: Cassandra N Burdziak
+DESCRIPTION: Computational techniques for analyzing genomic data including DNA, RNA, protein and gene expression data. Basic concepts in molecular biology relevant to these analyses. Emphasis on techniques from artificial intelligence and machine learning. String-matching algorithms, dynamic programming, hidden Markov models, expectation-maximization, neural networks, clustering algorithms, support vector machines. Students with life sciences backgrounds who satisfy the prerequisites are encouraged to enroll.

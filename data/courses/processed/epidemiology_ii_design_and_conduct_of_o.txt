@@ -1,0 +1,4 @@
+TITLE: Epidemiology II: Design and Conduct of O
+SUBJECT: Epidemiology
+INSTRUCTOR: John R Ii Pamplin
+DESCRIPTION: As a basic science of public health, epidemiology is responsible for the identification of causes of disease that can guide the development of rational public health policies.  The accuracy of the information provided by epidemiologic studies is therefore of central concern.  Epidemiologic methods are the tools we use to make valid causal arguments.  This course builds upon the methods introduced in P6400 Principles of Epidemiology or the Quant core module.   The primary objective is to provide students with the basic tools necessary to design, carry out, and interpret the results from observational epidemiologic studies.

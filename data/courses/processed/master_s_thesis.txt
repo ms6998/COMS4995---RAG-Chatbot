@@ -1,0 +1,4 @@
+TITLE: MASTER'S THESIS
+SUBJECT: Quant Methods-social Sciences
+INSTRUCTOR: Elena B Krumova
+DESCRIPTION: This course fulfills the Masters Thesis requirement of the QMSS MA Program. It is designed to help you make consistent progress on your master’s thesis throughout the semester, as well as to provide structure during the writing process. The master’s thesis, upon completion, should answer a fundamental research question in the subject matter of your choice. It should be an academic paper based on data that you can acquire, clean, and analyze within a single semester, with an emphasis on clarity and policy relevance.

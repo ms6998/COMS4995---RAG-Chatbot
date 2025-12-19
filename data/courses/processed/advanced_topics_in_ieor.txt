@@ -1,0 +1,4 @@
+TITLE: ADVANCED TOPICS IN IEOR
+SUBJECT: Industrl Engin-operations Rsch
+INSTRUCTOR: Daniel Lacker
+DESCRIPTION: Selected topics in IEOR. Content varies from year to year. May be repeated for credit.

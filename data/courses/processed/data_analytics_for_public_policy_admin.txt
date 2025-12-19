@@ -1,0 +1,4 @@
+TITLE: Data Analytics for Public Policy,  Admin
+SUBJECT: School Of Int & Public Affairs
+INSTRUCTOR: Poranee Kingpetcharat
+DESCRIPTION: MIA and MPA Policy Skills II Core. Priority Registration: MIA and MPA. This course provides a practical introduction to the core concepts, techniques, and tools used to analyze data for effective decision-making. Designed for students with little to no background in statistics, mathematics, or statistical software, the course emphasizes intuitive understanding and hands-on learning. Through interactive exercises and real-world datasets, students will explore both qualitative and quantitative methods for extracting insights, identifying patterns, and building evidence-based recommendations. The course focuses on developing analytical reasoning and applied skills that can be used across a range of policy and professional contexts.

@@ -1,0 +1,4 @@
+TITLE: The Case for Boring: Investing in Invest
+SUBJECT: Finance
+INSTRUCTOR: Ellen Carr
+DESCRIPTION: This course provides a primer on analyzing investment grade corporate bonds. It takes an investor perspective (to evaluate / quantify risk-reward across various IG corporate industries and companies) and a management perspective (to identify optimal capital structure/credit ratings). The course incorporates guest speakers from various functionalities on the buy side (portfolio managers, analysts, and traders), the sell side (underwriters, sales/trading/research), and the management side (treasurers). It will include an overview of “crossover” corporate bonds (falling angels/rising stars), LBO targets, ESG instruments such as green bonds and sustainability-linked bonds, and “corporate-adjacent” bonds (ABS, CMBS, munis). Students will gain exposure to both top-down and bottom-up approaches to IG corporate bond research and analysis.

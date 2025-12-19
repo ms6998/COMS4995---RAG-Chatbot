@@ -1,0 +1,4 @@
+TITLE: (PhD) Financial Econometrics: Panel Data
+SUBJECT: Finance
+INSTRUCTOR: Xavier Giroud
+DESCRIPTION: 

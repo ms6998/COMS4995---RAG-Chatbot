@@ -1,0 +1,4 @@
+TITLE: NATURAL LANGUAGE PROCESSING
+SUBJECT: Computer Science
+INSTRUCTOR: Andrei A Simion
+DESCRIPTION: Computational approaches to the analysis, understanding, and generation of natural language text at scale. Emphasis on machine learning techniques for NLP, including deep learning and large language models. Applications may include information extraction, sentiment analysis, question answering, summarization, machine translation, and conversational AI. Discussion of datasets, benchmarking and evaluation, interpretability, and ethical considerations. Due to significant overlap in content, only one of COMS 4705 or Barnard COMS 3705BC may be taken for credit.

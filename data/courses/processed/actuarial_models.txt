@@ -1,0 +1,4 @@
+TITLE: ACTUARIAL MODELS
+SUBJECT: Actuarial Science
+INSTRUCTOR: Regina Dolgoarshinnykh
+DESCRIPTION: This course provides an introduction to the tools for pricing and reserving for short term insurance. We will discuss methods for calculating IBNR reserves, ratemaking, frequency and severity models used for modeling coverage modifications, statistical methods for fitting, evaluating, and selecting parametric models for frequency and severity, and three credibility methods. This class covers the short-term material of Exam FAM and also covers the material of Exam ASTAM of the Society of Actuaries, and some of the material on Exams MAS I, MAS II, and 5 of the Casualty Actuarial Society. This is a core class of the Actuarial Science program. Students who have already taken and passed the FAM exam (or its short term portion) and the ASTAM exam administered by the SOA are exempted from this class and can substitute an elective.

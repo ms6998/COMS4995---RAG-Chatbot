@@ -1,0 +1,4 @@
+TITLE: INTRODUCTION TO ECONOMETRICS
+SUBJECT: Economics
+INSTRUCTOR: Michael C Best
+DESCRIPTION: Prerequisites: (ECON UN3211 or ECON UN3213) and (MATH UN1201 or MATH UN1207) and STAT UN1201 Modern econometric methods; the general linear statistical model and its extensions; simultaneous equations and the identification problem; time series problems; forecasting methods; extensive practice with the analysis of different types of data.

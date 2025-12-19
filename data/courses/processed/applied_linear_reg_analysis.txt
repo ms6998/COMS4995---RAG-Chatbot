@@ -1,0 +1,4 @@
+TITLE: APPLIED LINEAR REG ANALYSIS
+SUBJECT: Statistics
+INSTRUCTOR: Daniel Rabinowitz
+DESCRIPTION: Prerequisites: An introductory course in statistics (STAT UN1101 is recommended). Students without programming experience in R might find STAT UN2102 very helpful. Develops critical thinking and data analysis skills for regression analysis in science and policy settings. Simple and multiple linear regression, non-linear and logistic models, random-effects models. Implementation in a statistical package. Emphasis on real-world examples and on planning, proposing, implementing, and reporting.

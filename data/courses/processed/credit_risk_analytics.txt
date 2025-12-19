@@ -1,0 +1,4 @@
+TITLE: CREDIT RISK ANALYTICS
+SUBJECT: Enterprise Risk Mgmt
+INSTRUCTOR: Christopher Mann
+DESCRIPTION: The field of credit risk management is undergoing a quiet revolution as subjective and manually-intensive methods give way to digitization, algorithmic management, and decision-making. This course provides a practical overview and hands-on experience with different methods, and it also provides a view of future technologies and discussions of potential future directions. Participants in this course should be well-positioned to take entry-level analytic positions and help drive strategic decisions. The first half of the course explores analytics used today for credit risk management. You will learn to create rating and scoring models and a macro scenario-based stress testing model. In the second half of the course, we explore more advanced tools used by the more prominent organizations and fintech firms, including neural net and XGBoost decision tree models.

@@ -1,0 +1,4 @@
+TITLE: PRIN-INNOVATN/ENTREPRENEURSHIP
+SUBJECT: Computer Science
+INSTRUCTOR: William Reinisch
+DESCRIPTION: Team project centered course focused on principles of planning, creating, and growing a technology venture. Topics include: identifying and analyzing opportunities created by technology paradigm shifts, designing innovative products, protecting intellectual property, engineering innovative business models.

@@ -1,0 +1,4 @@
+TITLE: PRINCIPLES OF ECONOMICS
+SUBJECT: Economics
+INSTRUCTOR: Sunil K Gulati
+DESCRIPTION: Corequisites: ECON UN1155 How a market economy determines the relative prices of goods, factors of production, and the allocation of resources and the circumstances under which it does it efficiently. Why such an economy has fluctuations and how they may becontrolled.

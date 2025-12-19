@@ -1,0 +1,4 @@
+TITLE: GENERAL CHEMISTRY II-LECTURES
+SUBJECT: Chemistry
+INSTRUCTOR: Robert Beer
+DESCRIPTION: Prerequisites: CHEM UN1403 Although CHEM UN1403 and CHEM UN 1404 are separate courses, students are expected to take both terms sequentially. Topics include gases, kinetic theory of gases, states of matter: liquids and solids, chemical equilibria, applications of equilibria, acids and bases, chemical thermodynamics, energy, enthalpy, entropy, free energy, periodic properties, chemical kinetics, and electrochemistry. The order of presentation of topics may differ from the order presented here, and from year to year. Students must ensure they register for the recitation that corresponds to the lecture section. Please check the Directory of Classes for details.

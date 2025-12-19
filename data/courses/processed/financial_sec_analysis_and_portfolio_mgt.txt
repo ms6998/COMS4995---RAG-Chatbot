@@ -1,0 +1,4 @@
+TITLE: FINANCIAL SEC ANALYSIS AND PORTFOLIO MGT
+SUBJECT: Applied Analytics
+INSTRUCTOR: Alexandr Belyakov
+DESCRIPTION: Financial securities analysis and portfolio management is the study of analyzing information to evaluate financial securities and design investment strategies. Studying the subject can provide a foundation for students entering the fields of investment analysis or portfolio management. This course provides an intensive introduction to major topics in investments. Part I of the course lays the theoretical foundation by introducing the Portfolio Theory and Equilibrium Asset Pricing models. Part II covers the valuation models and analysis of major asset classes: equity, fixed-income, and derivatives. Topics include bond valuation and interest rate models, equity valuation and financial statement analysis, options valuation, other derivatives, and risk management. Part III of the course focuses on the practice of active portfolio management.

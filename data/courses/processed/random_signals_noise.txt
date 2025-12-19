@@ -1,0 +1,4 @@
+TITLE: RANDOM SIGNALS & NOISE
+SUBJECT: Electrical Engineering
+INSTRUCTOR: Irving Kalet
+DESCRIPTION: Characterization of stochastic processes as models of signals and noise; stationarity, ergodicity, correlation functions, and power spectra. Gaussian processes as models of noise in linear and nonlinear systems; linear and nonlinear transformations of random processes; orthogonal series representations. Applications to circuits and devices, to communication, control, filtering, and prediction.

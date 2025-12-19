@@ -1,0 +1,4 @@
+TITLE: Real Estate Finance
+SUBJECT: Finance
+INSTRUCTOR: Boaz Abramson
+DESCRIPTION: The course focuses on the set of concepts and techniques used to analyze and finance income-producing real property. It starts with the characteristics that make real property different, including cash flow uncertainties, debt sources and tax features. It then considers the available strategies and structures of real estate finance, including capital structure choices for construction and permanent financing. Extensive use is then made of cases to illustrate the range of choices and outcomes.

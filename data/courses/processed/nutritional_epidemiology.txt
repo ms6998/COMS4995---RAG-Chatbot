@@ -1,0 +1,4 @@
+TITLE: Nutritional Epidemiology
+SUBJECT: Epidemiology
+INSTRUCTOR: Sandra S Albrecht
+DESCRIPTION: The purpose of this course is for students to understand the methods involved in determining the role of nutrition in the etiology of various disease states.  Examples in the literature will be used to illustrate various aspects of nutritional epidemiology including assessment of dietary intake, biochemical markers of nutritional intake, body composition and issues in analysis of nutritional data in epidemiological studies.

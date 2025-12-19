@@ -1,0 +1,4 @@
+TITLE: TOPICS-INFORMATION PROCESSING
+SUBJECT: Elec Engin-computer Science
+INSTRUCTOR: Ching-Yung Lin
+DESCRIPTION: Advanced topics spanning Electrical Engineering and Computer Science such as speech processing and recognition, image and multimedia content analysis, and other areas drawing on signal processing, information theory, machine learning, pattern recognition, and related topics. Content varies from year to year, and different topics rotate through the course numbers 6890 to 6899.  Topic: Advanced Big Data Analytics.

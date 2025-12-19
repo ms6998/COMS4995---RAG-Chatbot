@@ -1,0 +1,4 @@
+TITLE: QUANT METH 2 STAT THEO&CAUS INF
+SUBJECT: Political Science
+INSTRUCTOR: John Marshall
+DESCRIPTION: This course is the second course in the graduate-level sequence on quantitative political methodology offered in the Department of Political Science. Students will learn (1) a framework and methodologies for making causal inferences from experimental and observational data, and (2) statistical theories essential for causal inference. Topics include randomized experiments, estimation under ignorability, instrumental variables, regression discontinuity, difference-indifferences, and causal inference with panel data. We also cover statistical theories, such as theories of ordinary least squares and maximum likelihood estimation, by connecting them to causal inference methods. This course builds on the materials covered in POLS 4700 and 4720 or theirequivalent (i.e., probability, statistics, linear regression, and logistic regression).

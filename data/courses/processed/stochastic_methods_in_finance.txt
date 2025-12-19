@@ -1,0 +1,4 @@
+TITLE: STOCHASTIC METHODS IN FINANCE
+SUBJECT: Statistics
+INSTRUCTOR: Graeme Baker
+DESCRIPTION: Prerequisites: STAT GU4264. Mathematical theory and probabilistic tools for modeling and analyzing security markets are developed. Pricing options in complete and incomplete markets, equivalent martingale measures, utility maximization, term structure of interest rates. This is a core course in the MS program in mathematical finance.

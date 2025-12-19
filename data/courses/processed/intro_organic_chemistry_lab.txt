@@ -1,0 +1,4 @@
+TITLE: INTRO ORGANIC CHEMISTRY-LAB
+SUBJECT: Chemistry
+INSTRUCTOR: Meenakshi S Rao
+DESCRIPTION: Prerequisites: (CHEM BC2001) General Chemistry I with lab. Corequisites: CHEM BC3230 Basic techniques of experimental organic chemistry. Principles and methods of separation, purification, and characterization of organic compounds. Selected organic reactions.

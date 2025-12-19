@@ -1,0 +1,4 @@
+TITLE: TECH WRITING FOR CS AND ENGINRS
+SUBJECT: Computer Sci-electrical Engin
+INSTRUCTOR: Janet Kayfetz
+DESCRIPTION: Topics to help CS/CE and EE graduate students’ communication skills. Emphasis on writing, presenting clear, concise proposals, journal articles, conference papers, theses, and technical presentations.  Credit may not be used to satisfy degree requirements.

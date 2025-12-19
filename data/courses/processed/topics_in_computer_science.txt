@@ -1,0 +1,4 @@
+TITLE: TOPICS IN COMPUTER SCIENCE
+SUBJECT: Computer Science
+INSTRUCTOR: Kaoutar El Maghraoui
+DESCRIPTION: Selected topics in computer science (advanced level). Content and prerequisites vary between sections and semesters. May be repeated for credit. Check “topics course” webpage on the department website for more information on each section.

@@ -1,0 +1,4 @@
+TITLE: STATISTICS FOR ECONOMICS
+SUBJECT: Economics
+INSTRUCTOR: Mulu Gebreyohannes
+DESCRIPTION: Elementary computational methods in statistics. Basic techniques in regression analysis of econometric models. One-hour weekly recitation sessions to complement lectures.

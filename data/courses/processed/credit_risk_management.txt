@@ -1,0 +1,4 @@
+TITLE: CREDIT RISK MANAGEMENT
+SUBJECT: Enterprise Risk Mgmt
+INSTRUCTOR: Weijun Weng
+DESCRIPTION: Credit Risk Management requires business acumen, the monitoring of internal and external data, disciplined execution, and organizational intelligence. A solid understanding of this enables a credit risk manager to help organizations achieve their objectives. Through readings, case studies, and modeling projects, students learn how risk managers decide on credit risk management strategy applied throughout the client lifecycle.

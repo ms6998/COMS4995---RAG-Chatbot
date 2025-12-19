@@ -1,0 +1,4 @@
+TITLE: INTRO TO GENERAL RELATIVITY
+SUBJECT: Physics
+INSTRUCTOR: James C Hill
+DESCRIPTION: Prerequisites: PHYS UN3003 and PHYS UN3007 or the equivalent. Tensor algebra, tensor analysis, introduction to Riemann geometry. Motion of particles, fluid, and fields in curved spacetime. Einstein equation. Schwarzschild solution; test-particle orbits and light bending. Introduction to black holes, gravitational waves, and cosmological models.

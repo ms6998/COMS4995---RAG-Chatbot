@@ -1,0 +1,4 @@
+TITLE: FINANCIAL RISK MANAGEMENT
+SUBJECT: Enterprise Risk Mgmt
+INSTRUCTOR: Zaur Nurtaza
+DESCRIPTION: A survey of market, credit, liquidity, and systemic risk. Includes case studies, risk quantification methods, and common mitigation techniques using portfolio management, hedging, and derivatives. Also addresses traditional risk management practices at banking institutions.

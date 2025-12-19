@@ -1,0 +1,4 @@
+TITLE: DATA ANALYSIS FOR THE SOCIAL SCIENCES
+SUBJECT: Quant Methods-social Sciences
+INSTRUCTOR: Mike Z He
+DESCRIPTION: Prerequisites: One semester of undergraduate statistics The data analysis course covers specific statistical tools used in social science research using the statistical program R. Topics to be covered include statistical data structures, and basic descriptives, regression models, multiple regression analysis, interactions, polynomials, Gauss-Markov assumptions and asymptotics, heteroskedasticity and diagnostics, models for binary outcomes, naive Bayes classifiers, models for ordered data, models for nominal data, first difference analysis, factor analysis, and a review of models that build upon OLS. Prerequisite: introductory statistics course that includes linear regression. There is a statistical computer lab session with this course: QMSS G4017 -001 -DATA ANALYSIS FOR SOC SCI

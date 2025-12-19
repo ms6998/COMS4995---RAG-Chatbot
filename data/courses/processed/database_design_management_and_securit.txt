@@ -1,0 +1,4 @@
+TITLE: Database Design, Management, and Securit
+SUBJECT: School Of Int & Public Affairs
+INSTRUCTOR: Poranee Kingpetcharat
+DESCRIPTION: MIA and MPA Policy Skills II Core. Priority Registration: MIA and MPA. This advanced course provides a comprehensive introduction to the principles and practices of effective database design, management, and security. Students will gain a strong foundation in information organization, data storage, and database administration, with attention to key topics such as data warehousing, governance, security, privacy, and alternative database models. The course emphasizes the relational database model and includes practical instruction in Structured Query Language (SQL), data modeling, and integrity constraints. Students will learn to design, build, and manage databases while addressing contemporary issues in security and privacy. Prior experience with basic programming and data structures is recommended.

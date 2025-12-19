@@ -1,0 +1,4 @@
+TITLE: Quantum Sensing Theory
+SUBJECT: Electrical Engineering
+INSTRUCTOR: Xiaodong Wang
+DESCRIPTION: Introduction to quantum detection and estimation theory and its applications to quantum communications, quantum radar, quantum metrology, and quantum tomography. Background on quantum mechanics, quantum detection, composite quantum systems, Gaussian states, and quantum estimation.

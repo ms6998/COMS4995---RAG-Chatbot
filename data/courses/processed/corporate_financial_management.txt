@@ -1,0 +1,4 @@
+TITLE: Corporate Financial Management
+SUBJECT: Finance
+INSTRUCTOR: Xavier Giroud
+DESCRIPTION: Formerly known as Advanced Corporate Finance develops the art and science of optimal strategic decision-making by applying corporate financial theory to cases of financial policy, financial instruments and valuation. In particular, the following topics are studied: cost of capital and capital budgeting, discounted cash flow valuation and financial multiples, payout policy, equity and debt financing, option pricing theory and applications, corporate control and recapitalizations. The classes are structured to maximize the synergy between theory and practice, providing students portable, durable and marketable tools for their internships and careers.

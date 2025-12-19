@@ -1,0 +1,4 @@
+TITLE: Macroeconometrics
+SUBJECT: Prog In Econ Policy Mgmt
+INSTRUCTOR: 
+DESCRIPTION: The course aims to analyze dynamic, multivariate interactions in evolutionary and non-stationary processes. The course first considers stationary univariate time-series processes and then extend the analysis to non-stationary processes and multivariate processes. The course covers a review of linear dynamic time-series models and focus on the concept of cointegration, as many applications lend themselves to dynamic systems of equilibrium-correction relations. In the final analysis, the course is aimed at presenting a certain number of econometric techniques the mastery of which is becoming increasingly inevitable in professional circles.

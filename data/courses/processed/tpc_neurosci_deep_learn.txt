@@ -1,0 +1,4 @@
+TITLE: TPC NEUROSCI & DEEP LEARN
+SUBJECT: Elen-comp Sci-biomedical Engin
+INSTRUCTOR: Aurel A Lazar
+DESCRIPTION: Selected advanced topics in neuroscience and deep learning. Content varies from year to year, and different topics rotate through the course numbers 6070 to 6079.

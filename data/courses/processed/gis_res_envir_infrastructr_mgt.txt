@@ -1,0 +1,4 @@
+TITLE: GIS-RES,ENVIR,INFRASTRUCTR MGT
+SUBJECT: Earth & Environmental Engin
+INSTRUCTOR: 
+DESCRIPTION: Basic concepts of spatial data representation and organization, and analytical tools are introduced and applied in a form of case studies from hydrology, environmental conservation, and emergency response to natural or man-made hazards, among others. Technical content includes geographic topics (map projections, cartography, etc.), spatial statistics, database design and use, interpolation and visualization of spatial surfaces and volumes, and multi-criteria decision analysis. Students will learn the basics of ArcGIS Pro, Model Builder and Python. Elective term projects or final exams emphasize spatial information synthesis towards the solution of a specific problem.

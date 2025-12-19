@@ -1,0 +1,4 @@
+TITLE: Data Science and Health Equity in New Yo
+SUBJECT: Public Health
+INSTRUCTOR: Suzue Saito
+DESCRIPTION: This course, which has no pre-requisites, teaches students about data science and public health. Students will create and answer public health research questions related to health equity in NYC. The course will use publicly available NYC health data to learn the seven steps of data science: 1) writing a research question; 2) obtaining data to address the question; 3) data cleaning; 4) data exploration; (5) analysis; 6) replication and validity evaluation; and (7) presentation and summary. The course will introduce students to R .

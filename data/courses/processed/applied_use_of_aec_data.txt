@@ -1,0 +1,4 @@
+TITLE: APPLIED USE OF AEC DATA
+SUBJECT: Civil Engineering
+INSTRUCTOR: 
+DESCRIPTION: Digital transformation optimizes day-to-day operations to provide maximum performance in Architecture, Engineering, and Construction (AEC) workflows. Focuses on broadening knowledge of AEC data leading to building data management. Use of open data sets from the design, construction, and operations of buildings to learn and practice data management and its applied use. Major technical topics include Project Management Information System (PMIS) and Facility Management (FM), leading to Digital Twin data management, data processing, and data visualization.

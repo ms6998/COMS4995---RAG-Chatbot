@@ -1,0 +1,4 @@
+TITLE: ERM CAPSTONE
+SUBJECT: Enterprise Risk Mgmt
+INSTRUCTOR: David P Mccarthy
+DESCRIPTION: Teams will work through a case assignment, demonstrating mastery of key learnings gained throughout the program on an integrated basis. A simulated case study is used: this is a combination of publicly-available information of an actual company and simulated ERM program details, based on a blend of current ERM programs and practices in the marketplace. Each team will assess the case study and recommend enhancements.

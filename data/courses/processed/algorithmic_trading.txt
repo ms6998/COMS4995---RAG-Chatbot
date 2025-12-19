@@ -1,0 +1,4 @@
+TITLE: ALGORITHMIC TRADING
+SUBJECT: Industrl Engin-operations Rsch
+INSTRUCTOR: Charles Pehlivanian
+DESCRIPTION: Prerequisite(s): IEOR E4700. Large and amorphous collection of subjects ranging from the study of market microstructure, to the analysis of optimal trading strategies, to the development of computerized, high-frequency trading strategies. Analysis of these subjects, the scientific and practical issues they involve, and the extensive body of academic literature they have spawned. Attempt to understand and uncover the economic and financial mechanisms that drive and ultimately relate them.

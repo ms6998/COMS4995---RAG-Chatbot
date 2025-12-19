@@ -1,0 +1,4 @@
+TITLE: ADV DESIGN OF STEEL STRUCTURES
+SUBJECT: Civil Engineering
+INSTRUCTOR: Virginia Mosquera
+DESCRIPTION: Review of loads and structural design approaches. Material considerations in structural steel design. Behavior and design of rolled steel, welded, cold-formed light-gauge, and composite concrete/steel members. Design of multi-story buildings and space structures.

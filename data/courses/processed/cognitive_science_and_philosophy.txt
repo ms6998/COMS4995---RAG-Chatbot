@@ -1,0 +1,4 @@
+TITLE: COGNITIVE SCIENCE AND PHILOSOPHY
+SUBJECT: Philosophy
+INSTRUCTOR: Joshua J Kramer
+DESCRIPTION: This course will survey a number of topics at the intersection of cognitive science and philosophy. Potential topics include free will, consciousness, embodied cognition, artificial intelligence, neural networks, and the language of thought.

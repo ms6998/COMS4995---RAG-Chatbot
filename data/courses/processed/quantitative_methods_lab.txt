@@ -1,0 +1,4 @@
+TITLE: Quantitative Methods - LAB
+SUBJECT: Climate School
+INSTRUCTOR: Abby Meola
+DESCRIPTION: Lab section corresponding to CLMT 5002 Quantitative Methods for Climate Applications

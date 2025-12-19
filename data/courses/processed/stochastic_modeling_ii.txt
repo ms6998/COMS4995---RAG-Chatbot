@@ -1,0 +1,4 @@
+TITLE: STOCHASTIC MODELING II
+SUBJECT: Industrl Engin-operations Rsch
+INSTRUCTOR: David D Yao
+DESCRIPTION: Continuation of IEOR E6711, covering further topics in stochastic modeling in the context of queueing, reliability, manufacturing, insurance risk, financial engineering, and other engineering applications. Topics from among generalized semi-Markov processes; processes with a non-discrete state space; point processes; stochastic comparisons; martingales; introduction to stochastic calculus.

@@ -1,0 +1,192 @@
+UNDERGRADUATE PROGRAMS
+Computer Science majors at Columbia study an integrated curriculum, partially in areas with an immediate relationship to the computer, such as programming languages, operating systems, and computer architecture, and partially in theoretical computer science and mathematics.
+A broad range of upper-level courses is available in topics including artificial intelligence, natural language processing, computational complexity and the analysis of algorithms, computer communications, combinatorial methods, computer architecture, computer graphics, databases, mathematical models for computation, optimization, and programming environments. Through this integrated approach, students acquire the flexibility needed in a rapidly changing field; they are prepared to engage in both applied and theoretical developments in computer science as they happen.
+Most graduates of the Computer Science Program at Columbia step directly into career positions in computer science with industry or government or continue their education in graduate degree programs. Many choose to combine computer science with a second career interest by pursuing additional programs in business administration, medicine, or other professional studies.
+Note, students may only declare one CS program.
+DEGREE PROGRAM QUICK GUIDES
+- New BS Curriculum Quick Guide – Students declaring in Fall 2023 or later must follow this.
+- Old BS Curriculum Quick Guide – Those who declared prior to Fall 2023, may choose to follow the new curriculum or the old Tracks.
+- SEAS Bulletin – Please refer to this for more details on the SEAS school policies and important exceptions.
+Note: One grade of D is permitted
+- CC Students, please refer to the Bulletin for more details on your school’s policies and important exceptions. GS Students may use this link; Barnard Students should contact their Dean.
+- New BA Curriculum Quickguide– CC/GS Students declaring in Spring 2024 or later must follow this. Barnard CS Students who join in Fall 2023 or later must follow this.
+- Old BA Curriculum Quick Guide – CC/GS students who declared prior to Spring 2024, may choose to follow the new curriculum or the old Tracks. Barnard students who joined Barnard in or before Spring 2023 are subject to the old requirements – for additional questions or possibly exceptions, please consult your Barnard advisor.
+Note: One grade of D is permitted for GS/CC students
+Please refer to the Math department and Bulletin for more information. A quick guide is below.
+Please review the Transfer Credit Policy, more information on this can be found in the Math Bulletin:
+“Up to three transfer courses are accepted toward the CS-Math major. Calculus courses can be transferred in addition to the three-course limit (with the approval of the Math department). Courses replaced by AP exams do not count towards the three-course limit.”
+For a description of the joint major in Computational Biology, see the Biology [link: https://bulletin.columbia.edu/columbia-college/departments-instruction/biological-sciences/ ]
+- Download Quick Guide Here
+- The program was formerly known as Computer Science and Statistics
+- Download Quick Guide Here Updated March 2021
+From Fall 2024 and onwards, the Minor in Computer Science consists of 6 courses as follows:
+1. COMS W1004: Intro to computer science and programming in Java (3) or COMS W1007: Honors intro to comp sci (3)
+2. COMS W3134: Data structures in Java (3) or COMS W3137: Honors data structures and algorithms (4)
+3. COMS W3203: Discrete mathematics (4)
+4. One course of the following:
+COMS W3157: Advanced programming (4)
+COMS W3261: Comp science theory (3)
+CSEE W3827: Fund of computer systems (3)
+5. Any 3000-level or 4000-level COMS/CSXX/XXCS course of at least 3 points
+6. Any 3000-level or 4000-level COMS/CSXX/XXCS course of at least 3 points OR one course from the following linear algebra or probability/statistics: APMA E3101, APMA E2101, MATH UN2010, MATH UN2015, IEOR E3658, STAT UN1201, STAT GU4001, or STAT GU4203.
+The Minor in Artificial Intelligence consists of 6 courses as follows:
+| MATH UN2015 | Linear Algebra and Probability* |
+| ENGI E1006 or COMS W1002 | INTRO TO COMP FOR ENG/APP SCI or COMPUTING IN CONTEXT |
+| COMS W2132 or IEOR E2000 | Intermediate Computing in Python or Data Engineering with Python |
+| AI Requirement | |
+|
+COMS W4701
+|
+ARTIFICIAL INTELLIGENCE |
+|
+|
+|
+| Ethics Requirement | |
+| Choose one: | |
+|
+COMS W4710
+|
+Ethics in AI |
+|
+COMS W2702
+|
+AI in Context |
+|
+PSYC GU4836
+|
+Machine Intelligence |
+|
+ORCS E4201
+|
+Policy for Privacy Technologies |
+|
+COMS BC3420
+|
+PRIVACY IN A NETWORKED WORLD |
+|
+|
+|
+| AI Elective | |
+| Choose one: | |
+|
+Any COMS 47XX course
+|
+|
+|
+Any “relevant” 4995/6998 course
+|
+|
+|
+BMEN E4460
+|
+Deep Learning in Biomedical Imaging |
+|
+BMEN E4470
+|
+Deep Learning for Biomedical Signal Processing |
+|
+BMEN E4480
+|
+Statistical machine learning for genomics |
+|
+CBMF W4761
+|
+COMPUTATIONAL GENOMICS |
+|
+CHEN E4180
+|
+Machine Learning for Biomolecular and Cellular Applications |
+|
+CIEN E4253
+|
+COMP SOLID MECHANICS WITH AI |
+|
+CIEN E4256
+|
+Applied Machine Learning in Civil Engineering |
+|
+EAEE E4000
+|
+Machine learning for environmental engineering and science |
+|
+ECBM E4040
+|
+NEURAL NETWRKS ＆ DEEP LEARNING |
+|
+EECS E4764
+|
+Artificial Intelligence of Things (AIoT) |
+|
+ELEN E4720
+|
+Machine Learning for Signals, Information and Data |
+|
+ELEN E4730
+|
+Quantum Optimization and Machine Learning |
+|
+IEOR E4212
+|
+Data Analytics ＆ Machine Learning for OR |
+|
+IEOR E4540
+|
+DATA MINING |
+|
+MECE E4520
+|
+DATA SCIENCE FOR MECHANICAL SYSTEMS |
+|
+MECE E4602
+|
+INTRODUCTION TO ROBOTICS |
+|
+ORCS E4200
+|
+Data-driven Decision Modeling |
+|
+ORCS E4529
+|
+Reinforcement Learning |
+|
+POLS GU4728
+|
+Machine Learning ＆ AI for the Social Sciences |
+|
+STAT GU4241
+|
+STATISTICAL MACHINE LEARNING |
+|
+STAT GU4242
+|
+Advanced Machine Learning |
+|
+STAT GU4243
+|
+APPLIED DATA SCIENCE |
+|
+STAT GU4244
+|
+Unsupervised Learning |
+*Or equivalent; may be substituted with a separate linear algebra course and a separate probability course, as with the CS Core.
+ADVISORS
+DEGREE PROGRESS CLEARANCE FORMS
+Access the Clearance Form via Google Docs. Make a copy of this form and enter your completed and/or planned courses. Name the file “Your Name UNI – SEAS BS Graduation Clearance Form” Share with Lionmail so your advisors can review it. Email ug-advising@cs.columbia.edu or your Faculty Advisor the link!
+You can use this same form to check progress prior to graduation and update it each semester.
+Access the Clearance Form via Google Docs. Make a copy of this form and enter your completed and/or planned courses. Name the file “Your Name UNI – CC/GS BA Graduation Clearance Form” Share with Lionmail so your advisors can review it. Email ug-advising@cs.columbia.edu or your Faculty Advisor the link!
+You can use this same form to check progress prior to graduation and update it each semester.
+- CC/GS BA Clearance Form – Spring 2024 and beyond
+- CC/GS BA Clearance Form – Tracks (Pre 2024)
+- OLD Excel Progress Checklist
+- Download Progress Clearance Form Here – Updated January 2022
+- Program formerly known as Computer Science and Statistics
+- Minor in Computer Science Clearance From – Fall 2024 and beyond
+- Minor in AI Clearance Form – AY 25-26 and Beyond
+FREQUENTLY ASKED QUESTIONS (FAQ)
+TOPICS COURSES
+Undergraduate students must get permission from their faculty advisor to count any topics course toward the Major.
+Students may take multiple sections of COMS 4995 and/or COMS 6998, as each section will vary by content each semester. If you aren’t sure if a course is the same, please email the instructor to verify.
+CURRENT RESEARCH OPPORTUNITIES
+CONTACT US
+If you have questions about the CS Department and major/minor requirements, please email CS Advising.
+If you have questions about the admissions requirements, please get in touch with the following admissions offices:

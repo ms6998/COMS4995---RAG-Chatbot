@@ -1,0 +1,27 @@
+Operations Research: Financial Engineering (BSOR:FE)
+Setting the Benchmark in Quantitative Finance
+The Financial Engineering concentration within the Operations Research program provides training in the application of engineering methodologies and quantitative methods to finance. Financial Engineering integrates financial theory with economics, methods of engineering, tools of mathematics, and practice of programming.
+Suggested Electives for Financial Engineering
+- ORCA 2500: Foundations of Data Science (only if taken by the end of sophomore year)
+- APMA W4300: Computational Math: Intro to Numerical Methods
+- CIEN E4138: Real Estate Finance for Construction Management
+- CSOR W4231: Analysis of Algorithms
+- ECON V3025: Financial Economics
+- IEOR E4212: Data Analytics and Machine Learning
+- IEOR E4525: Machine Learning for OR & FE
+- IEOR E4526: Analytics on the Cloud
+- IEOR E4601: Dynamic Pricing and Revenue Management
+- IEOR E4602: Quantitative Risk Management
+- IEOR E4650: Business Analytics
+- IEOR E4709: Statistical Analysis and Time Series (Seniors Only)
+- IEOR E4711: Global Capital Markets
+- IEOR E4718: Beyond Black-Scholes: The Implied Volatility Smile (Seniors Only)
+- IEOR E4721: AI Applications in Finance
+- IEOR E4731: Credit Risk Modeling and Derivatives (Seniors Only)
+- IEOR E4733: Algorithmic Trading
+- IEOR E4742: Deep Learning for OR & FE
+- ORCS E4200: Data Driven Decision Modeling
+- ORCS E4529: Reinforcement Learning
+- MATH V2030: Ordinary Differential Equations
+- MATH W4061: Intro to Modern Analysis, I
+A comprehensive list of electives can be found here. The BSOR:FE program requires 15 Technical Elective credits (including 6 credits of IEOR coursework) and 3 Management Elective credits.

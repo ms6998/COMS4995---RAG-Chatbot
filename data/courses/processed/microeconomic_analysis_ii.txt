@@ -1,0 +1,4 @@
+TITLE: MICROECONOMIC ANALYSIS II
+SUBJECT: Economics
+INSTRUCTOR: Qingmin Liu
+DESCRIPTION: Prerequisites: the director of graduate studies permission. Corequisites: ECON G6410. Consumer and producer behavior; general competitive equilibrium, welfare and efficiency, behavior under uncertainty, intertemporal allocation and capital theory, imperfect competition, elements of game theory, problems of information, economies with price rigidities.

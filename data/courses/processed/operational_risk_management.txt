@@ -1,0 +1,4 @@
+TITLE: OPERATIONAL RISK MANAGEMENT
+SUBJECT: Enterprise Risk Mgmt
+INSTRUCTOR: Lisa Broomer
+DESCRIPTION: Review of the types of operational risks, such as technology risk (e.g., cyber-security), human resources risk, disasters, etc. Includes case studies, risk analysis frameworks and metrics, and common mitigation techniques, such as insurance, IT mitigation, business continuing planning, etc.

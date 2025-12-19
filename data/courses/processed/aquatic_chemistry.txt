@@ -1,0 +1,4 @@
+TITLE: AQUATIC CHEMISTRY
+SUBJECT: Earth & Environmental Engin
+INSTRUCTOR: 
+DESCRIPTION: Principles of physical chemistry applied to equilibria and kinetics of aqueous solutions in contact with minerals and anthropogenic residues. The scientific background for addressing problems of aqueous pollution, water treatment, and sustainable production of materials with minimum environmental impact. Hydrolysis, oxidation-reduction, complex formation, dissolution and precipitation, predominance diagrams; examples of natural water systems, processes for water treatment and for the production of inorganic materials from minerals.

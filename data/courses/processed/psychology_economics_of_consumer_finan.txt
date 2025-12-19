@@ -1,0 +1,4 @@
+TITLE: Psychology & Economics of Consumer Finan
+SUBJECT: Business Economics & Marketing
+INSTRUCTOR: Stephen Zeldes
+DESCRIPTION: We will use the tools of behavioral economics and psychology to better understand consumer financial decisions and the consumer finance industry. We will examine markets for borrowing (mortgages, credit cards, peer-to-peer lending, payday loans), saving (401(k)s, strategies to promote saving, optimal asset allocation), and insurance (including life, health, and longevity). We will emphasize both how people do and how people should make financial decisions, and the implications for financial services firms. The goal of the course is to not only understand consumer finance, but to emphasize how the lessons from psychology and economics can be used to improve business decisions, foster innovation, and enhance public policy.

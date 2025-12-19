@@ -1,0 +1,4 @@
+TITLE: EXTERNAL STAKEHOLDER REQUIREMENTS
+SUBJECT: Enterprise Risk Mgmt
+INSTRUCTOR: Anthony Wong
+DESCRIPTION: Provides a global review of ERM requirements of regulators, rating agencies, and shareholders. Addresses three industry sectors: (1) insurance; (2) banking; and (3) corporate.

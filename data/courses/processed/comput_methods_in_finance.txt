@@ -1,0 +1,4 @@
+TITLE: COMPUT METHODS IN FINANCE
+SUBJECT: Industrl Engin-operations Rsch
+INSTRUCTOR: Alireza Javaheri
+DESCRIPTION: MS IEOR students only. Application of various computational methods/techniques in quantitative/computational finance. Transform techniques: fast Fourier transform for data de-noising and pricing, finite difference methods for partial differential equations (PDE), partial integro-differential equations (PIDE), Monte-Carlo simulation techniques in finance, and calibration techniques, filtering and parameter estimation techniques. Computational platform will be C++/Java/Python/Matlab/R.

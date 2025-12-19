@@ -1,0 +1,4 @@
+TITLE: STATISTICAL INFERENCE
+SUBJECT: Statistics
+INSTRUCTOR: Ashley Datta
+DESCRIPTION: Prerequisites: STAT GR5203 or the equivalent, and two semesters of calculus. Calculus-based introduction to the theory of statistics. Useful distributions, law of large numbers and central limit theorem, point estimation, hypothesis testing, confidence intervals, maximum likelihood, likelihood ratio tests, nonparametric procedures, theory of least squares and analysis of variance.

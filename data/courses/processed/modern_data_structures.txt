@@ -1,0 +1,4 @@
+TITLE: MODERN DATA STRUCTURES
+SUBJECT: Quant Methods-social Sciences
+INSTRUCTOR: 
+DESCRIPTION: This course is intended to provide a detailed tour on how to access, clean, “munge” and organize data, both big and small. (It should also give students a flavor of what would be expected of them in a typical data science interview.) Each week will have simple, moderate and complex examples in class, with code to follow. Students will then practice additional exercises at home. The end point of each project would be to get the data organized and cleaned enough so that it is in a data-frame, ready for subsequent analysis and graphing. Therefore, no analysis or visualization (beyond just basic tables and plots to make sure everything was correctly organized) will be taught; and this will free up substantial time for the “nitty-gritty” of all of this data wrangling.

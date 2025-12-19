@@ -1,0 +1,4 @@
+TITLE: GAME THEORY & POLIT THEORY
+SUBJECT: Political Science
+INSTRUCTOR: John Huber
+DESCRIPTION: Prerequisites: POLS GU4700 or equivalent level of calculus. Introduction to noncooperative game theory and its application to strategic situations in politics. Topics include solution concepts, asymmetric information, and incomplete information. Students should have taken POLS GU4700 or have equivalent background in calculus. Permission of instructor required.

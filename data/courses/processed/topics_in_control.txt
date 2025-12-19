@@ -1,0 +1,4 @@
+TITLE: Topics in Control
+SUBJECT: Electr-mechanical Engineering
+INSTRUCTOR: Navid Asr
+DESCRIPTION: This proposed course allows for a variety of potential advanced courses to be taught as part of the proposed concentration on control.

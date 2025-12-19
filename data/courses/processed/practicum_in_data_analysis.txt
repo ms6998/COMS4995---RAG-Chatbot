@@ -1,0 +1,4 @@
+TITLE: PRACTICUM IN DATA ANALYSIS
+SUBJECT: Quant Methods-social Sciences
+INSTRUCTOR: Charles R Riemann
+DESCRIPTION: This practicum course is meant to offer valuable training to students. Specifically, this practicum will mimicthe typical conditions that students would face in an internship in a large data-intense institution. The practicum will focus on four core elements involved in most internships: (1) Developing the intuition andskills to properly scope ambiguous project ideas; (2) practicing organizing and accessing a variety oflarge-scale data sources and formats; (3) conducting basic and advanced analysis of big data; and (4)communicating and “productizing” results and findings from the earlier steps, in things like dashboards,reports, interactive graphics, or apps. The practicum will also give students time to reflect on their work, andhow it would best translate into corporate, non-profit, start-up and other contexts.

@@ -1,0 +1,4 @@
+TITLE: CODING FOR RISK MANAGEMENT
+SUBJECT: Enterprise Risk Mgmt
+INSTRUCTOR: David J Romoff
+DESCRIPTION: Equips students with the ability to adopt the programming culture typically present in the ERM/risk areas of most financial organizations. By studying Python, SQL, R, git, and AWS, students gain exposure to different syntaxes. Students apply these skills by coding up market risk and credit risk models. Students also gain familiarity with working in the cloud.

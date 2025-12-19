@@ -1,0 +1,4 @@
+TITLE: PROBABILITY THEORY
+SUBJECT: Statistics
+INSTRUCTOR: Marco A Avella Medina
+DESCRIPTION: Prerequisites: At least one semester, and preferably two, of calculus. An introductory course (STAT UN1201, preferably) is strongly recommended. A calculus-based introduction to probability theory. A quick review of multivariate calculus is provided. Topics covered include random variables, conditional probability, expectation, independence, Bayes’ rule, important distributions, joint distributions, moment generating functions, central limit theorem, laws of large numbers and Markov’s inequality.

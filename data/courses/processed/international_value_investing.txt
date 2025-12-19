@@ -1,0 +1,4 @@
+TITLE: International Value Investing
+SUBJECT: Finance
+INSTRUCTOR: Nicholas D Samra
+DESCRIPTION: This course is designed to create awareness of the differences between investing in the United States and investing outside of the United States. Fundamental security analysis aimed at understanding a company’s economic profile is only one component of the analysis of any business. The legal, cultural, and macroeconomic framework under which a company operates can have a significant impact on investment outcomes. The major topics covered include defining the investable space, understanding the mechanics of investing, macroeconomic and country based policy influences on company valuation, the legal rights of minority shareholders in different markets, cultural influences on valuation and business economics, international economic crises and how to invest, the development of capital markets, and fundamental security analysis of foreign companies.

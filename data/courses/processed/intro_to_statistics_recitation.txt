@@ -1,0 +1,4 @@
+TITLE: Intro to Statistics Recitation
+SUBJECT: Statistics
+INSTRUCTOR: 
+DESCRIPTION: This is only recitation for STAT UG1101. We are requesting 8 sections of recitation to align with the two sections of 1101 offered for Fall 2024.

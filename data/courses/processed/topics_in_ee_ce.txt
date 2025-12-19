@@ -1,0 +1,4 @@
+TITLE: TOPICS IN EE & CE
+SUBJECT: Electrical Engineering
+INSTRUCTOR: Hui Jin
+DESCRIPTION: Selected topics in electrical and computer engineering. Content varies from year to year, and different topics rotate through the course numbers 4900 to 4909.

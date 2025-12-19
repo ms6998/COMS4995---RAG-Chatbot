@@ -1,0 +1,4 @@
+TITLE: Foundations of Biology
+SUBJECT: Biology
+INSTRUCTOR: Mary Ann Price
+DESCRIPTION: In this course, we will introduce basic terminology, important concepts, and basic problem-solving skills in order to prepare biology and pre-health students for the challenging Biology courses they will take at Columbia. We will do a deep dive into a small number of topics and use these as access points to teaching skills that will aid students in future STEM courses. Classes will include time for problem solving. Recitations will involve problem solving and student presentations of solutions to problems.

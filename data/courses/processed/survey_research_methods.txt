@@ -1,0 +1,4 @@
+TITLE: Survey Research Methods
+SUBJECT: Sociomedical Sciences
+INSTRUCTOR: Angela A Aidala
+DESCRIPTION: Survey research is increasingly important for studying structural and social determinants of health, patient-centered care, or to address other evidence needs where first-hand information from individuals themselves are needed—often required—data sources. The course introduces students to principles for designing, conducting, and evaluating survey research that are standard practices in the field. Students who complete the course will learn how to develop and implement a survey, create and evaluate measures, and write up methods and results. Throughout the course, emphasis will be placed on applying survey research methods to answer research questions within public health. Students will develop a survey-based project based on their own research interests.

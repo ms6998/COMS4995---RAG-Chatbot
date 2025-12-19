@@ -1,0 +1,4 @@
+TITLE: APPLIED DATA SCIENCE
+SUBJECT: Statistics
+INSTRUCTOR: Haiyuan Wang
+DESCRIPTION: Prerequisites: Pre-requisite for this course includes working knowledge in Statistics and Probability, data mining, statistical modeling and machine learning. Prior programming experience in R or Python is required. This course will incorporate knowledge and skills covered in a statistical curriculum with topics and projects in data science. Programming will covered using existing tools in R. Computing best practices will be taught using test-driven development, version control, and collaboration. Students finish the class with a portfolio of projects, and deeper understanding of several core statistical/machine-learning algorithms. Short project cycles throughout the semester provide students extensive hands-on experience with various data-driven applications.

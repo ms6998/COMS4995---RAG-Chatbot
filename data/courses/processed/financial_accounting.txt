@@ -1,0 +1,4 @@
+TITLE: FINANCIAL ACCOUNTING
+SUBJECT: Prof. Studies Management
+INSTRUCTOR: Melissa Hall
+DESCRIPTION: Students will examine the generally accepted account principles (GAAP) underlying financial statements and their implementation in practice. The perspective and main focus of the course is from the users of the information contained in the statements, including investors, financial analysts, creditors and, management. By the end of this class students will be able to construct a cash flow statement, balance sheet and decipher a 10K report.

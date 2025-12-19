@@ -1,0 +1,4 @@
+TITLE: MANAGE CIV INSTRASTUCTURE SYST
+SUBJECT: Civil Engineering
+INSTRUCTOR: 
+DESCRIPTION: Examination of the fundamentals of infrastructure planning and management, with a focus on the application of rational methods that support infrastructure decision-making. Institutional environment and issues. Decision-making under certainty and uncertainty. Capital budgeting and financing. Group decision processes. Elements of decision and finance theory. Priority given to graduate students in Construction Engineering and Management.

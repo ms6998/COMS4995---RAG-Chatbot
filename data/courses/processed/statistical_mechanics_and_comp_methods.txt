@@ -1,0 +1,4 @@
+TITLE: STATISTICAL MECHANICS AND COMP METHODS
+SUBJECT: Chemical Eng & Applied Physics
+INSTRUCTOR: Ben O'Shaughnessy
+DESCRIPTION: Boltzmann’s entropy hypothesis and its restatement to calculate the Helmholtz and Gibbs free energies and the grand potential. Applications to interfaces, liquid crystal displays, polymeric materials, crystalline solids, heat capacity and electrical conductivity of crystalline materials, fuel cell solid electrolytes, rubbers, surfactants, molecular self assembly, ferroelectricity. Computational methods for molecular systems. Monte Carlo (MC) and molecular dynamics (MD) simulation methods. MC method applied to liquid-gas and ferromagnetic phase transitions. Deterministic MD simulations of isolated gases and liquids. Stochastic MD simulation methods.

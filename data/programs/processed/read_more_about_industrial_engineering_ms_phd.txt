@@ -1,0 +1,40 @@
+Coursework
+All first year doctoral students are required to take four core courses in the following sequence:
+Fall
+IEOR E6613: Optimization I (4.5 credits)
+IEOR E6711: Stochastic Models I (4.5 credits)
+Spring
+IEOR E6614: Optimization II (4.5 credits)
+IEOR E6712: Stochastic Models II (4.5 credits)
+The department strongly encourages students to take CSOR W4231: Introduction to Algorithms in Fall. (This course can be waived for students who have taken a similar course earlier.)
+In addition to these 4 core courses, each PhD student must take 4 additional PhD level courses (possibly in other departments) during the course of the PhD. Research credits (IEOR E9101) do not count towards this requirement. It is important to select courses you find interesting while considering your background and in consultation with your academic advisor. Students can consider courses from other departments including mathematics, computer science, statistics, economics, and decision risk and operations.
+A complete listing of courses can be found through the Directory of Classes.
+Qualifying Procedure
+The qualifying procedure for PhD students consists of two components:
+- Complete the four core courses during the first year, with an average GPA of 3.66 or above.
+- Conduct research during the first summer (ideally starting in Spring or earlier). At the beginning of the third semester, submit a 3-5 page extended abstract and present it in a department seminar.
+Students will be reviewed after each component. Students who fail to complete component (1) may be asked to withdraw from the program at the end of the first year. Students who successfully complete component (1) will typically move on to summer research advised by a faculty member in the IEOR department. In the rare instance that the PhD Committee is dissatisfied with a student's performance in component (2), the student may be asked to withdraw from the program at the end of their second year.
+Thesis Proposal
+The thesis proposal is an important step towards a successful dissertation. It defines the scope of the research questions being examined and outlines current contributions and future directions to explore.
+A thesis proposal is a journal-quality document describing ongoing research and potential extensions, and students deliver an accompanying talk describing the work at a proposal defense. A partial PhD thesis committee made up of three faculty from the IEOR Department will be convened for the purpose of reviewing this document and the talk. The committee members will normally also serve at the eventual thesis defense. The thesis proposal should describe work that has reached a perceptible level of maturity and make a convincing case that the work will in due course lead to a dissertation. An unsatisfactory proposal will merit a review of the student's performance by their advisor, the Director of PhD program, and the Department Chair.
+The proposal defense normally takes place during the third academic year, but is required to take place no later than the end of the seventh semester. After the proposal defense, the completed Dissertation Prospectus Committee Report, signed and approved by the committee members, must be submitted to the IEOR department. More information about the dissertation prospectus can be found on the GSAS website.
+Thesis Defense
+When the dissertation is complete, there is a final examination by a faculty committee. Prior to application for the final examination, the dissertation must be approved by the sponsor and a faculty reader. The candidate must have complete copies of his thesis available at least four weeks before the examination date.
+Dissertation Defense Timeline
+3-4 Weeks Before:
+- Set the date for your defense by emailing [email protected].
+- Submit the Application for Dissertation Defense form to the office at 315 Mudd Building. You must have decided on a date for defense when you submit this form. The student is responsible for selecting the dissertation committee. The Chair needs to be a full-time faculty member of IEOR. The Sponsor must be your advisor. An "insider" reviewer is someone from the department, whereas an "outside" reviewer is anybody outside of IEOR.
+Post-Defense: The student will receive a "deposit" card that will need to be submitted to the IEOR Department *only* when their dissertation has been fully revised and completed. The student should also email [email protected] regarding when they would like to schedule their congratulatory champagne toast.
+Master of Philosophy Completion
+All students must file for the M.Phil. degree within a year of your intended dissertation defense. If you plan on defending in the spring or summer, you should apply for the M.Phil. by the fall semester before. All students must have:
+- Completed all departmental requirements for the degree
+- Have completed 30 credits post MS
+- Have 6 RU's (residence units) completed
+- No INs, CPs, or other missing grades
+- Not used R grade for credit towards the 30 post-MS
+The Application for the Degree of Master of Philosophy can be found here. Students need to fill this out and bring it to the IEOR Department.
+Funding
+Tuition and Stipend
+The IEOR Department provides tuition and stipend support for all PhD students for at least four years, usually extended to fifth year if needed, provided satisfactory progress is made. This support is provided in the form of a Fellowship, Research Assistantship or a Teaching Assistantship. The department encourages students to seek outside funding whenever possible (including National Science Foundation Graduate Fellowships).
+Travel and Professional Development
+IEOR PhD students are reimbursed for travel to conferences or professional development up to $1,000 per fiscal year. Students may petition for an additional $500 of departmental support once per fiscal year.
