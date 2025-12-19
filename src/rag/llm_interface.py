@@ -44,7 +44,51 @@ class GeminiInterface(LLMInterface):
             logger.info(f"Initialized Gemini interface with model: {model}")
         except ImportError:
             raise ImportError("google-genai package not installed. Run: pip install google-genai")
-    
+        
+    def generate(
+        self,
+        messages: List[Dict[str, str]],
+        temperature: float = 0.1, # Lower temperature for more consistent JSON
+        max_tokens: int = 3000
+    ) -> str:
+        try:
+            from google.genai import types
+            
+            # ... (history and system_instruction logic stays the same)
+
+            # Update the config to enforce JSON
+            system_instruction = None 
+            history = []
+        
+            for msg in messages:
+                if msg['role'] == 'system':
+                    system_instruction = msg['content']
+                else:
+                    role = 'user' if msg['role'] == 'user' else 'model'
+                    history.append(types.Content(
+                        role=role,
+                        parts=[types.Part.from_text(text=msg['content'])]
+                    ))
+
+            # Now this will not crash because system_instruction is defined
+            config = types.GenerateContentConfig(
+                system_instruction=system_instruction,
+                temperature=temperature,
+                max_output_tokens=max_tokens,
+                response_mime_type="application/json" # Add this to prevent the "Chatty" response
+            )
+            
+            response = self.client.models.generate_content(
+                model=self.model_id,
+                contents=history,
+                config=config
+            )
+            
+            return response.text
+        except Exception as e:
+            logger.error(f"Error generating Gemini response: {e}")
+            return f"Error: {str(e)}"
+    '''
     def generate(
         self,
         messages: List[Dict[str, str]],
@@ -90,12 +134,32 @@ class GeminiInterface(LLMInterface):
         except Exception as e:
             logger.error(f"Error generating Gemini response: {e}")
             return f"Error: {str(e)}"
-
+'''
 class PromptTemplate:
     """Template for building prompts."""
     
-    DEGREE_QA_SYSTEM = """You are PathWise, an academic advisor...""" # Rest of the string
-    PLANNING_SYSTEM = """You are PathWise, a planning assistant...""" # Rest of the string
+    DEGREE_QA_SYSTEM = """You are ColumbiaCourse AI, graduation requirements query assistant...""" # Rest of the string
+    PLANNING_SYSTEM = """
+    You are PathWise AI, a degree planning assistant.
+    Based on the provided Degree Requirements and Professor Ratings, create a semester-by-semester plan.
+
+    CRITICAL: You must return ONLY a JSON object. Do not include any introductory text, markdown formatting like ```json, or conversational filler.
+
+    The JSON structure must be:
+    {
+    "semesters": [
+        {
+        "name": "Fall 2024",
+        "courses": [
+            {"code": "COMS 4721", "name": "Machine Learning", "credits": 3, "description": "...", "professor_recommendation": "..."}
+        ],
+        "total_credits": 3
+        }
+    ],
+    "notes": ["Note 1", "Note 2"],
+    "explanation": "Brief overview of the strategy used for this plan."
+    }
+    """
 
     @staticmethod
     def build_qa_prompt(query: str, context: str, user_profile: Optional[Dict[str, Any]] = None) -> List[Dict[str, str]]:
@@ -137,7 +201,8 @@ class OpenAIInterface(LLMInterface):
         except Exception as e:
             logger.error(f"Error generating OpenAI response: {e}")
             return f"Error: {str(e)}"
-
+    
+    
 # AnthropicInterface and PromptTemplate remain largely the same, 
 # but ensure you use the logic above for the factory.
 

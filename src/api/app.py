@@ -251,6 +251,7 @@ async def create_plan(request: PlanRequest):
         
         user_profile_dict = request.user_profile.dict()
         
+        '''
         # Retrieve degree requirements
         req_query = f"degree requirements and course list for {request.user_profile.program}"
         req_docs = requirements_retriever.retrieve(
@@ -261,7 +262,31 @@ async def create_plan(request: PlanRequest):
                 'catalog_year': request.user_profile.catalog_year
             }
         )
+        '''
+        # Build the metadata filter correctly for ChromaDB
+        program = request.user_profile.program
+        #year = request.user_profile.catalog_year
+        year = request.user_profile.catalog_year if request.user_profile.catalog_year != 0 else 2023
         
+        # We only use $and if both fields are present
+        if program and year is not None:
+            filter_dict = {
+                "$and": [
+                    {"program": {"$eq": program}},
+                    {"catalog_year": {"$eq": year}}
+                ]
+            }
+        else:
+            # Fallback for single filter
+            filter_dict = {"program": program} if program else None
+
+        # Retrieve degree requirements
+        req_query = f"degree requirements and course list for {program}"
+        req_docs = requirements_retriever.retrieve(
+            query=req_query,
+            k=10,
+            filter_dict=filter_dict
+        )
         requirements_context = requirements_retriever.format_context_for_llm(req_docs)
         
         # Get professor ratings for relevant courses

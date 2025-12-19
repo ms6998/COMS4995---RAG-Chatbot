@@ -148,23 +148,21 @@ class RAGRetriever:
     ) -> Dict[str, Any]:
         """
         Retrieve documents with additional context enhancement.
-        
-        Args:
-            query: Search query
-            user_profile: Optional user profile for filtering
-            k: Number of results
-            
-        Returns:
-            Dictionary with retrieved documents and metadata
         """
         # Build filter from user profile
         filter_dict = None
         if user_profile:
-            filter_dict = {}
+            filters = []
             if 'program' in user_profile:
-                filter_dict['program'] = user_profile['program']
+                filters.append({'program': {'$eq': user_profile['program']}})
             if 'catalog_year' in user_profile:
-                filter_dict['catalog_year'] = user_profile['catalog_year']
+                filters.append({'catalog_year': {'$eq': user_profile['catalog_year']}})
+            
+            # If we have multiple filters, wrap them in an $and operator
+            if len(filters) > 1:
+                filter_dict = {"$and": filters}
+            elif len(filters) == 1:
+                filter_dict = filters[0]
         
         # Retrieve documents
         results = self.retrieve(
@@ -173,7 +171,6 @@ class RAGRetriever:
             filter_dict=filter_dict
         )
         
-        # Format response with context
         return {
             'query': query,
             'results': results,
