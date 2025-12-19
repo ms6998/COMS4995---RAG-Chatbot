@@ -247,8 +247,6 @@ class ColumbiaCourseData:
                     dept = m.group(1).replace("%20", " ").strip()
                     num = m.group(2).strip()
                     course_code = f"{dept} {num}"
-        print(f"URL: {url}")
-        print(f"Course code: {course_code}")
 
         return Course(
             title=title,
