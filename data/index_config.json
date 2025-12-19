@@ -20,6 +20,6 @@
   },
   "professor_ratings": {
     "collection_name": "professor_ratings",
-    "ratings_file": "data/ratings/culpa_ratings.csv"
+    "ratings_file": "data/ratings/culpa_course_ratings.csv"
   }
 }

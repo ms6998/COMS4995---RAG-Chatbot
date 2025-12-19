@@ -134,7 +134,7 @@ class DocumentIndexer:
 
         for i, rating in enumerate(ratings_data):
             course_code = rating["course_code"]
-            prof_name = rating["prof_name"]
+            prof_name = rating.get("prof_name", rating.get("name", ""))
             rating_score = rating["rating"]
             tags = rating.get("tags", "")
 
