@@ -40,17 +40,6 @@ venv/
 .env.local
 config.py
 
-# Data files
-data/raw/*
-!data/raw/.gitkeep
-data/processed/*
-!data/processed/.gitkeep
-*.pdf
-*.csv
-*.json
-!data/sample/*.json
-!data/sample/*.csv
-
 # Vector databases
 vector_db/
 *.faiss

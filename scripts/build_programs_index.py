@@ -17,6 +17,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from sentence_transformers import SentenceTransformer
 
+
 def read_text_file(file_path):
     """Read text from file."""
     try:
@@ -30,11 +31,13 @@ def read_text_file(file_path):
             print(f"  ⚠️  Error reading {file_path}: {e}")
             return ""
 
+
 def clean_text(text):
     """Basic text cleaning."""
     import re
     text = re.sub(r'\s+', ' ', text)
     return text.strip()
+
 
 def chunk_text(text, chunk_size=500, overlap=100):
     """Split text into chunks."""
@@ -47,6 +50,7 @@ def chunk_text(text, chunk_size=500, overlap=100):
             chunks.append(chunk)
 
     return chunks if chunks else [text]
+
 
 def build_programs_index():
     """Build index from program documents."""
