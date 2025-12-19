@@ -60,7 +60,7 @@ async def startup_event():
             from config import (
                 EMBEDDING_MODEL, VECTOR_DB_TYPE, VECTOR_DB_PATH,
                 COLLECTION_NAME_REQUIREMENTS, COLLECTION_NAME_PROFESSORS,
-                TOP_K_RETRIEVAL, OPENAI_API_KEY, LLM_MODEL
+                TOP_K_RETRIEVAL, GEMINI_API_KEY, LLM_MODEL
             )
         except ImportError:
             logger.warning("Config file not found. Using defaults.")
@@ -70,8 +70,8 @@ async def startup_event():
             COLLECTION_NAME_REQUIREMENTS = "degree_requirements"
             COLLECTION_NAME_PROFESSORS = "professor_ratings"
             TOP_K_RETRIEVAL = 5
-            OPENAI_API_KEY = "your_key_here"
-            LLM_MODEL = "gpt-4"
+            GEMINI_API_KEY = "AIzaSyDpy8DX9xhMYQP515kY9en2C03Wr4H5BWQ"
+            LLM_MODEL = "gemini-2.5-pro"
         
         # Initialize embedder
         logger.info(f"Loading embedding model: {EMBEDDING_MODEL}")
@@ -108,8 +108,8 @@ async def startup_event():
         # Initialize LLM
         logger.info(f"Initializing LLM: {LLM_MODEL}")
         llm_interface = create_llm_interface(
-            provider="openai",
-            api_key=OPENAI_API_KEY,
+            provider="gemini",
+            api_key=GEMINI_API_KEY,
             model=LLM_MODEL
         )
         
@@ -174,7 +174,7 @@ async def ask_question(request: QuestionRequest):
         # Retrieve relevant documents
         retrieval_result = requirements_retriever.retrieve_with_context(
             query=request.question,
-            user_profile=user_profile_dict,
+            user_profile=None,
             k=request.top_k
         )
         
@@ -327,7 +327,7 @@ async def query_professors(request: ProfessorQueryRequest):
             result[course_code] = [
                 ProfessorRating(
                     course_code=p['metadata']['course_code'],
-                    prof_name=p['metadata']['prof_name'],
+                    prof_name=p['metadata'].get('prof_name', p['metadata'].get('professor_name', 'Unknown Professor')),
                     rating=p['metadata']['rating'],
                     tags=p['metadata'].get('tags', '')
                 )

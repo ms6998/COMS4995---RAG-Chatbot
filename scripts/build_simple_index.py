@@ -47,7 +47,7 @@ def build_culpa_index_simple():
     metadatas = []
     
     for idx, row in df.iterrows():
-        prof_name = row['professor_name']
+        prof_name = row.get('prof_name') or row.get('professor_name', 'Unknown')
         rating = row['rating']
         course_code = row.get('course_code', '')
         tags = row.get('tags', '')

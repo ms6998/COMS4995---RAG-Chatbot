@@ -332,8 +332,8 @@ class FAISSVectorStore(VectorStore):
 
 
 def create_vector_store(
-    store_type: str,
-    collection_name: str,
+    store_type: str = "chroma",
+    collection_name: str = "default",
     embedding_dim: int = None,
     persist_directory: str = "./vector_db"
 ) -> VectorStore:
@@ -357,39 +357,3 @@ def create_vector_store(
         return FAISSVectorStore(collection_name, embedding_dim, persist_directory)
     else:
         raise ValueError(f"Unknown store type: {store_type}")
-
-
-if __name__ == "__main__":
-    # Test vector store
-    print("Testing ChromaDB...")
-    store = ChromaVectorStore("test_collection", persist_directory="./test_db")
-    
-    # Add some test documents
-    texts = [
-        "The MS in Computer Science requires 30 credits",
-        "Core courses include Database Systems and AI",
-        "Students must maintain a GPA of 3.0"
-    ]
-    
-    # Create dummy embeddings
-    embeddings = np.random.rand(3, 384).astype('float32')
-    metadatas = [
-        {"program": "MS CS", "catalog_year": 2023},
-        {"program": "MS CS", "catalog_year": 2023},
-        {"program": "MS CS", "catalog_year": 2024}
-    ]
-    
-    store.add_documents(texts, embeddings, metadatas)
-    
-    # Search
-    query_embedding = np.random.rand(384).astype('float32')
-    results = store.search(query_embedding, k=2)
-    
-    print(f"\nFound {len(results)} results")
-    for i, result in enumerate(results):
-        print(f"\n{i+1}. {result['text'][:50]}...")
-        print(f"   Distance: {result['distance']:.4f}")
-        print(f"   Metadata: {result['metadata']}")
-
-
-

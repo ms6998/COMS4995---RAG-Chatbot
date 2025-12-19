@@ -6,10 +6,62 @@ from typing import List, Dict, Any, Optional
 import logging
 from .embeddings import EmbeddingGenerator
 from .vector_store import VectorStore
+import re
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+
+class ProfessorRatingsRetriever:
+    """Specialized retriever for professor ratings with input normalization."""
+    
+    def __init__(self, embedder: EmbeddingGenerator, vector_store: VectorStore):
+        self.embedder = embedder
+        self.vector_store = vector_store
+        logger.info("Initialized ProfessorRatingsRetriever")
+
+    def normalize_course_code(self, course_code: str) -> str:
+        """
+        Standardizes course codes to 'DEPT ####' format.
+        Example: 'coms4995' -> 'COMS 4995'
+        """
+        # 1. Remove all spaces and convert to uppercase
+        clean = course_code.replace(" ", "").upper()
+        
+        # 2. Use regex to separate letters and numbers
+        match = re.match(r"([A-Z]{2,4})(\d{4})", clean)
+        if match:
+            return f"{match.group(1)} {match.group(2)}"
+        
+        return course_code  # Return original if pattern doesn't match
+
+    def get_professors_for_course(self, course_code: str, k: int = 5) -> List[Dict[str, Any]]:
+        # 1. Generate variations
+        raw = course_code.strip()
+        no_space = raw.replace(" ", "")
+        with_space = re.sub(r"([A-Z]{2,4})(\d{4})", r"\1 \2", no_space.upper())
+        
+        # 2. Build a flexible filter
+        # This checks for: "COMS 4995", "COMS4995", "coms4995", etc.
+        flexible_filter = {
+            "$or": [
+                {"course_code": with_space},           # "COMS 4995"
+                {"course_code": no_space.upper()},     # "COMS4995"
+                {"course_code": no_space.lower()},     # "coms4995"
+                {"course_code": raw}                   # Original input
+            ]
+        }
+
+        logger.info(f"Searching with flexible filter for: {raw}")
+        query_embedding = self.embedder.encode_query(f"professors for {with_space}")
+        
+        results = self.vector_store.search(
+            query_embedding=query_embedding,
+            k=k * 2,
+            filter_dict=flexible_filter
+        )
+        
+        return sorted(results, key=lambda x: x['metadata'].get('rating', 0), reverse=True)[:k]
 
 class RAGRetriever:
     """
