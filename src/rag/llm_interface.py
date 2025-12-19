@@ -21,7 +21,7 @@ class LLMProvider(Enum):
 
 class LLMInterface:
     """Base interface for LLM interactions."""
-    
+
     def generate(
         self,
         messages: List[Dict[str, str]],
@@ -34,7 +34,7 @@ class LLMInterface:
 
 class GeminiInterface(LLMInterface):
     """Interface for Google Gemini models using the unified google-genai SDK."""
-    
+
     def __init__(self, api_key: str, model: str = "gemini-2.5-pro"):
         """
         Initialize Gemini interface.
@@ -60,11 +60,11 @@ class GeminiInterface(LLMInterface):
         try:
             from google import genai
             from google.genai import types
-            
+
             # Separate System message from User/Assistant history
             system_instruction = None
             history = []
-            
+
             for msg in messages:
                 if msg['role'] == 'system':
                     system_instruction = msg['content']
@@ -82,13 +82,13 @@ class GeminiInterface(LLMInterface):
                 temperature=temperature,
                 max_output_tokens=max_tokens,
             )
-            
+
             response = self.client.models.generate_content(
                 model=self.model_id,
                 contents=history,
                 config=config
             )
-            
+
             return response.text
         except Exception as e:
             logger.error(f"Error generating Gemini response: {e}")

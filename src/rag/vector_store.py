@@ -1,6 +1,5 @@
 """
-Vector database module for storing and retrieving embeddings.
-Supports both ChromaDB and FAISS.
+Vector database module for storing and retrieving embeddings
 """
 
 from typing import List, Dict, Any, Optional, Tuple
@@ -65,26 +64,26 @@ class ChromaVectorStore(VectorStore):
         try:
             import chromadb
             from chromadb.config import Settings
-            
-            self.persist_directory = persist_directory
-            Path(persist_directory).mkdir(parents=True, exist_ok=True)
-            
-            self.client = chromadb.PersistentClient(
-                path=persist_directory,
-                settings=Settings(anonymized_telemetry=False)
-            )
-            
-            # Get or create collection
-            self.collection = self.client.get_or_create_collection(
-                name=collection_name,
-                metadata={"hnsw:space": "cosine"}
-            )
-            
-            logger.info(f"Initialized ChromaDB collection: {collection_name}")
-            logger.info(f"Current document count: {self.collection.count()}")
-            
         except ImportError:
             raise ImportError("chromadb not installed. Run: pip install chromadb")
+            
+        self.persist_directory = persist_directory
+        Path(persist_directory).mkdir(parents=True, exist_ok=True)
+        
+        self.client = chromadb.PersistentClient(
+            path=persist_directory,
+            settings=Settings(anonymized_telemetry=False)
+        )
+        
+        # Get or create collection
+        self.collection = self.client.get_or_create_collection(
+            name=collection_name,
+            metadata={"hnsw:space": "cosine"}
+        )
+        
+        logger.info(f"Initialized ChromaDB collection: {collection_name}")
+        logger.info(f"Current document count: {self.collection.count()}")
+            
     
     def add_documents(
         self,
@@ -193,178 +192,26 @@ class ChromaVectorStore(VectorStore):
         logger.info(f"Deleted collection: {self.collection.name}")
 
 
-class FAISSVectorStore(VectorStore):
-    """Vector store using FAISS."""
-    
-    def __init__(
-        self,
-        collection_name: str,
-        embedding_dim: int,
-        persist_directory: str = "./vector_db"
-    ):
-        """
-        Initialize FAISS vector store.
-        
-        Args:
-            collection_name: Name of the collection
-            embedding_dim: Dimension of embeddings
-            persist_directory: Directory to persist the database
-        """
-        try:
-            import faiss
-            
-            self.collection_name = collection_name
-            self.embedding_dim = embedding_dim
-            self.persist_directory = Path(persist_directory)
-            self.persist_directory.mkdir(parents=True, exist_ok=True)
-            
-            self.index_path = self.persist_directory / f"{collection_name}.faiss"
-            self.metadata_path = self.persist_directory / f"{collection_name}_metadata.pkl"
-            
-            # Initialize or load index
-            if self.index_path.exists():
-                self.index = faiss.read_index(str(self.index_path))
-                with open(self.metadata_path, 'rb') as f:
-                    self.documents = pickle.load(f)
-                logger.info(f"Loaded existing FAISS index with {self.index.ntotal} vectors")
-            else:
-                # Create new index (using inner product for cosine similarity)
-                self.index = faiss.IndexFlatIP(embedding_dim)
-                self.documents = []
-                logger.info(f"Created new FAISS index")
-            
-        except ImportError:
-            raise ImportError("faiss not installed. Run: pip install faiss-cpu")
-    
-    def add_documents(
-        self,
-        texts: List[str],
-        embeddings: np.ndarray,
-        metadatas: List[Dict[str, Any]],
-        ids: Optional[List[str]] = None
-    ):
-        """
-        Add documents to FAISS.
-        
-        Args:
-            texts: List of text strings
-            embeddings: Numpy array of embeddings (should be normalized for cosine similarity)
-            metadatas: List of metadata dictionaries
-            ids: Optional list of document IDs
-        """
-        if ids is None:
-            ids = [f"doc_{len(self.documents) + i}" for i in range(len(texts))]
-        
-        # Normalize embeddings for cosine similarity
-        embeddings_normalized = embeddings / np.linalg.norm(embeddings, axis=1, keepdims=True)
-        
-        # Add to index
-        self.index.add(embeddings_normalized.astype('float32'))
-        
-        # Store documents with metadata
-        for text, metadata, doc_id in zip(texts, metadatas, ids):
-            self.documents.append({
-                'id': doc_id,
-                'text': text,
-                'metadata': metadata
-            })
-        
-        # Persist
-        self._persist()
-        logger.info(f"Added {len(texts)} documents to FAISS index")
-    
-    def search(
-        self,
-        query_embedding: np.ndarray,
-        k: int = 5,
-        filter_dict: Optional[Dict[str, Any]] = None
-    ) -> List[Dict[str, Any]]:
-        """
-        Search for similar documents in FAISS.
-        
-        Args:
-            query_embedding: Query embedding vector (should be normalized)
-            k: Number of results to return
-            filter_dict: Optional metadata filter
-            
-        Returns:
-            List of result dictionaries
-        """
-        # Normalize query embedding
-        query_normalized = query_embedding / np.linalg.norm(query_embedding)
-        query_normalized = query_normalized.reshape(1, -1).astype('float32')
-        
-        # Search
-        distances, indices = self.index.search(query_normalized, min(k * 2, len(self.documents)))
-        
-        # Filter results based on metadata
-        results = []
-        for distance, idx in zip(distances[0], indices[0]):
-            if idx == -1 or idx >= len(self.documents):
-                continue
-            
-            doc = self.documents[idx]
-            
-            # Apply metadata filter if provided
-            if filter_dict:
-                match = all(
-                    doc['metadata'].get(key) == value
-                    for key, value in filter_dict.items()
-                )
-                if not match:
-                    continue
-            
-            results.append({
-                'text': doc['text'],
-                'metadata': doc['metadata'],
-                'distance': float(distance),
-                'id': doc['id']
-            })
-            
-            if len(results) >= k:
-                break
-        
-        return results
-    
-    def _persist(self):
-        """Persist index and metadata to disk."""
-        import faiss
-        faiss.write_index(self.index, str(self.index_path))
-        with open(self.metadata_path, 'wb') as f:
-            pickle.dump(self.documents, f)
-    
-    def delete_collection(self):
-        """Delete the collection files."""
-        if self.index_path.exists():
-            self.index_path.unlink()
-        if self.metadata_path.exists():
-            self.metadata_path.unlink()
-        logger.info(f"Deleted collection: {self.collection_name}")
-
-
 def create_vector_store(
     store_type: str = "chroma",
     collection_name: str = "default",
-    embedding_dim: int = None,
     persist_directory: str = "./vector_db"
 ) -> VectorStore:
     """
-    Factory function to create a vector store.
+    Factory function to create a vector store. Only Chroma is supported
+    for the proof-of-concept
     
     Args:
-        store_type: Type of store ('chroma' or 'faiss')
+        store_type: Type of store ('chroma')
         collection_name: Name of the collection
-        embedding_dim: Embedding dimension (required for FAISS)
         persist_directory: Directory to persist data
         
     Returns:
         VectorStore instance
     """
-    if store_type.lower() == 'chroma':
-        return ChromaVectorStore(collection_name, persist_directory)
-    elif store_type.lower() == 'faiss':
-        if embedding_dim is None:
-            raise ValueError("embedding_dim is required for FAISS")
-        return FAISSVectorStore(collection_name, embedding_dim, persist_directory)
-    else:
-        raise ValueError(f"Unknown store type: {store_type}")
+    if store_type.lower() == "chroma":
+        return ChromaVectorStore(
+            collection_name,
+            persist_directory,
+        )
+    raise ValueError(f"Unknown store type: {store_type}")

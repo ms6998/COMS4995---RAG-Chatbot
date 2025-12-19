@@ -23,16 +23,16 @@ def scan_programs_folder(programs_dir):
         List of document configurations
     """
     programs_path = Path(programs_dir)
-    
+
     if not programs_path.exists():
         print(f"❌ Error: Programs folder not found: {programs_dir}")
         print("\nPlease download Colin's programs folder from Google Drive:")
         print("https://drive.google.com/drive/folders/1djwskyPBs211TZFumsCnimOkzkDZ-13G")
         print("\nAnd extract it to: data/raw/programs/")
         return []
-    
+
     documents = []
-    
+
     # Find all supported document files
     supported_extensions = ['.pdf', '.txt', '.html', '.htm']
     

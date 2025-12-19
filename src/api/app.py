@@ -174,14 +174,12 @@ async def _startup_event(*args, **kwargs) -> None:
     requirements_store = create_vector_store(
         store_type=VECTOR_DB_TYPE,
         collection_name=COLLECTION_NAME_REQUIREMENTS,
-        embedding_dim=embedder.embedding_dim,
         persist_directory=VECTOR_DB_PATH
     )
 
     professor_store = create_vector_store(
         store_type=VECTOR_DB_TYPE,
         collection_name=COLLECTION_NAME_PROFESSORS,
-        embedding_dim=embedder.embedding_dim,
         persist_directory=VECTOR_DB_PATH
     )
     

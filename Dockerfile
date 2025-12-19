@@ -19,6 +19,12 @@ COPY config.py .env
 COPY ./src/ src/
 COPY ./scripts/ scripts/
 
+# Copy data for vector db
+COPY ./data/ data/
+
+# Build vector database indices
+RUN python scripts/build_index.py
+
 EXPOSE 8000
 COPY run.sh run.sh
 RUN chmod +x run.sh

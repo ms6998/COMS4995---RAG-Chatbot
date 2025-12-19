@@ -256,7 +256,6 @@ def build_indices_from_config(config_path: str):
         req_store = create_vector_store(
             store_type=config['vector_db']['type'],
             collection_name=req_config['collection_name'],
-            embedding_dim=embedder.embedding_dim,
             persist_directory=config['vector_db']['persist_directory']
         )
         
@@ -269,7 +268,6 @@ def build_indices_from_config(config_path: str):
         prof_store = create_vector_store(
             store_type=config['vector_db']['type'],
             collection_name=prof_config['collection_name'],
-            embedding_dim=embedder.embedding_dim,
             persist_directory=config['vector_db']['persist_directory']
         )
         

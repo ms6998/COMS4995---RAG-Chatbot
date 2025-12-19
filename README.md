@@ -138,7 +138,7 @@ COMS4995---RAG-Chatbot/
 │   ├── rag/                    # RAG system components
 │   │   ├── document_processor.py   # Document extraction & chunking
 │   │   ├── embeddings.py           # Embedding generation
-│   │   ├── vector_store.py         # Vector database (Chroma/FAISS)
+│   │   ├── vector_store.py         # Vector database (Chroma)
 │   │   ├── retriever.py            # Retrieval logic
 │   │   ├── indexer.py              # Index building
 │   │   └── llm_interface.py        # LLM integration
@@ -176,7 +176,7 @@ LLM_MODEL = "gpt-4"
 LLM_TEMPERATURE = 0.3
 
 # Vector Database
-VECTOR_DB_TYPE = "chroma"  # or "faiss"
+VECTOR_DB_TYPE = "chroma"
 VECTOR_DB_PATH = "./vector_db"
 
 # Retrieval
@@ -242,27 +242,32 @@ python scripts/build_index.py path/to/your_config.json
 ## 🧪 RAG System Components
 
 ### Document Processing
+
 - Extracts text from PDFs, HTML, and text files
 - Chunks documents with overlapping windows (600 tokens, 100 overlap)
 - Preserves metadata (program, year, source)
 - Extracts course codes automatically
 
 ### Embeddings
+
 - Uses sentence-transformers for local embedding generation
 - Default model: `all-MiniLM-L6-v2` (384 dimensions)
 - Supports OpenAI embeddings as alternative
 
 ### Vector Store
-- Supports ChromaDB (default) and FAISS
+
+- Supports ChromaDB (default)
 - Efficient similarity search with metadata filtering
 - Persistent storage
 
 ### Retrieval
+
 - Semantic search using cosine similarity
 - Metadata filtering by program, year, etc.
 - Context formatting for LLM prompts
 
 ### LLM Integration
+
 - Supports OpenAI (GPT-4, GPT-3.5)
 - Supports Anthropic Claude
 - Structured prompts for Q&A and planning
@@ -270,25 +275,29 @@ python scripts/build_index.py path/to/your_config.json
 ## 📝 Example Use Cases
 
 ### 1. Check Degree Requirements
-```
+
+```text
 Q: "What are the core courses for MS in Computer Science?"
 A: Returns specific courses with citations to the bulletin.
 ```
 
 ### 2. Verify Course Eligibility
-```
+
+```text
 Q: "Does COMS 4995 count as a technical elective?"
 A: Checks requirements and provides official guidance.
 ```
 
 ### 3. Plan Your Degree
-```
+
+```text
 Input: Program, year, completed courses, preferences
 Output: 4-semester plan with best-rated professors
 ```
 
 ### 4. Find Best Professors
-```
+
+```text
 Q: "Who are the top-rated professors for Database Systems?"
 A: Ranked list with ratings and student feedback tags.
 ```
@@ -296,6 +305,7 @@ A: Ranked list with ratings and student feedback tags.
 ## 🔍 Testing
 
 ### Test RAG Components
+
 ```bash
 python scripts/test_rag.py
 ```
@@ -320,12 +330,14 @@ python tests/test_api.py
 This project was developed for COMS 4995 - Applied Machine Learning at Columbia University.
 
 ### Key Concepts Demonstrated
+
 - **RAG (Retrieval-Augmented Generation)**: Combines information retrieval with LLM generation
 - **Semantic Search**: Uses embeddings for meaning-based retrieval
 - **Prompt Engineering**: Structured prompts for accurate, safe responses
 - **API Design**: RESTful API with proper validation and error handling
 
 ### Alignment with Course Trends
+
 - Self-improving agents (LLM learns from retrieved context)
 - RLAIF potential (AI-generated training data for fine-tuning)
 - Multimodal capabilities (can extend to process diagrams, flowcharts)
@@ -356,7 +368,7 @@ MIT License - see LICENSE file for details.
 ## 👥 Contributors
 
 - Mingjun Sun - RAG System Implementation
-- Colin Payne-Rogers - Document retrieval
+- Colin Payne-Rogers - Document retrieval, backend integration, docker setup
 
 ## 📧 Contact
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Build vector index for program documents.
-Uses simple numpy-based storage (no FAISS dependency).
+Uses simple numpy-based storage.
 """
 
 import os

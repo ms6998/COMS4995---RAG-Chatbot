@@ -29,9 +29,10 @@ def main():
     
     # Check if config exists
     config_path = Path("config.py")
-    if not config_path.exists():
-        print("⚠ Warning: config.py not found!")
-        print("  Please copy config_example.py to config.py and fill in your API keys.")
+    env_path = Path(".env")
+    if not config_path.exists() and not env_path.exists():
+        print("⚠ Warning: config not found!")
+        print("  Please copy config_example.py to config.py or .env and fill in your API keys.")
         print("  The server will start but some features may not work without proper config.\n")
     
     # Check if vector DB exists
