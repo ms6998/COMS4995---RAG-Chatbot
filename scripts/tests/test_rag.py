@@ -7,7 +7,7 @@ import sys
 from pathlib import Path
 
 # Add parent directory to path
-sys.path.insert(0, str(Path(__file__).parent.parent))
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from src.rag.embeddings import EmbeddingGenerator
 from src.rag.vector_store import create_vector_store
@@ -22,13 +22,12 @@ def test_requirements_retrieval():
 
     # Initialize components
     print("\nInitializing embedder...")
-    embedder = EmbeddingGenerator()
+    embedder = EmbeddingGenerator("sentence-transformers/all-MiniLM-L6-v2") # TODO: consolidate config
 
     print("Connecting to vector store...")
     vector_store = create_vector_store(
         store_type="chroma",
         collection_name="degree_requirements",
-        embedding_dim=embedder.embedding_dim,
         persist_directory="./vector_db"
     )
 
@@ -76,13 +75,12 @@ def test_professor_ratings():
 
     # Initialize components
     print("\nInitializing embedder...")
-    embedder = EmbeddingGenerator()
+    embedder = EmbeddingGenerator("sentence-transformers/all-MiniLM-L6-v2") # TODO: consolidate config
 
     print("Connecting to professor ratings store...")
     vector_store = create_vector_store(
         store_type="chroma",
         collection_name="professor_ratings",
-        embedding_dim=embedder.embedding_dim,
         persist_directory="./vector_db"
     )
 

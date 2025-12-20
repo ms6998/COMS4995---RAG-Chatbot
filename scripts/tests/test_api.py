@@ -2,12 +2,10 @@
 Simple test script for API endpoints using requests.
 Run the server first, then run this script.
 """
-
 import requests
 import json
 
-
-BASE_URL = "http://localhost:8000"
+BASE_URL = "http://localhost:8000"  # Assumes local testing
 
 
 def test_health():
