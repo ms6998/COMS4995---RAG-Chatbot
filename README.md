@@ -26,7 +26,7 @@ Using Docker is recommended. All you need to do is:
 ### 1. Clone Repo
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:ms6998/COMS4995---RAG-Chatbot
 cd COMS4995---RAG-Chatbot
 ```
 
@@ -54,8 +54,8 @@ Once indices are built, the server will be available at `http://localhost:8000`
 In a new terminal:
 
 ```bash
-python scripts/test_rag.py  # Test RAG components
-python tests/test_api.py    # Test API endpoints
+python scripts/tests/test_rag.py  # Test RAG components
+python scripts/tests/test_api.py  # Test API endpoints
 ```
 
 ## 📚 API Documentation

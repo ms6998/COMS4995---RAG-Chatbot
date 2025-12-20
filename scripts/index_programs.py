@@ -123,7 +123,7 @@ def create_full_index_config(programs_dir, output_file):
     print("\nNext steps:")
     print(f"  1. Install dependencies: pip install -r requirements.txt")
     print(f"  2. Build index: python scripts/build_index.py {output_file}")
-    print(f"  3. Test system: python scripts/test_rag.py")
+    print(f"  3. Test system: python scripts/tests/test_rag.py")
 
     return True
 
