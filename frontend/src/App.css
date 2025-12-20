@@ -271,6 +271,60 @@ body {
   }
 }
 
+/* Markdown Formatting */
+.message-content p {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.message-content ul, .message-content ol {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.message-content li {
+  margin-bottom: 4px;
+}
+
+.message-content strong {
+  font-weight: 700;
+  color: #1a73e8; /* A nice highlight color */
+}
+
+/* Header & Back Button */
+.chat-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  gap: 12px;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.back-button:hover {
+  background: #f0f0f0;
+}
+
+/* Auto-scroll behavior */
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: calc(100vh - 160px); /* Adjust based on your header/input height */
+  padding: 20px;
+}
+
 .message.user {
   justify-content: flex-end;
 }
@@ -383,4 +437,51 @@ body {
 
 .messages-container::-webkit-scrollbar-thumb:hover {
   background: var(--color-text-tertiary);
+}
+
+/* Makes citations look like small chips */
+.message-content em {
+  font-style: normal;
+  font-size: 0.8rem;
+  background: #f1f3f4;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #5f6368;
+}
+
+.major-selector-container {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.selector-label {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.major-select {
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  background-color: white;
+  color: #002d62; /* Columbia Blue */
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+}
+
+.major-badge {
+  font-size: 0.75rem;
+  background: #e1f5fe;
+  color: #0077cc;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
 }
