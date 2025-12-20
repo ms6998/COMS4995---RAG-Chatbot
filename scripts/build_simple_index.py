@@ -120,7 +120,7 @@ def build_culpa_index_simple():
     print(f"Embedding dimension: {embeddings.shape[1]}")
 
     print("\nNext steps:")
-    print("  1. Test search: python scripts/test_simple_search.py")
+    print("  1. Test search: python scripts/tests/test_simple_search.py")
     print("  2. Start API: python scripts/start_server.py")
 
     return True

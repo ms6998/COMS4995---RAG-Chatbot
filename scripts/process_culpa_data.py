@@ -312,7 +312,7 @@ def main():
         print("\n2. Build the vector index:")
         print("   python scripts/build_index.py data/culpa_index_config.json")
         print("\n3. Test the system:")
-        print("   python scripts/test_rag.py")
+        print("   python scripts/tests/test_rag.py")
 
     except Exception as e:
         print(f"\n✗ Error: {e}")
