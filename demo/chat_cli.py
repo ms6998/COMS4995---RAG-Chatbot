@@ -16,7 +16,7 @@ API_URL = "http://localhost:8000"
 def chat():
     """Run interactive chatbot."""
     print("=" * 60)
-    print("PathWise Chatbot Demo")
+    print("PathWay Chatbot Demo")
     print("=" * 60)
     print("\nType your questions about MS programs.")
     print("Commands: 'quit' to exit, 'help' for examples\n")

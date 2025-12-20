@@ -50,7 +50,7 @@ def search_index(query, index_dir, k=3):
 def main():
     """Test combined searches."""
     print("="*60)
-    print("PathWise Combined Search Test")
+    print("PathWay Combined Search Test")
     print("="*60)
 
     # Test professor queries

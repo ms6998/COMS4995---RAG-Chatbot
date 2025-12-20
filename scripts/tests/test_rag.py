@@ -112,7 +112,7 @@ def test_professor_ratings():
 def main():
     """Main function."""
     print("\n" + "="*60)
-    print("PathWise RAG System Test")
+    print("PathWay RAG System Test")
     print("="*60)
 
     # Check if indices exist

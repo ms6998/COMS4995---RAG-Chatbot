@@ -2,7 +2,7 @@
 # Quick installation script
 
 echo "========================================="
-echo "PathWise Dependency Quick Install"
+echo "PathWay Dependency Quick Install"
 echo "========================================="
 
 echo ""

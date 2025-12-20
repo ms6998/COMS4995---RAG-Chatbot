@@ -9,13 +9,13 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from src.rag.langchain_rag import create_pathwise_rag
+from src.rag.langchain_rag import create_pathway_rag
 
 
 def main():
     """Run interactive chatbot."""
     print("="*60)
-    print("PathWise Chatbot - LangChain RAG Demo")
+    print("PathWay Chatbot - LangChain RAG Demo")
     print("="*60)
 
     # Check API key
@@ -30,7 +30,7 @@ def main():
     # Initialize RAG
     print("\nInitializing RAG system...")
     try:
-        rag = create_pathwise_rag(api_key, model_name="gpt-3.5-turbo")
+        rag = create_pathway_rag(api_key, model_name="gpt-3.5-turbo")
     except Exception as e:
         print(f"❌ Error initializing RAG: {e}")
         sys.exit(1)
@@ -64,7 +64,7 @@ def main():
                 query_type = "general"
 
             # Get answer
-            print("\n🤖 PathWise: ", end="", flush=True)
+            print("\n🤖 PathWay: ", end="", flush=True)
 
             result = rag.answer_question(question, query_type=query_type)
             print(result['answer'])

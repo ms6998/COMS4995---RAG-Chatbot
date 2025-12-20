@@ -1,6 +1,6 @@
-# PathWise - LLM-Powered Degree Advisor
+# PathWay - LLM-Powered Degree Advisor
 
-PathWise is an intelligent academic advising system that uses Retrieval-
+PathWay is an intelligent academic advising system that uses Retrieval-
 Augmented Generation (RAG) to help engineering students navigate degree
 requirements, plan their academic path, and select courses taught by
 highly-rated professors.
@@ -44,7 +44,7 @@ would be separate, but, the corpus is small enough that it can be incorporated
 into the running backend image
 
 ```bash
-docker compose run --remove-orphans --build pathwise
+docker compose run --remove-orphans --build pathway
 ```
 
 Once indices are built, the server will be available at `http://localhost:8000`
