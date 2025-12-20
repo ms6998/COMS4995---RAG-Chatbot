@@ -131,7 +131,7 @@ def main():
     """Run all tests."""
 
     print("="*60)
-    print("PathWise API Test Suite")
+    print("PathWay API Test Suite")
     print("="*60)
     print("\nMake sure the server is running: python scripts/start_server.py")
 

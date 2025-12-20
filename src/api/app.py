@@ -1,5 +1,5 @@
 """
-FastAPI application for PathWise RAG system.
+FastAPI application for PathWay RAG system.
 """
 import asyncio
 import inspect
@@ -35,7 +35,7 @@ logger = logging.getLogger(__name__)
 
 # Initialize FastAPI app
 app = FastAPI(
-    title="PathWise API",
+    title="PathWay API",
     description="LLM-Powered Degree Advisor with RAG",
     version="0.1.0"
 )
@@ -127,7 +127,7 @@ async def _startup_event(*args, **kwargs) -> None:
     Initialize components on startup
     """
     global embedder, requirements_retriever, professor_retriever, llm_interface
-    logger.info("Initializing PathWise RAG system...")
+    logger.info("Initializing PathWay RAG system...")
 
     # Load configuration
     # This can be handled better and more consistently
@@ -203,7 +203,7 @@ async def _startup_event(*args, **kwargs) -> None:
         api_key=GEMINI_API_KEY,
     )
 
-    logger.info("PathWise RAG system initialized successfully!")
+    logger.info("PathWay RAG system initialized successfully!")
 
 
 @app.on_event("startup")
@@ -215,7 +215,7 @@ async def startup_event():
 async def root():
     """Root endpoint."""
     return {
-        "message": "Welcome to PathWise API",
+        "message": "Welcome to PathWay API",
         "version": "0.1.0",
         "endpoints": {
             "health": "/health",

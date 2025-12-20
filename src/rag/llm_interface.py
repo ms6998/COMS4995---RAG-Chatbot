@@ -107,8 +107,8 @@ class GeminiInterface(LLMInterface):
 class PromptTemplate:
     """Template for building prompts."""
 
-    DEGREE_QA_SYSTEM = """You are PathWise, an academic advisor...""" # Rest of the string
-    PLANNING_SYSTEM = """You are PathWise, a planning assistant...""" # Rest of the string
+    DEGREE_QA_SYSTEM = """You are PathWay, an academic advisor...""" # Rest of the string
+    PLANNING_SYSTEM = """You are PathWay, a planning assistant...""" # Rest of the string
 
     @staticmethod
     def build_qa_prompt(query: str, context: str, user_profile: Optional[Dict[str, Any]] = None) -> List[Dict[str, str]]:

@@ -92,9 +92,9 @@ class SimpleVectorStore:
         return results
 
 
-class PathWiseRAG:
+class PathWayRAG:
     """
-    PathWise RAG system using LangChain.
+    PathWay RAG system using LangChain.
     """
 
     def __init__(
@@ -106,7 +106,7 @@ class PathWiseRAG:
         temperature: float = 0.3
     ):
         """
-        Initialize PathWise RAG system.
+        Initialize PathWay RAG system.
 
         Args:
             openai_api_key: OpenAI API key
@@ -115,7 +115,7 @@ class PathWiseRAG:
             model_name: LLM model name
             temperature: LLM temperature
         """
-        print("Initializing PathWise RAG with LangChain...")
+        print("Initializing PathWay RAG with LangChain...")
 
         # Set API key
         os.environ['OPENAI_API_KEY'] = openai_api_key
@@ -135,7 +135,7 @@ class PathWiseRAG:
         from sentence_transformers import SentenceTransformer
         self.embedder = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
 
-        print("✅ PathWise RAG initialized")
+        print("✅ PathWay RAG initialized")
 
     def retrieve_context(
         self,
@@ -215,7 +215,7 @@ class PathWiseRAG:
 
         # Build prompt
         prompt_template = ChatPromptTemplate.from_messages([
-            ("system", """You are PathWise, an intelligent academic advisor for Columbia Engineering programs.
+            ("system", """You are PathWay, an intelligent academic advisor for Columbia Engineering programs.
 
 Your role is to help students understand degree requirements, course options, and professor recommendations.
 
@@ -343,7 +343,7 @@ Please provide a helpful answer based on the context above. Include source citat
 
         # Build planning prompt
         prompt_template = ChatPromptTemplate.from_messages([
-            ("system", """You are PathWise, an academic planning assistant.
+            ("system", """You are PathWay, an academic planning assistant.
 
 Create a realistic semester-by-semester course plan based on the degree requirements and professor ratings provided.
 
@@ -399,21 +399,21 @@ Please create a personalized course plan.""")
 
 
 # Convenience function
-def create_pathwise_rag(
+def create_pathway_rag(
     openai_api_key: str,
     model_name: str = "gpt-4"
-) -> PathWiseRAG:
+) -> PathWayRAG:
     """
-    Create a PathWise RAG instance.
+    Create a PathWay RAG instance.
 
     Args:
         openai_api_key: OpenAI API key
         model_name: LLM model name
 
     Returns:
-        PathWiseRAG instance
+        PathWayRAG instance
     """
-    return PathWiseRAG(
+    return PathWayRAG(
         openai_api_key=openai_api_key,
         model_name=model_name
     )
@@ -421,7 +421,7 @@ def create_pathwise_rag(
 
 if __name__ == "__main__":
     # Example usage
-    print("PathWise LangChain RAG Example")
+    print("PathWay LangChain RAG Example")
     print("="*60)
 
     # Check for API key
@@ -432,7 +432,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     # Initialize RAG
-    rag = create_pathwise_rag(api_key, model_name="gpt-3.5-turbo")
+    rag = create_pathway_rag(api_key, model_name="gpt-3.5-turbo")
 
     # Test question answering
     print("\n" + "="*60)

@@ -14,7 +14,7 @@ import uvicorn
 
 def main():
     """Start the FastAPI server."""
-    print("Starting PathWise API Server...")
+    print("Starting PathWay API Server...")
     print("=" * 60)
     print("API Documentation will be available at:")
     print("  - Swagger UI: http://localhost:8000/docs")

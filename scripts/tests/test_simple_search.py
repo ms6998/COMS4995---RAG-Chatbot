@@ -55,7 +55,7 @@ def search(query, k=5):
 def main():
     """Test searches."""
     print("="*60)
-    print("PathWise Simple Search Test")
+    print("PathWay Simple Search Test")
     print("="*60)
 
     # Check if index exists
